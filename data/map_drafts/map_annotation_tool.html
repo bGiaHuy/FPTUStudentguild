@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Map Annotation Tool</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 380px; background: #f4f4f4; border-right: 1px solid #ccc; display: flex; flex-direction: column; padding: 10px; box-sizing: border-box; }
+        #main { flex-grow: 1; position: relative; overflow: auto; background: #ddd; }
+        
+        #map-container { position: relative; display: inline-block; transform-origin: top left; }
+        #floor-img { display: block; max-width: 100%; height: auto; }
+        
+        /* Overlays */
+        #overlays { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        
+        .room-bbox { position: absolute; border: 2px solid rgba(0, 150, 0, 0.7); background: rgba(0, 255, 0, 0.2); pointer-events: none; }
+        .room-bbox.selected { border-color: yellow; background: rgba(255, 255, 0, 0.4); z-index: 10; border-width: 3px; }
+        
+        .hotspot-dot { position: absolute; width: 10px; height: 10px; background: rgba(0, 150, 0, 0.7); border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+        .hotspot-dot.selected { background: yellow; box-shadow: 0 0 10px yellow; width: 15px; height: 15px; z-index: 10; }
+        
+        .room-label { position: absolute; color: blue; font-weight: bold; background: rgba(255,255,255,0.7); padding: 2px; font-size: 12px; pointer-events: none; transform: translate(-50%, -100%); }
+        .room-label.selected { background: yellow; z-index: 11; font-size: 14px; }
+        
+        /* Drag box */
+        #drag-box { position: absolute; border: 2px dashed #00f; background: rgba(0,0,255,0.2); display: none; pointer-events: none; z-index: 999; }
+        
+        /* Sidebar UI */
+        .section { margin-bottom: 10px; font-size: 13px; }
+        #room-list { flex-grow: 1; overflow-y: auto; background: white; border: 1px solid #ccc; font-size: 12px; }
+        .room-item { padding: 5px; cursor: pointer; border-bottom: 1px solid #eee; display: flex; flex-direction: column; }
+        .room-item:hover { background: #e0e0e0; }
+        .room-item.selected { background: #007bff; color: white; }
+        .room-item.assigned { border-left: 4px solid green; }
+        .room-item.unassigned { border-left: 4px solid red; }
+        
+        .badge { display: inline-block; padding: 2px 4px; font-size: 10px; border-radius: 3px; color: white; margin-right: 2px; }
+        .badge-id { color: #555; font-size: 10px; font-family: monospace; word-break: break-all; }
+        .room-item.selected .badge-id { color: #ddd; }
+        
+        #export-area { width: 100%; height: 60px; resize: none; font-size: 10px; }
+        #coords-display { position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; pointer-events: none; z-index: 1000; }
+        button { cursor: pointer; padding: 5px 8px; margin: 2px; font-size: 12px; }
+        
+        .mode-btn { background: #e0e0e0; border: 1px solid #999; }
+        .mode-btn.active { background: #007bff; color: white; font-weight: bold; border-color: #0056b3; }
+        
+        select, input[type="text"] { font-size: 12px; padding: 3px; }
+        
+        #selected-info { font-size: 11px; background: #e9ecef; padding: 5px; margin-top: 5px; display: none; }
+        #image-warning { display: none; color: red; font-weight: bold; font-size: 11px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div class="section">
+        <strong>1. Load JSON:</strong> <input type="file" id="json-upload" accept=".json">
+    </div>
+    <div class="section">
+        <strong>2. Image (Opt):</strong> <input type="file" id="img-upload" accept="image/*">
+        <div id="image-warning">Failed to load default image. Please upload manually.</div>
+    </div>
+
+    <div class="section">
+        <strong>Floor:</strong>
+        <select id="floor-select">
+            <option value="1">Floor 1</option>
+            <option value="2">Floor 2</option>
+            <option value="3">Floor 3</option>
+            <option value="4">Floor 4</option>
+        </select>
+        <br><br>
+        <strong>Mode:</strong>
+        <button class="mode-btn active" id="mode-rect" onclick="setMode('rectangle')">Room Region [R]</button>
+        <button class="mode-btn" id="mode-point" onclick="setMode('point')">Point Hotspot [P]</button>
+    </div>
+
+    <div class="section">
+        <input type="text" id="search-box" placeholder="Search display_name, id, code..." style="width: 100%; box-sizing: border-box; margin-bottom: 5px;">
+        <select id="filter-status" style="width: 100%;">
+            <option value="">All Status</option>
+            <option value="unassigned">Unassigned</option>
+            <option value="assigned">Assigned</option>
+        </select>
+    </div>
+
+    <div class="section" style="margin-bottom: 5px;">
+        <div><strong>Current Floor Stats:</strong></div>
+        <span id="stat-total">0</span> Total | 
+        <span id="stat-assigned" style="color:green">0</span> Assigned | 
+        <span id="stat-unassigned" style="color:red">0</span> Unassigned
+        <hr style="margin:5px 0;">
+        <div><strong>Global Stats:</strong></div>
+        <span id="stat-global-assigned" style="color:green">0</span> Total Assigned<br>
+        <span id="stat-missing" style="color:red"></span>
+    </div>
+
+    <div id="room-list"></div>
+    
+    <div id="selected-info"></div>
+
+    <div class="section" style="margin-top: 10px;">
+        <button onclick="clearSelected()">Clear Selected [Del]</button>
+        <button onclick="autoSelectNextUnassigned()">Next [N]</button>
+        <br>
+        <button id="export-btn" style="background:#28a745; color:white; border:none; margin-top:5px;">Generate JSON</button>
+        <button id="copy-btn">Copy</button>
+        <textarea id="export-area" readonly placeholder="Exported JSON here..."></textarea>
+    </div>
+</div>
+
+<div id="main">
+    <div id="map-container">
+        <img id="floor-img" src="../../mapping/floor1vs2.jpg" alt="Floor Map" onerror="handleImageError()">
+        <div id="overlays"></div>
+        <div id="drag-box"></div>
+    </div>
+</div>
+
+<div id="coords-display">X: 0, Y: 0</div>
+
+<script>
+    let mapData = []; // Nested JSON: [ {floor:1, image:..., rooms:[...]}, ... ]
+    let currentFloor = 1;
+    let selectedItemId = null;
+    let mode = 'rectangle';
+
+    // Drag state
+    let isDragging = false;
+    let dragStartXDisplay = 0;
+    let dragStartYDisplay = 0;
+    
+    const floorSelect = document.getElementById('floor-select');
+    const filterStatus = document.getElementById('filter-status');
+    const jsonUpload = document.getElementById('json-upload');
+    const imgUpload = document.getElementById('img-upload');
+    const roomListEl = document.getElementById('room-list');
+    const mapContainer = document.getElementById('map-container');
+    const floorImg = document.getElementById('floor-img');
+    const overlays = document.getElementById('overlays');
+    const dragBox = document.getElementById('drag-box');
+    const coordsDisplay = document.getElementById('coords-display');
+    const searchBox = document.getElementById('search-box');
+    const exportArea = document.getElementById('export-area');
+    const selectedInfo = document.getElementById('selected-info');
+    const imageWarning = document.getElementById('image-warning');
+
+    function handleImageError() {
+        imageWarning.style.display = 'block';
+    }
+
+    function setMode(newMode) {
+        mode = newMode;
+        document.getElementById('mode-rect').classList.toggle('active', mode === 'rectangle');
+        document.getElementById('mode-point').classList.toggle('active', mode === 'point');
+    }
+
+    // Helper functions for nested structure
+    function getCurrentFloorData() {
+        if (!mapData || !Array.isArray(mapData)) return null;
+        return mapData.find(f => f.floor === currentFloor);
+    }
+
+    function getCurrentRooms() {
+        const floorData = getCurrentFloorData();
+        return floorData ? (floorData.rooms || []) : [];
+    }
+
+    function findRoomById(itemId) {
+        if (!itemId) return null;
+        for (const floor of mapData) {
+            if (!floor.rooms) continue;
+            const room = floor.rooms.find(r => r.item_id === itemId);
+            if (room) return { room, floor };
+        }
+        return null;
+    }
+
+    // Coordinate scaling
+    function getDisplayScale() {
+        if (!floorImg.naturalWidth) return { scaleX: 1, scaleY: 1, rect: floorImg.getBoundingClientRect() };
+        const rect = floorImg.getBoundingClientRect();
+        return {
+            scaleX: floorImg.naturalWidth / rect.width,
+            scaleY: floorImg.naturalHeight / rect.height,
+            rect: rect
+        };
+    }
+
+    function toNaturalCoords(displayX, displayY) {
+        const { scaleX, scaleY } = getDisplayScale();
+        return {
+            x: Math.round(displayX * scaleX),
+            y: Math.round(displayY * scaleY)
+        };
+    }
+
+    function toDisplayCoords(naturalX, naturalY) {
+        const { scaleX, scaleY } = getDisplayScale();
+        return {
+            x: naturalX / scaleX,
+            y: naturalY / scaleY
+        };
+    }
+
+    function getMouseDisplayCoords(e) {
+        const { rect } = getDisplayScale();
+        return {
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top
+        };
+    }
+
+    jsonUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                mapData = JSON.parse(event.target.result);
+                renderApp();
+            } catch (err) {
+                alert("Invalid JSON file.");
+            }
+        };
+        reader.readAsText(file);
+    });
+
+    imgUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            floorImg.src = event.target.result;
+            imageWarning.style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+    });
+
+    floorSelect.addEventListener('change', (e) => {
+        currentFloor = parseInt(e.target.value);
+        floorImg.src = `../../mapping/floor${currentFloor}vs2.jpg`;
+        imageWarning.style.display = 'none';
+        selectedItemId = null;
+        renderApp();
+    });
+
+    searchBox.addEventListener('input', renderRoomList);
+    filterStatus.addEventListener('change', renderRoomList);
+
+    window.addEventListener('resize', () => {
+        renderOverlays(); // redraw as scale changes
+    });
+
+    floorImg.addEventListener('load', () => {
+        renderOverlays();
+    });
+
+    mapContainer.addEventListener('mousemove', (e) => {
+        const displayCoords = getMouseDisplayCoords(e);
+        const nat = toNaturalCoords(displayCoords.x, displayCoords.y);
+        coordsDisplay.innerText = `X: ${nat.x}, Y: ${nat.y}`;
+
+        if (isDragging && mode === 'rectangle') {
+            const minX = Math.min(dragStartXDisplay, displayCoords.x);
+            const maxX = Math.max(dragStartXDisplay, displayCoords.x);
+            const minY = Math.min(dragStartYDisplay, displayCoords.y);
+            const maxY = Math.max(dragStartYDisplay, displayCoords.y);
+            
+            dragBox.style.left = minX + 'px';
+            dragBox.style.top = minY + 'px';
+            dragBox.style.width = (maxX - minX) + 'px';
+            dragBox.style.height = (maxY - minY) + 'px';
+        }
+    });
+
+    mapContainer.addEventListener('mousedown', (e) => {
+        if (!selectedItemId) return;
+        const displayCoords = getMouseDisplayCoords(e);
+        
+        if (mode === 'rectangle') {
+            isDragging = true;
+            dragStartXDisplay = displayCoords.x;
+            dragStartYDisplay = displayCoords.y;
+            dragBox.style.display = 'block';
+            dragBox.style.left = dragStartXDisplay + 'px';
+            dragBox.style.top = dragStartYDisplay + 'px';
+            dragBox.style.width = '0px';
+            dragBox.style.height = '0px';
+        }
+    });
+
+    mapContainer.addEventListener('mouseup', (e) => {
+        if (!selectedItemId) return;
+        const displayCoords = getMouseDisplayCoords(e);
+        const res = findRoomById(selectedItemId);
+        if (!res) {
+            alert("Error: Missing item_id for this room. Cannot save.");
+            return;
+        }
+        const room = res.room;
+
+        if (mode === 'rectangle' && isDragging) {
+            isDragging = false;
+            dragBox.style.display = 'none';
+
+            const minX = Math.min(dragStartXDisplay, displayCoords.x);
+            const maxX = Math.max(dragStartXDisplay, displayCoords.x);
+            const minY = Math.min(dragStartYDisplay, displayCoords.y);
+            const maxY = Math.max(dragStartYDisplay, displayCoords.y);
+
+            if (maxX - minX > 2 && maxY - minY > 2) {
+                const natMin = toNaturalCoords(minX, minY);
+                const natMax = toNaturalCoords(maxX, maxY);
+                
+                const cx = Math.round((natMin.x + natMax.x) / 2);
+                const cy = Math.round((natMin.y + natMax.y) / 2);
+                
+                Object.assign(room, {
+                    bbox: { min_x: natMin.x, min_y: natMin.y, max_x: natMax.x, max_y: natMax.y },
+                    center_x: cx, center_y: cy,
+                    x: cx, y: cy,
+                    label_x: cx, label_y: cy - 14,
+                    click_radius: 20,
+                    annotation_mode: "rectangle",
+                    annotation_status: "assigned",
+                    source: "manual_snipping_annotation",
+                    confidence: "human_marked_needs_review"
+                });
+                renderApp();
+                autoSelectNextUnassigned();
+            }
+        } else if (mode === 'point') {
+            const nat = toNaturalCoords(displayCoords.x, displayCoords.y);
+            Object.assign(room, {
+                x: nat.x, y: nat.y,
+                center_x: nat.x, center_y: nat.y,
+                label_x: nat.x, label_y: nat.y - 14,
+                click_radius: 20,
+                annotation_mode: "point",
+                annotation_status: "assigned",
+                source: "manual_point_annotation",
+                confidence: "human_marked_needs_review"
+            });
+            renderApp();
+            autoSelectNextUnassigned();
+        }
+    });
+
+    function clearSelected() {
+        if (!selectedItemId) return;
+        const res = findRoomById(selectedItemId);
+        if (res) {
+            const room = res.room;
+            room.center_x = 0; room.center_y = 0;
+            room.x = 0; room.y = 0;
+            room.label_x = 0; room.label_y = 0;
+            room.bbox = { min_x: 0, min_y: 0, max_x: 0, max_y: 0 };
+            room.annotation_status = "unassigned";
+            room.annotation_mode = "";
+        }
+        renderApp();
+    }
+
+    function autoSelectNextUnassigned() {
+        const query = searchBox.value.toLowerCase();
+        const rooms = getCurrentRooms();
+        
+        for (const room of rooms) {
+            const ident = (room.display_name || room.item_id || "").toLowerCase();
+            if (query && !ident.includes(query)) continue;
+            
+            const status = room.annotation_status || (room.x > 0 ? "assigned" : "unassigned");
+            if (status === 'unassigned') {
+                if (!room.item_id) {
+                    console.error("Skipped room because item_id is missing");
+                    continue;
+                }
+                selectedItemId = room.item_id;
+                renderRoomList();
+                renderOverlays();
+                return;
+            }
+        }
+        selectedItemId = null;
+        renderApp();
+    }
+
+    function renderApp() {
+        renderRoomList();
+        renderOverlays();
+        updateStats();
+        
+        if (selectedItemId) {
+            const res = findRoomById(selectedItemId);
+            if (res && (res.room.annotation_status === 'assigned' || res.room.x > 0)) {
+                const room = res.room;
+                selectedInfo.style.display = 'block';
+                if (room.annotation_mode === 'rectangle' && room.bbox) {
+                    selectedInfo.innerHTML = `
+                        <strong>Selected BBox:</strong><br>
+                        min: (${room.bbox.min_x}, ${room.bbox.min_y})<br>
+                        max: (${room.bbox.max_x}, ${room.bbox.max_y})<br>
+                        center: (${room.center_x}, ${room.center_y})
+                    `;
+                } else {
+                    selectedInfo.innerHTML = `
+                        <strong>Selected Point:</strong><br>
+                        (${room.x}, ${room.y})
+                    `;
+                }
+            } else {
+                selectedInfo.style.display = 'none';
+            }
+        } else {
+            selectedInfo.style.display = 'none';
+        }
+    }
+
+    function renderRoomList() {
+        roomListEl.innerHTML = '';
+        const query = searchBox.value.toLowerCase();
+        const fStatus = filterStatus.value;
+        const rooms = getCurrentRooms();
+
+        rooms.forEach(room => {
+            const ident = (room.display_name || room.item_id || "").toLowerCase();
+            if (query && !ident.includes(query)) return;
+            
+            const isAssigned = room.annotation_status === 'assigned' || room.x > 0;
+            if (fStatus && fStatus === 'assigned' && !isAssigned) return;
+            if (fStatus && fStatus === 'unassigned' && isAssigned) return;
+
+            const itemId = room.item_id;
+            const isSelected = selectedItemId === itemId;
+
+            const div = document.createElement('div');
+            div.className = `room-item ${isAssigned ? 'assigned' : 'unassigned'} ${isSelected ? 'selected' : ''}`;
+            
+            const title = room.display_name || room.item_id;
+            
+            div.innerHTML = `
+                <div><strong>${title}</strong> ${isAssigned ? '&#10003;' : ''}</div>
+                <div class="badge-id">${itemId}</div>
+            `;
+            
+            div.onclick = () => {
+                selectedItemId = itemId;
+                renderRoomList();
+                renderOverlays();
+            };
+            roomListEl.appendChild(div);
+        });
+        
+        const selectedEl = roomListEl.querySelector('.selected');
+        if (selectedEl) selectedEl.scrollIntoView({block: 'nearest'});
+    }
+
+    function renderOverlays() {
+        overlays.innerHTML = '';
+        const rooms = getCurrentRooms();
+        
+        rooms.forEach(room => {
+            const isAssigned = room.annotation_status === 'assigned' || room.x > 0;
+            if (isAssigned) {
+                const itemId = room.item_id;
+                const isSelected = selectedItemId === itemId;
+                
+                if (room.annotation_mode === 'rectangle' && room.bbox) {
+                    const box = document.createElement('div');
+                    box.className = `room-bbox ${isSelected ? 'selected' : ''}`;
+                    
+                    const tl = toDisplayCoords(room.bbox.min_x, room.bbox.min_y);
+                    const br = toDisplayCoords(room.bbox.max_x, room.bbox.max_y);
+                    
+                    box.style.left = tl.x + 'px';
+                    box.style.top = tl.y + 'px';
+                    box.style.width = (br.x - tl.x) + 'px';
+                    box.style.height = (br.y - tl.y) + 'px';
+                    overlays.appendChild(box);
+                } else if (room.x > 0 || room.center_x > 0) {
+                    const cx = room.x || room.center_x;
+                    const cy = room.y || room.center_y;
+                    
+                    const dot = document.createElement('div');
+                    dot.className = `hotspot-dot ${isSelected ? 'selected' : ''}`;
+                    const d = toDisplayCoords(cx, cy);
+                    dot.style.left = d.x + 'px';
+                    dot.style.top = d.y + 'px';
+                    overlays.appendChild(dot);
+                }
+
+                if (room.label_x > 0) {
+                    const label = document.createElement('div');
+                    label.className = `room-label ${isSelected ? 'selected' : ''}`;
+                    label.innerText = room.display_name || room.room_code;
+                    const l = toDisplayCoords(room.label_x, room.label_y);
+                    label.style.left = l.x + 'px';
+                    label.style.top = l.y + 'px';
+                    overlays.appendChild(label);
+                }
+            }
+        });
+    }
+
+    function updateStats() {
+        let total = 0, assigned = 0, unassigned = 0;
+        const rooms = getCurrentRooms();
+        rooms.forEach(r => {
+            total++;
+            if (r.annotation_status === 'assigned' || r.x > 0) assigned++;
+            else unassigned++;
+        });
+        document.getElementById('stat-total').innerText = total;
+        document.getElementById('stat-assigned').innerText = assigned;
+        document.getElementById('stat-unassigned').innerText = unassigned;
+        
+        let globalAssigned = 0;
+        let missingFloors = [];
+        if (Array.isArray(mapData)) {
+            mapData.forEach(f => {
+                if (!f.image) missingFloors.push(f.floor);
+                if (f.rooms) {
+                    f.rooms.forEach(r => {
+                        if (r.annotation_status === 'assigned' || r.x > 0) globalAssigned++;
+                    });
+                }
+            });
+        }
+        document.getElementById('stat-global-assigned').innerText = globalAssigned;
+        document.getElementById('stat-missing').innerText = missingFloors.length > 0 ? `Missing images: Floor ${missingFloors.join(', ')}` : '';
+    }
+
+    document.getElementById('export-btn').addEventListener('click', () => {
+        exportArea.value = JSON.stringify(mapData, null, 2);
+    });
+
+    document.getElementById('copy-btn').addEventListener('click', () => {
+        exportArea.select();
+        document.execCommand('copy');
+        alert('Copied to clipboard!');
+    });
+
+    // Keyboard Shortcuts
+    document.addEventListener('keydown', (e) => {
+        if (e.target.tagName.toLowerCase() === 'input' || e.target.tagName.toLowerCase() === 'textarea') return;
+        
+        if (e.key === 'Delete' || e.key === 'Backspace') clearSelected();
+        else if (e.key.toLowerCase() === 'n') autoSelectNextUnassigned();
+        else if (e.key.toLowerCase() === 'r') setMode('rectangle');
+        else if (e.key.toLowerCase() === 'p') setMode('point');
+    });
+
+</script>
+
+</body>
+</html>

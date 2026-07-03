@@ -1,0 +1,38 @@
+{
+  "building": "DELTA",
+  "generated": "2026-06-28",
+  "assets": [
+    {
+      "floor": 1,
+      "public_image_path": "/mapping/floor1.png",
+      "image_width": 2600,
+      "image_height": 1600,
+      "preview_overlay_path": "data/map_drafts/previews/floor1_manual_prefill_overlay.png",
+      "item_count": 30
+    },
+    {
+      "floor": 2,
+      "public_image_path": "/mapping/floor2.png",
+      "image_width": 2412,
+      "image_height": 1760,
+      "preview_overlay_path": "data/map_drafts/previews/floor2_manual_prefill_overlay.png",
+      "item_count": 43
+    },
+    {
+      "floor": 3,
+      "public_image_path": "/mapping/floor3.png",
+      "image_width": 2422,
+      "image_height": 1687,
+      "preview_overlay_path": "data/map_drafts/previews/floor3_manual_prefill_overlay.png",
+      "item_count": 53
+    },
+    {
+      "floor": 4,
+      "public_image_path": "/mapping/floor4.png",
+      "image_width": 2380,
+      "image_height": 1760,
+      "preview_overlay_path": "data/map_drafts/previews/floor4_manual_prefill_overlay.png",
+      "item_count": 54
+    }
+  ]
+}

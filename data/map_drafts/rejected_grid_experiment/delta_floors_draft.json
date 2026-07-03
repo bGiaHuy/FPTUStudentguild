@@ -1,0 +1,2385 @@
+{
+  "building": {
+    "name": "MAPPING DELTA (DRAFT)",
+    "code": "DELTA"
+  },
+  "floors": [
+    {
+      "floor_number": 1,
+      "floor_name": "Tầng 1",
+      "items": [
+        {
+          "item_id": "DELTA-F1-icpdp-draft",
+          "room_code": "icpdp",
+          "display_code": "icpdp",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 223.93,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 206.7,
+            "max_x": 187.0,
+            "max_y": 241.15
+          },
+          "polygons": "M 93.5,206.70000000000002 L 187.0,206.70000000000002 L 187.0,241.15000000000003 L 93.5,241.15000000000003 Z",
+          "label_x": 140.25,
+          "label_y": 223.93
+        },
+        {
+          "item_id": "DELTA-F1-cửa-draft",
+          "room_code": "cửa",
+          "display_code": "cửa",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 420.75,
+          "center_y": 223.93,
+          "bbox": {
+            "min_x": 374.0,
+            "min_y": 206.7,
+            "max_x": 467.5,
+            "max_y": 241.15
+          },
+          "polygons": "M 374.0,206.70000000000002 L 467.5,206.70000000000002 L 467.5,241.15000000000003 L 374.0,241.15000000000003 Z",
+          "label_x": 420.75,
+          "label_y": 223.93
+        },
+        {
+          "item_id": "DELTA-F1-112.0-draft",
+          "room_code": "112.0",
+          "display_code": "112.0",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 794.75,
+          "center_y": 223.93,
+          "bbox": {
+            "min_x": 748.0,
+            "min_y": 206.7,
+            "max_x": 841.5,
+            "max_y": 241.15
+          },
+          "polygons": "M 748.0,206.70000000000002 L 841.5,206.70000000000002 L 841.5,241.15000000000003 L 748.0,241.15000000000003 Z",
+          "label_x": 794.75,
+          "label_y": 223.93
+        },
+        {
+          "item_id": "DELTA-F1-cửa ra-draft",
+          "room_code": "cửa ra",
+          "display_code": "cửa ra",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 46.75,
+          "center_y": 292.83,
+          "bbox": {
+            "min_x": 0.0,
+            "min_y": 275.6,
+            "max_x": 93.5,
+            "max_y": 310.05
+          },
+          "polygons": "M 0.0,275.6 L 93.5,275.6 L 93.5,310.05 L 0.0,310.05 Z",
+          "label_x": 46.75,
+          "label_y": 292.83
+        },
+        {
+          "item_id": "DELTA-F1-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 292.83,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 275.6,
+            "max_x": 187.0,
+            "max_y": 310.05
+          },
+          "polygons": "M 93.5,275.6 L 187.0,275.6 L 187.0,310.05 L 93.5,310.05 Z",
+          "label_x": 140.25,
+          "label_y": 292.83
+        },
+        {
+          "item_id": "DELTA-F1-Sảnh-draft",
+          "room_code": "Sảnh",
+          "display_code": "Sảnh",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 327.25,
+          "center_y": 292.83,
+          "bbox": {
+            "min_x": 280.5,
+            "min_y": 275.6,
+            "max_x": 374.0,
+            "max_y": 310.05
+          },
+          "polygons": "M 280.5,275.6 L 374.0,275.6 L 374.0,310.05 L 280.5,310.05 Z",
+          "label_x": 327.25,
+          "label_y": 292.83
+        },
+        {
+          "item_id": "DELTA-F1-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 292.83,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 275.6,
+            "max_x": 1028.5,
+            "max_y": 310.05
+          },
+          "polygons": "M 935.0,275.6 L 1028.5,275.6 L 1028.5,310.05 L 935.0,310.05 Z",
+          "label_x": 981.75,
+          "label_y": 292.83
+        },
+        {
+          "item_id": "DELTA-F1-cửa ra-draft",
+          "room_code": "cửa ra",
+          "display_code": "cửa ra",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1075.25,
+          "center_y": 292.83,
+          "bbox": {
+            "min_x": 1028.5,
+            "min_y": 275.6,
+            "max_x": 1122.0,
+            "max_y": 310.05
+          },
+          "polygons": "M 1028.5,275.6 L 1122.0,275.6 L 1122.0,310.05 L 1028.5,310.05 Z",
+          "label_x": 1075.25,
+          "label_y": 292.83
+        },
+        {
+          "item_id": "DELTA-F1-103-draft",
+          "room_code": "103",
+          "display_code": "103",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 327.28,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 310.05,
+            "max_x": 187.0,
+            "max_y": 344.5
+          },
+          "polygons": "M 93.5,310.05 L 187.0,310.05 L 187.0,344.5 L 93.5,344.5 Z",
+          "label_x": 140.25,
+          "label_y": 327.28
+        },
+        {
+          "item_id": "DELTA-F1-111-draft",
+          "room_code": "111",
+          "display_code": "111",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 327.28,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 310.05,
+            "max_x": 1028.5,
+            "max_y": 344.5
+          },
+          "polygons": "M 935.0,310.05 L 1028.5,310.05 L 1028.5,344.5 L 935.0,344.5 Z",
+          "label_x": 981.75,
+          "label_y": 327.28
+        },
+        {
+          "item_id": "DELTA-F1-104-draft",
+          "room_code": "104",
+          "display_code": "104",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 361.73,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 344.5,
+            "max_x": 187.0,
+            "max_y": 378.95
+          },
+          "polygons": "M 93.5,344.5 L 187.0,344.5 L 187.0,378.95 L 93.5,378.95 Z",
+          "label_x": 140.25,
+          "label_y": 361.73
+        },
+        {
+          "item_id": "DELTA-F1-110-draft",
+          "room_code": "110",
+          "display_code": "110",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 361.73,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 344.5,
+            "max_x": 1028.5,
+            "max_y": 378.95
+          },
+          "polygons": "M 935.0,344.5 L 1028.5,344.5 L 1028.5,378.95 L 935.0,378.95 Z",
+          "label_x": 981.75,
+          "label_y": 361.73
+        },
+        {
+          "item_id": "DELTA-F1-105-draft",
+          "room_code": "105",
+          "display_code": "105",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 396.18,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 378.95,
+            "max_x": 187.0,
+            "max_y": 413.4
+          },
+          "polygons": "M 93.5,378.95000000000005 L 187.0,378.95000000000005 L 187.0,413.40000000000003 L 93.5,413.40000000000003 Z",
+          "label_x": 140.25,
+          "label_y": 396.18
+        },
+        {
+          "item_id": "DELTA-F1-109-draft",
+          "room_code": "109",
+          "display_code": "109",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 396.18,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 378.95,
+            "max_x": 1028.5,
+            "max_y": 413.4
+          },
+          "polygons": "M 935.0,378.95000000000005 L 1028.5,378.95000000000005 L 1028.5,413.40000000000003 L 935.0,413.40000000000003 Z",
+          "label_x": 981.75,
+          "label_y": 396.18
+        },
+        {
+          "item_id": "DELTA-F1-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 430.63,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 413.4,
+            "max_x": 187.0,
+            "max_y": 447.85
+          },
+          "polygons": "M 93.5,413.40000000000003 L 187.0,413.40000000000003 L 187.0,447.85 L 93.5,447.85 Z",
+          "label_x": 140.25,
+          "label_y": 430.63
+        },
+        {
+          "item_id": "DELTA-F1-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 430.63,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 413.4,
+            "max_x": 1028.5,
+            "max_y": 447.85
+          },
+          "polygons": "M 935.0,413.40000000000003 L 1028.5,413.40000000000003 L 1028.5,447.85 L 935.0,447.85 Z",
+          "label_x": 981.75,
+          "label_y": 430.63
+        },
+        {
+          "item_id": "DELTA-F1-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 465.08,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 447.85,
+            "max_x": 187.0,
+            "max_y": 482.3
+          },
+          "polygons": "M 93.5,447.85 L 187.0,447.85 L 187.0,482.3 L 93.5,482.3 Z",
+          "label_x": 140.25,
+          "label_y": 465.08
+        },
+        {
+          "item_id": "DELTA-F1-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 465.08,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 447.85,
+            "max_x": 1028.5,
+            "max_y": 482.3
+          },
+          "polygons": "M 935.0,447.85 L 1028.5,447.85 L 1028.5,482.3 L 935.0,482.3 Z",
+          "label_x": 981.75,
+          "label_y": 465.08
+        },
+        {
+          "item_id": "DELTA-F1-startup-draft",
+          "room_code": "startup",
+          "display_code": "startup",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 499.53,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 482.3,
+            "max_x": 187.0,
+            "max_y": 516.75
+          },
+          "polygons": "M 93.5,482.30000000000007 L 187.0,482.30000000000007 L 187.0,516.7500000000001 L 93.5,516.7500000000001 Z",
+          "label_x": 140.25,
+          "label_y": 499.53
+        },
+        {
+          "item_id": "DELTA-F1-108C-draft",
+          "room_code": "108C",
+          "display_code": "108C",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 499.53,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 482.3,
+            "max_x": 1028.5,
+            "max_y": 516.75
+          },
+          "polygons": "M 935.0,482.30000000000007 L 1028.5,482.30000000000007 L 1028.5,516.7500000000001 L 935.0,516.7500000000001 Z",
+          "label_x": 981.75,
+          "label_y": 499.53
+        },
+        {
+          "item_id": "DELTA-F1-108B-draft",
+          "room_code": "108B",
+          "display_code": "108B",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 533.98,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 516.75,
+            "max_x": 1028.5,
+            "max_y": 551.2
+          },
+          "polygons": "M 935.0,516.75 L 1028.5,516.75 L 1028.5,551.2 L 935.0,551.2 Z",
+          "label_x": 981.75,
+          "label_y": 533.98
+        },
+        {
+          "item_id": "DELTA-F1-108A-draft",
+          "room_code": "108A",
+          "display_code": "108A",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 568.43,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 551.2,
+            "max_x": 1028.5,
+            "max_y": 585.65
+          },
+          "polygons": "M 935.0,551.2 L 1028.5,551.2 L 1028.5,585.6500000000001 L 935.0,585.6500000000001 Z",
+          "label_x": 981.75,
+          "label_y": 568.43
+        },
+        {
+          "item_id": "DELTA-F1-cửa ra vào-draft",
+          "room_code": "cửa ra vào",
+          "display_code": "cửa ra vào",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 602.88,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 585.65,
+            "max_x": 187.0,
+            "max_y": 620.1
+          },
+          "polygons": "M 93.5,585.6500000000001 L 187.0,585.6500000000001 L 187.0,620.1000000000001 L 93.5,620.1000000000001 Z",
+          "label_x": 140.25,
+          "label_y": 602.88
+        },
+        {
+          "item_id": "DELTA-F1-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 602.88,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 585.65,
+            "max_x": 1028.5,
+            "max_y": 620.1
+          },
+          "polygons": "M 935.0,585.6500000000001 L 1028.5,585.6500000000001 L 1028.5,620.1000000000001 L 935.0,620.1000000000001 Z",
+          "label_x": 981.75,
+          "label_y": 602.88
+        },
+        {
+          "item_id": "DELTA-F1-cửa ra-draft",
+          "room_code": "cửa ra",
+          "display_code": "cửa ra",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1075.25,
+          "center_y": 602.88,
+          "bbox": {
+            "min_x": 1028.5,
+            "min_y": 585.65,
+            "max_x": 1122.0,
+            "max_y": 620.1
+          },
+          "polygons": "M 1028.5,585.6500000000001 L 1122.0,585.6500000000001 L 1122.0,620.1000000000001 L 1028.5,620.1000000000001 Z",
+          "label_x": 1075.25,
+          "label_y": 602.88
+        },
+        {
+          "item_id": "DELTA-F1-cầu thang-draft",
+          "room_code": "cầu thang",
+          "display_code": "cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 637.33,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 620.1,
+            "max_x": 187.0,
+            "max_y": 654.55
+          },
+          "polygons": "M 93.5,620.1 L 187.0,620.1 L 187.0,654.5500000000001 L 93.5,654.5500000000001 Z",
+          "label_x": 140.25,
+          "label_y": 637.33
+        },
+        {
+          "item_id": "DELTA-F1-cửa thư viện-draft",
+          "room_code": "cửa thư viện",
+          "display_code": "cửa thư viện",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 233.75,
+          "center_y": 637.33,
+          "bbox": {
+            "min_x": 187.0,
+            "min_y": 620.1,
+            "max_x": 280.5,
+            "max_y": 654.55
+          },
+          "polygons": "M 187.0,620.1 L 280.5,620.1 L 280.5,654.5500000000001 L 187.0,654.5500000000001 Z",
+          "label_x": 233.75,
+          "label_y": 637.33
+        },
+        {
+          "item_id": "DELTA-F1-cửa 107B-draft",
+          "room_code": "cửa 107B",
+          "display_code": "cửa 107B",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 637.33,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 620.1,
+            "max_x": 1028.5,
+            "max_y": 654.55
+          },
+          "polygons": "M 935.0,620.1 L 1028.5,620.1 L 1028.5,654.5500000000001 L 935.0,654.5500000000001 Z",
+          "label_x": 981.75,
+          "label_y": 637.33
+        },
+        {
+          "item_id": "DELTA-F1-Thư viện-draft",
+          "room_code": "Thư viện",
+          "display_code": "Thư viện",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 140.25,
+          "center_y": 671.78,
+          "bbox": {
+            "min_x": 93.5,
+            "min_y": 654.55,
+            "max_x": 187.0,
+            "max_y": 689.0
+          },
+          "polygons": "M 93.5,654.5500000000001 L 187.0,654.5500000000001 L 187.0,689.0000000000001 L 93.5,689.0000000000001 Z",
+          "label_x": 140.25,
+          "label_y": 671.78
+        },
+        {
+          "item_id": "DELTA-F1-kỹ thuật-draft",
+          "room_code": "kỹ thuật",
+          "display_code": "kỹ thuật",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 981.75,
+          "center_y": 671.78,
+          "bbox": {
+            "min_x": 935.0,
+            "min_y": 654.55,
+            "max_x": 1028.5,
+            "max_y": 689.0
+          },
+          "polygons": "M 935.0,654.5500000000001 L 1028.5,654.5500000000001 L 1028.5,689.0000000000001 L 935.0,689.0000000000001 Z",
+          "label_x": 981.75,
+          "label_y": 671.78
+        }
+      ]
+    },
+    {
+      "floor_number": 2,
+      "floor_name": "Tấng 2",
+      "items": [
+        {
+          "item_id": "DELTA-F2-220-draft",
+          "room_code": "220",
+          "display_code": "220",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-219-draft",
+          "room_code": "219",
+          "display_code": "219",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-218-draft",
+          "room_code": "218",
+          "display_code": "218",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-216-draft",
+          "room_code": "216",
+          "display_code": "216",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-214-draft",
+          "room_code": "214",
+          "display_code": "214",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-213-draft",
+          "room_code": "213",
+          "display_code": "213",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Hành lang-draft",
+          "room_code": "Hành lang",
+          "display_code": "Hành lang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-222-draft",
+          "room_code": "222",
+          "display_code": "222",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-212-draft",
+          "room_code": "212",
+          "display_code": "212",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-223-draft",
+          "room_code": "223",
+          "display_code": "223",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C204-draft",
+          "room_code": "C204",
+          "display_code": "C204",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C203-draft",
+          "room_code": "C203",
+          "display_code": "C203",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C202-draft",
+          "room_code": "C202",
+          "display_code": "C202",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-224A-draft",
+          "room_code": "224A",
+          "display_code": "224A",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-211-draft",
+          "room_code": "211",
+          "display_code": "211",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C205-draft",
+          "room_code": "C205",
+          "display_code": "C205",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C201-draft",
+          "room_code": "C201",
+          "display_code": "C201",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C206-draft",
+          "room_code": "C206",
+          "display_code": "C206",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C210-draft",
+          "room_code": "C210",
+          "display_code": "C210",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-224B-draft",
+          "room_code": "224B",
+          "display_code": "224B",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C207-draft",
+          "room_code": "C207",
+          "display_code": "C207",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C208-draft",
+          "room_code": "C208",
+          "display_code": "C208",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-C209-draft",
+          "room_code": "C209",
+          "display_code": "C209",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-???-draft",
+          "room_code": "???",
+          "display_code": "???",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-224C-draft",
+          "room_code": "224C",
+          "display_code": "224C",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-???-draft",
+          "room_code": "???",
+          "display_code": "???",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-225-draft",
+          "room_code": "225",
+          "display_code": "225",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Hành lang-draft",
+          "room_code": "Hành lang",
+          "display_code": "Hành lang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-227-draft",
+          "room_code": "227",
+          "display_code": "227",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-cầu thang-draft",
+          "room_code": "cầu thang",
+          "display_code": "cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-tường-draft",
+          "room_code": "tường",
+          "display_code": "tường",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-tường-draft",
+          "room_code": "tường",
+          "display_code": "tường",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F2-Thư viện-draft",
+          "room_code": "Thư viện",
+          "display_code": "Thư viện",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        }
+      ]
+    },
+    {
+      "floor_number": 3,
+      "floor_name": "Tầng 3",
+      "items": [
+        {
+          "item_id": "DELTA-F3-321-draft",
+          "room_code": "321",
+          "display_code": "321",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 249.55,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 213.9,
+            "max_x": 372.36,
+            "max_y": 285.2
+          },
+          "polygons": "M 186.1818181818182,213.89999999999998 L 372.3636363636364,213.89999999999998 L 372.3636363636364,285.2 L 186.1818181818182,285.2 Z",
+          "label_x": 279.27,
+          "label_y": 249.55
+        },
+        {
+          "item_id": "DELTA-F3-320A-draft",
+          "room_code": "320A",
+          "display_code": "320A",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 249.55,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 213.9,
+            "max_x": 744.73,
+            "max_y": 285.2
+          },
+          "polygons": "M 558.5454545454545,213.89999999999998 L 744.7272727272727,213.89999999999998 L 744.7272727272727,285.2 L 558.5454545454545,285.2 Z",
+          "label_x": 651.64,
+          "label_y": 249.55
+        },
+        {
+          "item_id": "DELTA-F3-318-draft",
+          "room_code": "318",
+          "display_code": "318",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1024.0,
+          "center_y": 249.55,
+          "bbox": {
+            "min_x": 930.91,
+            "min_y": 213.9,
+            "max_x": 1117.09,
+            "max_y": 285.2
+          },
+          "polygons": "M 930.909090909091,213.89999999999998 L 1117.0909090909092,213.89999999999998 L 1117.0909090909092,285.2 L 930.909090909091,285.2 Z",
+          "label_x": 1024.0,
+          "label_y": 249.55
+        },
+        {
+          "item_id": "DELTA-F3-316-draft",
+          "room_code": "316",
+          "display_code": "316",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 249.55,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 213.9,
+            "max_x": 1489.45,
+            "max_y": 285.2
+          },
+          "polygons": "M 1303.2727272727273,213.89999999999998 L 1489.4545454545455,213.89999999999998 L 1489.4545454545455,285.2 L 1303.2727272727273,285.2 Z",
+          "label_x": 1396.36,
+          "label_y": 249.55
+        },
+        {
+          "item_id": "DELTA-F3-315-draft",
+          "room_code": "315",
+          "display_code": "315",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 249.55,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 213.9,
+            "max_x": 2048.0,
+            "max_y": 285.2
+          },
+          "polygons": "M 1861.818181818182,213.89999999999998 L 2048.0,213.89999999999998 L 2048.0,285.2 L 1861.818181818182,285.2 Z",
+          "label_x": 1954.91,
+          "label_y": 249.55
+        },
+        {
+          "item_id": "DELTA-F3-319-draft",
+          "room_code": "319",
+          "display_code": "319",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 320.85,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 285.2,
+            "max_x": 744.73,
+            "max_y": 356.5
+          },
+          "polygons": "M 558.5454545454545,285.2 L 744.7272727272727,285.2 L 744.7272727272727,356.5 L 558.5454545454545,356.5 Z",
+          "label_x": 651.64,
+          "label_y": 320.85
+        },
+        {
+          "item_id": "DELTA-F3-317-draft",
+          "room_code": "317",
+          "display_code": "317",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 320.85,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 285.2,
+            "max_x": 1489.45,
+            "max_y": 356.5
+          },
+          "polygons": "M 1303.2727272727273,285.2 L 1489.4545454545455,285.2 L 1489.4545454545455,356.5 L 1303.2727272727273,356.5 Z",
+          "label_x": 1396.36,
+          "label_y": 320.85
+        },
+        {
+          "item_id": "DELTA-F3-314-draft",
+          "room_code": "314",
+          "display_code": "314",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 320.85,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 285.2,
+            "max_x": 2048.0,
+            "max_y": 356.5
+          },
+          "polygons": "M 1861.818181818182,285.2 L 2048.0,285.2 L 2048.0,356.5 L 1861.818181818182,356.5 Z",
+          "label_x": 1954.91,
+          "label_y": 320.85
+        },
+        {
+          "item_id": "DELTA-F3-213-draft",
+          "room_code": "213",
+          "display_code": "213",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 392.15,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 356.5,
+            "max_x": 2048.0,
+            "max_y": 427.8
+          },
+          "polygons": "M 1861.818181818182,356.5 L 2048.0,356.5 L 2048.0,427.8 L 1861.818181818182,427.8 Z",
+          "label_x": 1954.91,
+          "label_y": 392.15
+        },
+        {
+          "item_id": "DELTA-F3-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 463.45,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 427.8,
+            "max_x": 372.36,
+            "max_y": 499.1
+          },
+          "polygons": "M 186.1818181818182,427.79999999999995 L 372.3636363636364,427.79999999999995 L 372.3636363636364,499.09999999999997 L 186.1818181818182,499.09999999999997 Z",
+          "label_x": 279.27,
+          "label_y": 463.45
+        },
+        {
+          "item_id": "DELTA-F3-Hành lang-draft",
+          "room_code": "Hành lang",
+          "display_code": "Hành lang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 463.45,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 427.8,
+            "max_x": 744.73,
+            "max_y": 499.1
+          },
+          "polygons": "M 558.5454545454545,427.79999999999995 L 744.7272727272727,427.79999999999995 L 744.7272727272727,499.09999999999997 L 558.5454545454545,499.09999999999997 Z",
+          "label_x": 651.64,
+          "label_y": 463.45
+        },
+        {
+          "item_id": "DELTA-F3-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 463.45,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 427.8,
+            "max_x": 2048.0,
+            "max_y": 499.1
+          },
+          "polygons": "M 1861.818181818182,427.79999999999995 L 2048.0,427.79999999999995 L 2048.0,499.09999999999997 L 1861.818181818182,499.09999999999997 Z",
+          "label_x": 1954.91,
+          "label_y": 463.45
+        },
+        {
+          "item_id": "DELTA-F3-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 534.75,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 499.1,
+            "max_x": 744.73,
+            "max_y": 570.4
+          },
+          "polygons": "M 558.5454545454545,499.09999999999997 L 744.7272727272727,499.09999999999997 L 744.7272727272727,570.4 L 558.5454545454545,570.4 Z",
+          "label_x": 651.64,
+          "label_y": 534.75
+        },
+        {
+          "item_id": "DELTA-F3-322-draft",
+          "room_code": "322",
+          "display_code": "322",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 606.05,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 570.4,
+            "max_x": 372.36,
+            "max_y": 641.7
+          },
+          "polygons": "M 186.1818181818182,570.4 L 372.3636363636364,570.4 L 372.3636363636364,641.6999999999999 L 186.1818181818182,641.6999999999999 Z",
+          "label_x": 279.27,
+          "label_y": 606.05
+        },
+        {
+          "item_id": "DELTA-F3-313-draft",
+          "room_code": "313",
+          "display_code": "313",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 606.05,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 570.4,
+            "max_x": 2048.0,
+            "max_y": 641.7
+          },
+          "polygons": "M 1861.818181818182,570.4 L 2048.0,570.4 L 2048.0,641.6999999999999 L 1861.818181818182,641.6999999999999 Z",
+          "label_x": 1954.91,
+          "label_y": 606.05
+        },
+        {
+          "item_id": "DELTA-F3-323-draft",
+          "room_code": "323",
+          "display_code": "323",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 677.35,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 641.7,
+            "max_x": 372.36,
+            "max_y": 713.0
+          },
+          "polygons": "M 186.1818181818182,641.6999999999999 L 372.3636363636364,641.6999999999999 L 372.3636363636364,712.9999999999999 L 186.1818181818182,712.9999999999999 Z",
+          "label_x": 279.27,
+          "label_y": 677.35
+        },
+        {
+          "item_id": "DELTA-F3-C304-draft",
+          "room_code": "C304",
+          "display_code": "C304",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 677.35,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 641.7,
+            "max_x": 744.73,
+            "max_y": 713.0
+          },
+          "polygons": "M 558.5454545454545,641.6999999999999 L 744.7272727272727,641.6999999999999 L 744.7272727272727,712.9999999999999 L 558.5454545454545,712.9999999999999 Z",
+          "label_x": 651.64,
+          "label_y": 677.35
+        },
+        {
+          "item_id": "DELTA-F3-C303-draft",
+          "room_code": "C303",
+          "display_code": "C303",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1024.0,
+          "center_y": 677.35,
+          "bbox": {
+            "min_x": 930.91,
+            "min_y": 641.7,
+            "max_x": 1117.09,
+            "max_y": 713.0
+          },
+          "polygons": "M 930.909090909091,641.6999999999999 L 1117.0909090909092,641.6999999999999 L 1117.0909090909092,712.9999999999999 L 930.909090909091,712.9999999999999 Z",
+          "label_x": 1024.0,
+          "label_y": 677.35
+        },
+        {
+          "item_id": "DELTA-F3-C302-draft",
+          "room_code": "C302",
+          "display_code": "C302",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 677.35,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 641.7,
+            "max_x": 1489.45,
+            "max_y": 713.0
+          },
+          "polygons": "M 1303.2727272727273,641.6999999999999 L 1489.4545454545455,641.6999999999999 L 1489.4545454545455,712.9999999999999 L 1303.2727272727273,712.9999999999999 Z",
+          "label_x": 1396.36,
+          "label_y": 677.35
+        },
+        {
+          "item_id": "DELTA-F3-312-draft",
+          "room_code": "312",
+          "display_code": "312",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 677.35,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 641.7,
+            "max_x": 2048.0,
+            "max_y": 713.0
+          },
+          "polygons": "M 1861.818181818182,641.6999999999999 L 2048.0,641.6999999999999 L 2048.0,712.9999999999999 L 1861.818181818182,712.9999999999999 Z",
+          "label_x": 1954.91,
+          "label_y": 677.35
+        },
+        {
+          "item_id": "DELTA-F3-324-draft",
+          "room_code": "324",
+          "display_code": "324",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 748.65,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 713.0,
+            "max_x": 372.36,
+            "max_y": 784.3
+          },
+          "polygons": "M 186.1818181818182,713.0 L 372.3636363636364,713.0 L 372.3636363636364,784.3 L 186.1818181818182,784.3 Z",
+          "label_x": 279.27,
+          "label_y": 748.65
+        },
+        {
+          "item_id": "DELTA-F3-311-draft",
+          "room_code": "311",
+          "display_code": "311",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 748.65,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 713.0,
+            "max_x": 2048.0,
+            "max_y": 784.3
+          },
+          "polygons": "M 1861.818181818182,713.0 L 2048.0,713.0 L 2048.0,784.3 L 1861.818181818182,784.3 Z",
+          "label_x": 1954.91,
+          "label_y": 748.65
+        },
+        {
+          "item_id": "DELTA-F3-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 819.95,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 784.3,
+            "max_x": 372.36,
+            "max_y": 855.6
+          },
+          "polygons": "M 186.1818181818182,784.3 L 372.3636363636364,784.3 L 372.3636363636364,855.5999999999999 L 186.1818181818182,855.5999999999999 Z",
+          "label_x": 279.27,
+          "label_y": 819.95
+        },
+        {
+          "item_id": "DELTA-F3-C305-draft",
+          "room_code": "C305",
+          "display_code": "C305",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 819.95,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 784.3,
+            "max_x": 744.73,
+            "max_y": 855.6
+          },
+          "polygons": "M 558.5454545454545,784.3 L 744.7272727272727,784.3 L 744.7272727272727,855.5999999999999 L 558.5454545454545,855.5999999999999 Z",
+          "label_x": 651.64,
+          "label_y": 819.95
+        },
+        {
+          "item_id": "DELTA-F3-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1024.0,
+          "center_y": 819.95,
+          "bbox": {
+            "min_x": 930.91,
+            "min_y": 784.3,
+            "max_x": 1117.09,
+            "max_y": 855.6
+          },
+          "polygons": "M 930.909090909091,784.3 L 1117.0909090909092,784.3 L 1117.0909090909092,855.5999999999999 L 930.909090909091,855.5999999999999 Z",
+          "label_x": 1024.0,
+          "label_y": 819.95
+        },
+        {
+          "item_id": "DELTA-F3-C301-draft",
+          "room_code": "C301",
+          "display_code": "C301",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 819.95,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 784.3,
+            "max_x": 1489.45,
+            "max_y": 855.6
+          },
+          "polygons": "M 1303.2727272727273,784.3 L 1489.4545454545455,784.3 L 1489.4545454545455,855.5999999999999 L 1303.2727272727273,855.5999999999999 Z",
+          "label_x": 1396.36,
+          "label_y": 819.95
+        },
+        {
+          "item_id": "DELTA-F3-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 819.95,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 784.3,
+            "max_x": 2048.0,
+            "max_y": 855.6
+          },
+          "polygons": "M 1861.818181818182,784.3 L 2048.0,784.3 L 2048.0,855.5999999999999 L 1861.818181818182,855.5999999999999 Z",
+          "label_x": 1954.91,
+          "label_y": 819.95
+        },
+        {
+          "item_id": "DELTA-F3-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 891.25,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 855.6,
+            "max_x": 372.36,
+            "max_y": 926.9
+          },
+          "polygons": "M 186.1818181818182,855.5999999999999 L 372.3636363636364,855.5999999999999 L 372.3636363636364,926.8999999999999 L 186.1818181818182,926.8999999999999 Z",
+          "label_x": 279.27,
+          "label_y": 891.25
+        },
+        {
+          "item_id": "DELTA-F3-C306-draft",
+          "room_code": "C306",
+          "display_code": "C306",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 891.25,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 855.6,
+            "max_x": 744.73,
+            "max_y": 926.9
+          },
+          "polygons": "M 558.5454545454545,855.5999999999999 L 744.7272727272727,855.5999999999999 L 744.7272727272727,926.8999999999999 L 558.5454545454545,926.8999999999999 Z",
+          "label_x": 651.64,
+          "label_y": 891.25
+        },
+        {
+          "item_id": "DELTA-F3-C310-draft",
+          "room_code": "C310",
+          "display_code": "C310",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 891.25,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 855.6,
+            "max_x": 1489.45,
+            "max_y": 926.9
+          },
+          "polygons": "M 1303.2727272727273,855.5999999999999 L 1489.4545454545455,855.5999999999999 L 1489.4545454545455,926.8999999999999 L 1303.2727272727273,926.8999999999999 Z",
+          "label_x": 1396.36,
+          "label_y": 891.25
+        },
+        {
+          "item_id": "DELTA-F3-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 891.25,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 855.6,
+            "max_x": 2048.0,
+            "max_y": 926.9
+          },
+          "polygons": "M 1861.818181818182,855.5999999999999 L 2048.0,855.5999999999999 L 2048.0,926.8999999999999 L 1861.818181818182,926.8999999999999 Z",
+          "label_x": 1954.91,
+          "label_y": 891.25
+        },
+        {
+          "item_id": "DELTA-F3-325-draft",
+          "room_code": "325",
+          "display_code": "325",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 962.55,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 926.9,
+            "max_x": 372.36,
+            "max_y": 998.2
+          },
+          "polygons": "M 186.1818181818182,926.9 L 372.3636363636364,926.9 L 372.3636363636364,998.1999999999999 L 186.1818181818182,998.1999999999999 Z",
+          "label_x": 279.27,
+          "label_y": 962.55
+        },
+        {
+          "item_id": "DELTA-F3-C307-draft",
+          "room_code": "C307",
+          "display_code": "C307",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 962.55,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 926.9,
+            "max_x": 744.73,
+            "max_y": 998.2
+          },
+          "polygons": "M 558.5454545454545,926.9 L 744.7272727272727,926.9 L 744.7272727272727,998.1999999999999 L 558.5454545454545,998.1999999999999 Z",
+          "label_x": 651.64,
+          "label_y": 962.55
+        },
+        {
+          "item_id": "DELTA-F3-C308-draft",
+          "room_code": "C308",
+          "display_code": "C308",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1024.0,
+          "center_y": 962.55,
+          "bbox": {
+            "min_x": 930.91,
+            "min_y": 926.9,
+            "max_x": 1117.09,
+            "max_y": 998.2
+          },
+          "polygons": "M 930.909090909091,926.9 L 1117.0909090909092,926.9 L 1117.0909090909092,998.1999999999999 L 930.909090909091,998.1999999999999 Z",
+          "label_x": 1024.0,
+          "label_y": 962.55
+        },
+        {
+          "item_id": "DELTA-F3-C309-draft",
+          "room_code": "C309",
+          "display_code": "C309",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 962.55,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 926.9,
+            "max_x": 1489.45,
+            "max_y": 998.2
+          },
+          "polygons": "M 1303.2727272727273,926.9 L 1489.4545454545455,926.9 L 1489.4545454545455,998.1999999999999 L 1303.2727272727273,998.1999999999999 Z",
+          "label_x": 1396.36,
+          "label_y": 962.55
+        },
+        {
+          "item_id": "DELTA-F3-339-draft",
+          "room_code": "339",
+          "display_code": "339",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 962.55,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 926.9,
+            "max_x": 2048.0,
+            "max_y": 998.2
+          },
+          "polygons": "M 1861.818181818182,926.9 L 2048.0,926.9 L 2048.0,998.1999999999999 L 1861.818181818182,998.1999999999999 Z",
+          "label_x": 1954.91,
+          "label_y": 962.55
+        },
+        {
+          "item_id": "DELTA-F3-326-draft",
+          "room_code": "326",
+          "display_code": "326",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 1033.85,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 998.2,
+            "max_x": 372.36,
+            "max_y": 1069.5
+          },
+          "polygons": "M 186.1818181818182,998.1999999999999 L 372.3636363636364,998.1999999999999 L 372.3636363636364,1069.5 L 186.1818181818182,1069.5 Z",
+          "label_x": 279.27,
+          "label_y": 1033.85
+        },
+        {
+          "item_id": "DELTA-F3-338-draft",
+          "room_code": "338",
+          "display_code": "338",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 1033.85,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 998.2,
+            "max_x": 2048.0,
+            "max_y": 1069.5
+          },
+          "polygons": "M 1861.818181818182,998.1999999999999 L 2048.0,998.1999999999999 L 2048.0,1069.5 L 1861.818181818182,1069.5 Z",
+          "label_x": 1954.91,
+          "label_y": 1033.85
+        },
+        {
+          "item_id": "DELTA-F3-327-draft",
+          "room_code": "327",
+          "display_code": "327",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 1105.15,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 1069.5,
+            "max_x": 372.36,
+            "max_y": 1140.8
+          },
+          "polygons": "M 186.1818181818182,1069.5 L 372.3636363636364,1069.5 L 372.3636363636364,1140.8 L 186.1818181818182,1140.8 Z",
+          "label_x": 279.27,
+          "label_y": 1105.15
+        },
+        {
+          "item_id": "DELTA-F3-Hành lang-draft",
+          "room_code": "Hành lang",
+          "display_code": "Hành lang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 1105.15,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 1069.5,
+            "max_x": 744.73,
+            "max_y": 1140.8
+          },
+          "polygons": "M 558.5454545454545,1069.5 L 744.7272727272727,1069.5 L 744.7272727272727,1140.8 L 558.5454545454545,1140.8 Z",
+          "label_x": 651.64,
+          "label_y": 1105.15
+        },
+        {
+          "item_id": "DELTA-F3-337-draft",
+          "room_code": "337",
+          "display_code": "337",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 1105.15,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 1069.5,
+            "max_x": 2048.0,
+            "max_y": 1140.8
+          },
+          "polygons": "M 1861.818181818182,1069.5 L 2048.0,1069.5 L 2048.0,1140.8 L 1861.818181818182,1140.8 Z",
+          "label_x": 1954.91,
+          "label_y": 1105.15
+        },
+        {
+          "item_id": "DELTA-F3-cầu thang-draft",
+          "room_code": "cầu thang",
+          "display_code": "cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 1176.45,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 1140.8,
+            "max_x": 372.36,
+            "max_y": 1212.1
+          },
+          "polygons": "M 186.1818181818182,1140.8 L 372.3636363636364,1140.8 L 372.3636363636364,1212.1 L 186.1818181818182,1212.1 Z",
+          "label_x": 279.27,
+          "label_y": 1176.45
+        },
+        {
+          "item_id": "DELTA-F3-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 1176.45,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 1140.8,
+            "max_x": 744.73,
+            "max_y": 1212.1
+          },
+          "polygons": "M 558.5454545454545,1140.8 L 744.7272727272727,1140.8 L 744.7272727272727,1212.1 L 558.5454545454545,1212.1 Z",
+          "label_x": 651.64,
+          "label_y": 1176.45
+        },
+        {
+          "item_id": "DELTA-F3-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 1176.45,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 1140.8,
+            "max_x": 2048.0,
+            "max_y": 1212.1
+          },
+          "polygons": "M 1861.818181818182,1140.8 L 2048.0,1140.8 L 2048.0,1212.1 L 1861.818181818182,1212.1 Z",
+          "label_x": 1954.91,
+          "label_y": 1176.45
+        },
+        {
+          "item_id": "DELTA-F3-328-draft",
+          "room_code": "328",
+          "display_code": "328",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 1247.75,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 1212.1,
+            "max_x": 372.36,
+            "max_y": 1283.4
+          },
+          "polygons": "M 186.1818181818182,1212.1 L 372.3636363636364,1212.1 L 372.3636363636364,1283.3999999999999 L 186.1818181818182,1283.3999999999999 Z",
+          "label_x": 279.27,
+          "label_y": 1247.75
+        },
+        {
+          "item_id": "DELTA-F3-336-draft",
+          "room_code": "336",
+          "display_code": "336",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 1247.75,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 1212.1,
+            "max_x": 2048.0,
+            "max_y": 1283.4
+          },
+          "polygons": "M 1861.818181818182,1212.1 L 2048.0,1212.1 L 2048.0,1283.3999999999999 L 1861.818181818182,1283.3999999999999 Z",
+          "label_x": 1954.91,
+          "label_y": 1247.75
+        },
+        {
+          "item_id": "DELTA-F3-331-draft",
+          "room_code": "331",
+          "display_code": "331",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 1319.05,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 1283.4,
+            "max_x": 744.73,
+            "max_y": 1354.7
+          },
+          "polygons": "M 558.5454545454545,1283.3999999999999 L 744.7272727272727,1283.3999999999999 L 744.7272727272727,1354.6999999999998 L 558.5454545454545,1354.6999999999998 Z",
+          "label_x": 651.64,
+          "label_y": 1319.05
+        },
+        {
+          "item_id": "DELTA-F3-333-draft",
+          "room_code": "333",
+          "display_code": "333",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 1319.05,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 1283.4,
+            "max_x": 1489.45,
+            "max_y": 1354.7
+          },
+          "polygons": "M 1303.2727272727273,1283.3999999999999 L 1489.4545454545455,1283.3999999999999 L 1489.4545454545455,1354.6999999999998 L 1303.2727272727273,1354.6999999999998 Z",
+          "label_x": 1396.36,
+          "label_y": 1319.05
+        },
+        {
+          "item_id": "DELTA-F3-329-draft",
+          "room_code": "329",
+          "display_code": "329",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 279.27,
+          "center_y": 1390.35,
+          "bbox": {
+            "min_x": 186.18,
+            "min_y": 1354.7,
+            "max_x": 372.36,
+            "max_y": 1426.0
+          },
+          "polygons": "M 186.1818181818182,1354.7 L 372.3636363636364,1354.7 L 372.3636363636364,1426.0 L 186.1818181818182,1426.0 Z",
+          "label_x": 279.27,
+          "label_y": 1390.35
+        },
+        {
+          "item_id": "DELTA-F3-330-draft",
+          "room_code": "330",
+          "display_code": "330",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 651.64,
+          "center_y": 1390.35,
+          "bbox": {
+            "min_x": 558.55,
+            "min_y": 1354.7,
+            "max_x": 744.73,
+            "max_y": 1426.0
+          },
+          "polygons": "M 558.5454545454545,1354.7 L 744.7272727272727,1354.7 L 744.7272727272727,1426.0 L 558.5454545454545,1426.0 Z",
+          "label_x": 651.64,
+          "label_y": 1390.35
+        },
+        {
+          "item_id": "DELTA-F3-332-draft",
+          "room_code": "332",
+          "display_code": "332",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1024.0,
+          "center_y": 1390.35,
+          "bbox": {
+            "min_x": 930.91,
+            "min_y": 1354.7,
+            "max_x": 1117.09,
+            "max_y": 1426.0
+          },
+          "polygons": "M 930.909090909091,1354.7 L 1117.0909090909092,1354.7 L 1117.0909090909092,1426.0 L 930.909090909091,1426.0 Z",
+          "label_x": 1024.0,
+          "label_y": 1390.35
+        },
+        {
+          "item_id": "DELTA-F3-334-draft",
+          "room_code": "334",
+          "display_code": "334",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1396.36,
+          "center_y": 1390.35,
+          "bbox": {
+            "min_x": 1303.27,
+            "min_y": 1354.7,
+            "max_x": 1489.45,
+            "max_y": 1426.0
+          },
+          "polygons": "M 1303.2727272727273,1354.7 L 1489.4545454545455,1354.7 L 1489.4545454545455,1426.0 L 1303.2727272727273,1426.0 Z",
+          "label_x": 1396.36,
+          "label_y": 1390.35
+        },
+        {
+          "item_id": "DELTA-F3-335-draft",
+          "room_code": "335",
+          "display_code": "335",
+          "status": "draft",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "low",
+          "center_x": 1954.91,
+          "center_y": 1390.35,
+          "bbox": {
+            "min_x": 1861.82,
+            "min_y": 1354.7,
+            "max_x": 2048.0,
+            "max_y": 1426.0
+          },
+          "polygons": "M 1861.818181818182,1354.7 L 2048.0,1354.7 L 2048.0,1426.0 L 1861.818181818182,1426.0 Z",
+          "label_x": 1954.91,
+          "label_y": 1390.35
+        }
+      ]
+    },
+    {
+      "floor_number": 4,
+      "floor_name": "Tầng 4",
+      "items": [
+        {
+          "item_id": "DELTA-F4-421-draft",
+          "room_code": "421",
+          "display_code": "421",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-420-draft",
+          "room_code": "420",
+          "display_code": "420",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-418-draft",
+          "room_code": "418",
+          "display_code": "418",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-416-draft",
+          "room_code": "416",
+          "display_code": "416",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-415-draft",
+          "room_code": "415",
+          "display_code": "415",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-422-draft",
+          "room_code": "422",
+          "display_code": "422",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-419-draft",
+          "room_code": "419",
+          "display_code": "419",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-417-draft",
+          "room_code": "417",
+          "display_code": "417",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-414-draft",
+          "room_code": "414",
+          "display_code": "414",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-213-draft",
+          "room_code": "213",
+          "display_code": "213",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Hành lang-draft",
+          "room_code": "Hành lang",
+          "display_code": "Hành lang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-423-draft",
+          "room_code": "423",
+          "display_code": "423",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-413-draft",
+          "room_code": "413",
+          "display_code": "413",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-424-draft",
+          "room_code": "424",
+          "display_code": "424",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C404-draft",
+          "room_code": "C404",
+          "display_code": "C404",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C403-draft",
+          "room_code": "C403",
+          "display_code": "C403",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C402-draft",
+          "room_code": "C402",
+          "display_code": "C402",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-412-draft",
+          "room_code": "412",
+          "display_code": "412",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-425-draft",
+          "room_code": "425",
+          "display_code": "425",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-411-draft",
+          "room_code": "411",
+          "display_code": "411",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C405-draft",
+          "room_code": "C405",
+          "display_code": "C405",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C401-draft",
+          "room_code": "C401",
+          "display_code": "C401",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-NVS Nam-draft",
+          "room_code": "NVS Nam",
+          "display_code": "NVS Nam",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C406-draft",
+          "room_code": "C406",
+          "display_code": "C406",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C410-draft",
+          "room_code": "C410",
+          "display_code": "C410",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-NVS Nữ-draft",
+          "room_code": "NVS Nữ",
+          "display_code": "NVS Nữ",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-426-draft",
+          "room_code": "426",
+          "display_code": "426",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C407-draft",
+          "room_code": "C407",
+          "display_code": "C407",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C408-draft",
+          "room_code": "C408",
+          "display_code": "C408",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-C409-draft",
+          "room_code": "C409",
+          "display_code": "C409",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-440-draft",
+          "room_code": "440",
+          "display_code": "440",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-427-draft",
+          "room_code": "427",
+          "display_code": "427",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-439-draft",
+          "room_code": "439",
+          "display_code": "439",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-428-draft",
+          "room_code": "428",
+          "display_code": "428",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Hành lang-draft",
+          "room_code": "Hành lang",
+          "display_code": "Hành lang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-438-draft",
+          "room_code": "438",
+          "display_code": "438",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-cầu thang-draft",
+          "room_code": "cầu thang",
+          "display_code": "cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Giếng trời-draft",
+          "room_code": "Giếng trời",
+          "display_code": "Giếng trời",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-Cầu thang-draft",
+          "room_code": "Cầu thang",
+          "display_code": "Cầu thang",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-429-draft",
+          "room_code": "429",
+          "display_code": "429",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-437-draft",
+          "room_code": "437",
+          "display_code": "437",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-432-draft",
+          "room_code": "432",
+          "display_code": "432",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-434-draft",
+          "room_code": "434",
+          "display_code": "434",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-430-draft",
+          "room_code": "430",
+          "display_code": "430",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-431-draft",
+          "room_code": "431",
+          "display_code": "431",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-433-draft",
+          "room_code": "433",
+          "display_code": "433",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-435-draft",
+          "room_code": "435",
+          "display_code": "435",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        },
+        {
+          "item_id": "DELTA-F4-436-draft",
+          "room_code": "436",
+          "display_code": "436",
+          "status": "missing_floorplan_image",
+          "source": "xlsx_grid_approximation",
+          "geometry_confidence": "none"
+        }
+      ]
+    }
+  ]
+}

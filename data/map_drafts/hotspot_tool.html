@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotspot Calibration Tool</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 350px; background: #f4f4f4; border-right: 1px solid #ccc; display: flex; flex-direction: column; padding: 10px; box-sizing: border-box; }
+        #main { flex-grow: 1; position: relative; overflow: auto; background: #ddd; }
+        #map-container { position: relative; display: inline-block; transform-origin: top left; }
+        #floor-img { display: block; }
+        .hotspot-dot { position: absolute; width: 10px; height: 10px; background: red; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+        .hotspot-label { position: absolute; color: blue; font-weight: bold; background: rgba(255,255,255,0.7); padding: 2px; font-size: 12px; pointer-events: none; transform: translate(-50%, -100%); }
+        .room-item { padding: 5px; cursor: pointer; border-bottom: 1px solid #ddd; }
+        .room-item:hover { background: #e0e0e0; }
+        .room-item.selected { background: #007bff; color: white; }
+        .room-item.assigned { border-left: 4px solid green; }
+        .room-item.unassigned { border-left: 4px solid red; }
+        
+        /* Sidebar sections */
+        .section { margin-bottom: 15px; }
+        #room-list { flex-grow: 1; overflow-y: auto; background: white; border: 1px solid #ccc; }
+        #export-area { width: 100%; height: 100px; resize: none; font-size: 10px; }
+        #coords-display { position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; pointer-events: none; }
+        button { cursor: pointer; padding: 5px 10px; margin: 2px; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div class="section">
+        <h3>1. Load JSON</h3>
+        <input type="file" id="json-upload" accept=".json">
+    </div>
+
+    <div class="section">
+        <h3>2. Floor & Filters</h3>
+        <select id="floor-select">
+            <option value="1">Floor 1</option>
+            <option value="3">Floor 3</option>
+        </select>
+        <br><br>
+        <input type="text" id="search-box" placeholder="Search room code..." style="width: 100%; box-sizing: border-box;">
+    </div>
+
+    <div class="section">
+        <strong>Stats:</strong> 
+        <span id="stat-total">0</span> Total | 
+        <span id="stat-assigned" style="color:green">0</span> Assigned | 
+        <span id="stat-unassigned" style="color:red">0</span> Unassigned
+    </div>
+
+    <h3>3. Select Room to Assign</h3>
+    <div id="room-list"></div>
+
+    <div class="section" style="margin-top: 15px;">
+        <h3>4. Export</h3>
+        <button id="export-btn">Generate JSON</button>
+        <button id="copy-btn">Copy to Clipboard</button>
+        <textarea id="export-area" readonly placeholder="Exported JSON will appear here..."></textarea>
+    </div>
+</div>
+
+<div id="main">
+    <div id="map-container">
+        <img id="floor-img" src="../../mapping/floor1.png" alt="Floor Map">
+        <div id="hotspots-layer"></div>
+    </div>
+</div>
+
+<div id="coords-display">X: 0, Y: 0</div>
+
+<script>
+    let mapData = [];
+    let currentFloor = 1;
+    let selectedRoomCode = null;
+    let scale = 1;
+
+    const floorSelect = document.getElementById('floor-select');
+    const jsonUpload = document.getElementById('json-upload');
+    const roomListEl = document.getElementById('room-list');
+    const mapContainer = document.getElementById('map-container');
+    const floorImg = document.getElementById('floor-img');
+    const hotspotsLayer = document.getElementById('hotspots-layer');
+    const coordsDisplay = document.getElementById('coords-display');
+    const searchBox = document.getElementById('search-box');
+    const exportBtn = document.getElementById('export-btn');
+    const copyBtn = document.getElementById('copy-btn');
+    const exportArea = document.getElementById('export-area');
+
+    jsonUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                mapData = JSON.parse(event.target.result);
+                renderApp();
+            } catch (err) {
+                alert("Invalid JSON file.");
+            }
+        };
+        reader.readAsText(file);
+    });
+
+    floorSelect.addEventListener('change', (e) => {
+        currentFloor = parseInt(e.target.value);
+        floorImg.src = `../../mapping/floor${currentFloor}.png`;
+        selectedRoomCode = null;
+        renderApp();
+    });
+
+    searchBox.addEventListener('input', () => {
+        renderRoomList();
+    });
+
+    mapContainer.addEventListener('mousemove', (e) => {
+        const rect = mapContainer.getBoundingClientRect();
+        const x = Math.round((e.clientX - rect.left) / scale);
+        const y = Math.round((e.clientY - rect.top) / scale);
+        coordsDisplay.innerText = `X: ${x}, Y: ${y}`;
+    });
+
+    mapContainer.addEventListener('click', (e) => {
+        if (!selectedRoomCode) return;
+        const rect = mapContainer.getBoundingClientRect();
+        const x = Math.round((e.clientX - rect.left) / scale);
+        const y = Math.round((e.clientY - rect.top) / scale);
+
+        updateRoomCoordinates(selectedRoomCode, x, y);
+        renderApp();
+        autoSelectNextUnassigned();
+    });
+
+    function updateRoomCoordinates(roomCode, x, y) {
+        const floorData = mapData.find(f => f.floor === currentFloor);
+        if (!floorData) return;
+        const room = floorData.rooms.find(r => r.room_code === roomCode);
+        if (room) {
+            room.x = x;
+            room.y = y;
+            room.label_x = x;
+            room.label_y = y - 14;
+            room.click_radius = 20;
+            room.source = "manual_hotspot";
+            room.confidence = "human_marked_needs_review";
+        }
+    }
+
+    function autoSelectNextUnassigned() {
+        const floorData = mapData.find(f => f.floor === currentFloor);
+        if (!floorData) return;
+        
+        // Find next unassigned room that matches search filter
+        const query = searchBox.value.toLowerCase();
+        for (const room of floorData.rooms) {
+            if (room.room_code.toLowerCase().includes(query) && room.x === 0 && room.y === 0) {
+                selectedRoomCode = room.room_code;
+                renderRoomList();
+                return;
+            }
+        }
+        selectedRoomCode = null;
+    }
+
+    function renderApp() {
+        renderRoomList();
+        renderHotspots();
+        updateStats();
+    }
+
+    function renderRoomList() {
+        roomListEl.innerHTML = '';
+        const floorData = mapData.find(f => f.floor === currentFloor);
+        if (!floorData) return;
+
+        const query = searchBox.value.toLowerCase();
+
+        floorData.rooms.forEach(room => {
+            if (!room.room_code.toLowerCase().includes(query)) return;
+
+            const isAssigned = room.x > 0 || room.y > 0;
+            const div = document.createElement('div');
+            div.className = `room-item ${isAssigned ? 'assigned' : 'unassigned'} ${selectedRoomCode === room.room_code ? 'selected' : ''}`;
+            div.innerText = `${room.room_code} ${isAssigned ? '(Assigned)' : ''}`;
+            
+            div.onclick = () => {
+                selectedRoomCode = room.room_code;
+                renderRoomList();
+            };
+            roomListEl.appendChild(div);
+        });
+    }
+
+    function renderHotspots() {
+        hotspotsLayer.innerHTML = '';
+        const floorData = mapData.find(f => f.floor === currentFloor);
+        if (!floorData) return;
+
+        floorData.rooms.forEach(room => {
+            if (room.x > 0 || room.y > 0) {
+                // Dot
+                const dot = document.createElement('div');
+                dot.className = 'hotspot-dot';
+                dot.style.left = room.x + 'px';
+                dot.style.top = room.y + 'px';
+                if (selectedRoomCode === room.room_code) {
+                    dot.style.background = 'yellow';
+                    dot.style.boxShadow = '0 0 10px yellow';
+                    dot.style.width = '15px';
+                    dot.style.height = '15px';
+                }
+                hotspotsLayer.appendChild(dot);
+
+                // Label
+                const label = document.createElement('div');
+                label.className = 'hotspot-label';
+                label.innerText = room.room_code;
+                label.style.left = room.label_x + 'px';
+                label.style.top = room.label_y + 'px';
+                hotspotsLayer.appendChild(label);
+            }
+        });
+    }
+
+    function updateStats() {
+        let total = 0, assigned = 0, unassigned = 0;
+        const floorData = mapData.find(f => f.floor === currentFloor);
+        if (floorData) {
+            floorData.rooms.forEach(r => {
+                total++;
+                if (r.x > 0 || r.y > 0) assigned++;
+                else unassigned++;
+            });
+        }
+        document.getElementById('stat-total').innerText = total;
+        document.getElementById('stat-assigned').innerText = assigned;
+        document.getElementById('stat-unassigned').innerText = unassigned;
+    }
+
+    exportBtn.addEventListener('click', () => {
+        exportArea.value = JSON.stringify(mapData, null, 2);
+    });
+
+    copyBtn.addEventListener('click', () => {
+        exportArea.select();
+        document.execCommand('copy');
+        alert('Copied to clipboard!');
+    });
+
+</script>
+
+</body>
+</html>

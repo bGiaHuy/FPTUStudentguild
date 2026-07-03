@@ -1,0 +1,2446 @@
+{
+  "building": {
+    "name": "MAPPING DELTA",
+    "code": "DELTA"
+  },
+  "floors": [
+    {
+      "floor": 1,
+      "floor_name": "Tầng 1",
+      "image": "floor1vs2.jpg",
+      "image_width": 2580,
+      "image_height": 1635,
+      "items": [
+        {
+          "item_id": "DELTA-F1-user-gen-0",
+          "room_code": "",
+          "display_name": "Cửa chính",
+          "item_type": "door",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 895,
+            "min_y": 10,
+            "max_x": 1715,
+            "max_y": 135
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-1",
+          "room_code": "",
+          "display_name": "ICPDP",
+          "item_type": "office",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 135,
+            "max_x": 895,
+            "max_y": 273
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-2",
+          "room_code": "112",
+          "display_name": "112",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1718,
+            "min_y": 137,
+            "max_x": 2460,
+            "max_y": 273
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-3",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 275,
+            "max_x": 469,
+            "max_y": 370
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-4",
+          "room_code": "",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 409,
+            "min_y": 310,
+            "max_x": 469,
+            "max_y": 370
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-5",
+          "room_code": "103",
+          "display_name": "103",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 375,
+            "max_x": 469,
+            "max_y": 480
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-6",
+          "room_code": "104",
+          "display_name": "104",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 485,
+            "max_x": 469,
+            "max_y": 590
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-7",
+          "room_code": "105",
+          "display_name": "105",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 595,
+            "max_x": 469,
+            "max_y": 700
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-8",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 705,
+            "max_x": 469,
+            "max_y": 810
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-9",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 815,
+            "max_x": 469,
+            "max_y": 920
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-10",
+          "room_code": "",
+          "display_name": "STARTUP",
+          "item_type": "office",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 920,
+            "max_x": 469,
+            "max_y": 1140
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-11",
+          "room_code": "",
+          "display_name": "Cửa ra vào",
+          "item_type": "door",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1145,
+            "max_x": 469,
+            "max_y": 1250
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-12",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1255,
+            "max_x": 469,
+            "max_y": 1360
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-13",
+          "room_code": "",
+          "display_name": "Thư viện",
+          "item_type": "library",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1580,
+            "max_x": 2036,
+            "max_y": 1670
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-14",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 275,
+            "max_x": 2460,
+            "max_y": 370
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-15",
+          "room_code": "111",
+          "display_name": "111",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 375,
+            "max_x": 2460,
+            "max_y": 480
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-16",
+          "room_code": "110",
+          "display_name": "110",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 485,
+            "max_x": 2460,
+            "max_y": 590
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-17",
+          "room_code": "109",
+          "display_name": "109",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 595,
+            "max_x": 2460,
+            "max_y": 700
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-18",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 705,
+            "max_x": 2460,
+            "max_y": 810
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-19",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 815,
+            "max_x": 2460,
+            "max_y": 920
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-20",
+          "room_code": "108C",
+          "display_name": "108C",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 925,
+            "max_x": 2460,
+            "max_y": 1030
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-21",
+          "room_code": "108B",
+          "display_name": "108B",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1035,
+            "max_x": 2460,
+            "max_y": 1140
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-22",
+          "room_code": "108A",
+          "display_name": "108A",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1145,
+            "max_x": 2460,
+            "max_y": 1250
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-23",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1255,
+            "max_x": 2460,
+            "max_y": 1360
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-24",
+          "room_code": "107A",
+          "display_name": "107A",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1365,
+            "max_x": 2460,
+            "max_y": 1470
+          }
+        },
+        {
+          "item_id": "DELTA-F1-user-gen-25",
+          "room_code": "",
+          "display_name": "Kỹ thuật",
+          "item_type": "technical_room",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1475,
+            "max_x": 2460,
+            "max_y": 1600
+          }
+        },
+        {
+          "item_id": "PERIMETER-LEFT-F1",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 0,
+            "min_y": 155,
+            "max_x": 120,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-RIGHT-F1",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 2460,
+            "min_y": 155,
+            "max_x": 2580,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-BOTTOM-F1",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1670,
+            "max_x": 2460,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-TOP-LEFT-F1",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 0,
+            "min_y": 155,
+            "max_x": 120,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-TOP-RIGHT-F1",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 2460,
+            "min_y": 155,
+            "max_x": 2580,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        }
+      ],
+      "image_min_x": 0,
+      "image_min_y": 155
+    },
+    {
+      "floor": 2,
+      "floor_name": "Tầng 2",
+      "image": "floor2vs2.jpg",
+      "image_width": 2580,
+      "image_height": 1635,
+      "items": [
+        {
+          "item_id": "DELTA-F2-user-gen-0",
+          "room_code": "220",
+          "display_name": "220",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 275,
+            "max_x": 469,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-1",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 485,
+            "max_x": 469,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-2",
+          "room_code": "",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 409,
+            "min_y": 540,
+            "max_x": 469,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-3",
+          "room_code": "222",
+          "display_name": "222",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 580,
+            "max_x": 469,
+            "max_y": 685
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-4",
+          "room_code": "223",
+          "display_name": "223",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 685,
+            "max_x": 469,
+            "max_y": 790
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-5",
+          "room_code": "224",
+          "display_name": "224",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 790,
+            "max_x": 469,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-6",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 895,
+            "max_x": 469,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-7",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1000,
+            "max_x": 469,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-8",
+          "room_code": "224B",
+          "display_name": "224B",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1105,
+            "max_x": 469,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-9",
+          "room_code": "225",
+          "display_name": "225",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1210,
+            "max_x": 469,
+            "max_y": 1420
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-10",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1420,
+            "max_x": 469,
+            "max_y": 1525
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-11",
+          "room_code": "",
+          "display_name": "Thư viện",
+          "item_type": "library",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1525,
+            "max_x": 2460,
+            "max_y": 1670
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-13",
+          "room_code": "214",
+          "display_name": "214",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 275,
+            "max_x": 2460,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-14",
+          "room_code": "213",
+          "display_name": "213",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 380,
+            "max_x": 2460,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-15",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 485,
+            "max_x": 2460,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-16",
+          "room_code": "212",
+          "display_name": "212",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 580,
+            "max_x": 2460,
+            "max_y": 790
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-17",
+          "room_code": "211",
+          "display_name": "211",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 790,
+            "max_x": 2460,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-18",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 895,
+            "max_x": 2460,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-19",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1000,
+            "max_x": 2460,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-20",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1105,
+            "max_x": 2460,
+            "max_y": 1210
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-21",
+          "room_code": "227",
+          "display_name": "227",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1210,
+            "max_x": 2460,
+            "max_y": 1420
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-22",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1420,
+            "max_x": 2460,
+            "max_y": 1525
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-24",
+          "room_code": "219",
+          "display_name": "219",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 275,
+            "max_x": 1115,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-25",
+          "room_code": "218",
+          "display_name": "218",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 275,
+            "max_x": 1464,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-26",
+          "room_code": "216",
+          "display_name": "216",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 275,
+            "max_x": 1813,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-27",
+          "room_code": "219A",
+          "display_name": "219A",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 380,
+            "max_x": 1115,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-28",
+          "room_code": "217",
+          "display_name": "217",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 380,
+            "max_x": 1813,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-30",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 548,
+            "max_x": 1813,
+            "max_y": 727
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-31",
+          "room_code": "C204",
+          "display_name": "C204",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 790,
+            "max_x": 1115,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-32",
+          "room_code": "C203",
+          "display_name": "C203",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 790,
+            "max_x": 1464,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-33",
+          "room_code": "C202",
+          "display_name": "C202",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 790,
+            "max_x": 1813,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-34",
+          "room_code": "C205",
+          "display_name": "C205",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 895,
+            "max_x": 1115,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-35",
+          "room_code": "C201",
+          "display_name": "C201",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 895,
+            "max_x": 1813,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-36",
+          "room_code": "C206",
+          "display_name": "C206",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1000,
+            "max_x": 1115,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-37",
+          "room_code": "C210",
+          "display_name": "C210",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1000,
+            "max_x": 1813,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-38",
+          "room_code": "C207",
+          "display_name": "C207",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1105,
+            "max_x": 1115,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-39",
+          "room_code": "C208",
+          "display_name": "C208",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 1105,
+            "max_x": 1464,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-40",
+          "room_code": "C209",
+          "display_name": "C209",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1105,
+            "max_x": 1813,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F2-user-gen-41",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1283,
+            "max_x": 1813,
+            "max_y": 1452
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "PERIMETER-LEFT-F2",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 0,
+            "min_y": 155,
+            "max_x": 120,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-RIGHT-F2",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 2460,
+            "min_y": 155,
+            "max_x": 2580,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-BOTTOM-F2",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1670,
+            "max_x": 2460,
+            "max_y": 1790
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-TOP-F2",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 155,
+            "max_x": 2460,
+            "max_y": 275
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "BLOCK-C-MIDDLE-2",
+          "room_code": "",
+          "name": "Khoảng trống",
+          "display_name": "",
+          "item_type": "block",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 895,
+            "max_x": 1464,
+            "max_y": 1105
+          }
+        }
+      ],
+      "image_min_x": 0,
+      "image_min_y": 155
+    },
+    {
+      "floor": 3,
+      "floor_name": "Tầng 3",
+      "image": "floor3vs2.jpg",
+      "image_width": 2580,
+      "image_height": 1700,
+      "items": [
+        {
+          "item_id": "DELTA-F3-user-gen-1",
+          "room_code": "321",
+          "display_name": "321",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 275,
+            "max_x": 469,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-2",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 485,
+            "max_x": 469,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-3",
+          "room_code": "",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 409,
+            "min_y": 540,
+            "max_x": 469,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-4",
+          "room_code": "322",
+          "display_name": "322",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 580,
+            "max_x": 469,
+            "max_y": 685
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-5",
+          "room_code": "323",
+          "display_name": "323",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 685,
+            "max_x": 469,
+            "max_y": 790
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-6",
+          "room_code": "324",
+          "display_name": "324",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 790,
+            "max_x": 469,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-7",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 895,
+            "max_x": 469,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-8",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1000,
+            "max_x": 469,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-9",
+          "room_code": "325",
+          "display_name": "325",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1105,
+            "max_x": 469,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-10",
+          "room_code": "326",
+          "display_name": "326",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1210,
+            "max_x": 469,
+            "max_y": 1315
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-11",
+          "room_code": "327",
+          "display_name": "327",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1315,
+            "max_x": 469,
+            "max_y": 1420
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-12",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1420,
+            "max_x": 469,
+            "max_y": 1525
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-15",
+          "room_code": "315",
+          "display_name": "315",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 275,
+            "max_x": 2460,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-16",
+          "room_code": "314",
+          "display_name": "314",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 380,
+            "max_x": 2460,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-17",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 485,
+            "max_x": 2460,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-18",
+          "room_code": "313",
+          "display_name": "313",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 580,
+            "max_x": 2460,
+            "max_y": 685
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-19",
+          "room_code": "312",
+          "display_name": "312",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 685,
+            "max_x": 2460,
+            "max_y": 790
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-20",
+          "room_code": "311",
+          "display_name": "311",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 790,
+            "max_x": 2460,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-21",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 895,
+            "max_x": 2460,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-22",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1000,
+            "max_x": 2460,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-23",
+          "room_code": "339",
+          "display_name": "339",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1105,
+            "max_x": 2460,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-24",
+          "room_code": "338",
+          "display_name": "338",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1210,
+            "max_x": 2460,
+            "max_y": 1315
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-25",
+          "room_code": "337",
+          "display_name": "337",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1315,
+            "max_x": 2460,
+            "max_y": 1420
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-26",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1420,
+            "max_x": 2460,
+            "max_y": 1525
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-29",
+          "room_code": "320",
+          "display_name": "320",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 275,
+            "max_x": 1115,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-30",
+          "room_code": "318",
+          "display_name": "318",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 275,
+            "max_x": 1464,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-31",
+          "room_code": "316",
+          "display_name": "316",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 275,
+            "max_x": 1813,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-32",
+          "room_code": "319",
+          "display_name": "319",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 380,
+            "max_x": 1115,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-33",
+          "room_code": "317",
+          "display_name": "317",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 380,
+            "max_x": 1813,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-36",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 548,
+            "max_x": 1813,
+            "max_y": 727
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-37",
+          "room_code": "C304",
+          "display_name": "C304",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 790,
+            "max_x": 1115,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-38",
+          "room_code": "C303",
+          "display_name": "C303",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 790,
+            "max_x": 1464,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-39",
+          "room_code": "C302",
+          "display_name": "C302",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 790,
+            "max_x": 1813,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-40",
+          "room_code": "C305",
+          "display_name": "C305",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 895,
+            "max_x": 1115,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-41",
+          "room_code": "C301",
+          "display_name": "C301",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 895,
+            "max_x": 1813,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-42",
+          "room_code": "C306",
+          "display_name": "C306",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1000,
+            "max_x": 1115,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-43",
+          "room_code": "C310",
+          "display_name": "C310",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1000,
+            "max_x": 1813,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-44",
+          "room_code": "C307",
+          "display_name": "C307",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1105,
+            "max_x": 1115,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-45",
+          "room_code": "C308",
+          "display_name": "C308",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 1105,
+            "max_x": 1464,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-46",
+          "room_code": "C309",
+          "display_name": "C309",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1105,
+            "max_x": 1813,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-47",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1283,
+            "max_x": 1813,
+            "max_y": 1452
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-50",
+          "room_code": "328",
+          "display_name": "328",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1525,
+            "max_x": 469,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-51",
+          "room_code": "329",
+          "display_name": "329",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1630,
+            "max_x": 469,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-53",
+          "room_code": "331",
+          "display_name": "331",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1525,
+            "max_x": 1115,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-54",
+          "room_code": "333",
+          "display_name": "333",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1525,
+            "max_x": 1813,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-56",
+          "room_code": "330",
+          "display_name": "330",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1630,
+            "max_x": 1115,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-57",
+          "room_code": "332",
+          "display_name": "332",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 1630,
+            "max_x": 1464,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-58",
+          "room_code": "334",
+          "display_name": "334",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1630,
+            "max_x": 1813,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-60",
+          "room_code": "336",
+          "display_name": "336",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1525,
+            "max_x": 2460,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F3-user-gen-61",
+          "room_code": "335",
+          "display_name": "335",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1630,
+            "max_x": 2460,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "PERIMETER-LEFT-F3",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 0,
+            "min_y": 155,
+            "max_x": 120,
+            "max_y": 1855
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-RIGHT-F3",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 2460,
+            "min_y": 155,
+            "max_x": 2580,
+            "max_y": 1855
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-BOTTOM-F3",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1735,
+            "max_x": 2460,
+            "max_y": 1855
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-TOP-F3",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 155,
+            "max_x": 2460,
+            "max_y": 275
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "BLOCK-C-MIDDLE-3",
+          "room_code": "",
+          "name": "Khoảng trống",
+          "display_name": "",
+          "item_type": "block",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 895,
+            "max_x": 1464,
+            "max_y": 1105
+          }
+        }
+      ],
+      "image_min_x": 0,
+      "image_min_y": 155
+    },
+    {
+      "floor": 4,
+      "floor_name": "Tầng 4",
+      "image": "floor4vs2.jpg",
+      "image_width": 2580,
+      "image_height": 1700,
+      "items": [
+        {
+          "item_id": "DELTA-F4-user-gen-1A",
+          "room_code": "421",
+          "display_name": "421",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 275,
+            "max_x": 469,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-1B",
+          "room_code": "422",
+          "display_name": "422",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 380,
+            "max_x": 469,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-2",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 485,
+            "max_x": 469,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-3",
+          "room_code": "",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 409,
+            "min_y": 540,
+            "max_x": 469,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-4",
+          "room_code": "423",
+          "display_name": "423",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 580,
+            "max_x": 469,
+            "max_y": 685
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-5",
+          "room_code": "424",
+          "display_name": "424",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 685,
+            "max_x": 469,
+            "max_y": 790
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-6",
+          "room_code": "425",
+          "display_name": "425",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 790,
+            "max_x": 469,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-7",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 895,
+            "max_x": 469,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-8",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1000,
+            "max_x": 469,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-9",
+          "room_code": "426",
+          "display_name": "426",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1105,
+            "max_x": 469,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-10",
+          "room_code": "427",
+          "display_name": "427",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1210,
+            "max_x": 469,
+            "max_y": 1315
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-11",
+          "room_code": "428",
+          "display_name": "428",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1315,
+            "max_x": 469,
+            "max_y": 1420
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-12",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1420,
+            "max_x": 469,
+            "max_y": 1525
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-15",
+          "room_code": "415",
+          "display_name": "415",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 275,
+            "max_x": 2460,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-16",
+          "room_code": "414",
+          "display_name": "414",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 380,
+            "max_x": 2460,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-17",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 485,
+            "max_x": 2460,
+            "max_y": 580
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-18",
+          "room_code": "413",
+          "display_name": "413",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 580,
+            "max_x": 2460,
+            "max_y": 685
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-19",
+          "room_code": "412",
+          "display_name": "412",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 685,
+            "max_x": 2460,
+            "max_y": 790
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-20",
+          "room_code": "411",
+          "display_name": "411",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 790,
+            "max_x": 2460,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-21",
+          "room_code": "",
+          "display_name": "NVS NAM",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 895,
+            "max_x": 2460,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-22",
+          "room_code": "",
+          "display_name": "NVS NỮ",
+          "item_type": "toilet",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1000,
+            "max_x": 2460,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-23",
+          "room_code": "440",
+          "display_name": "440",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1105,
+            "max_x": 2460,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-24",
+          "room_code": "439",
+          "display_name": "439",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1210,
+            "max_x": 2460,
+            "max_y": 1315
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-25",
+          "room_code": "438",
+          "display_name": "438",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1315,
+            "max_x": 2460,
+            "max_y": 1420
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-26",
+          "room_code": "",
+          "display_name": "Cầu thang",
+          "item_type": "stair",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1420,
+            "max_x": 2460,
+            "max_y": 1525
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-29",
+          "room_code": "420",
+          "display_name": "420",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 275,
+            "max_x": 1115,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-30",
+          "room_code": "418",
+          "display_name": "418",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 275,
+            "max_x": 1464,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-31",
+          "room_code": "416",
+          "display_name": "416",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 275,
+            "max_x": 1813,
+            "max_y": 380
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-32",
+          "room_code": "419",
+          "display_name": "419",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 380,
+            "max_x": 1115,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-33",
+          "room_code": "417",
+          "display_name": "417",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 380,
+            "max_x": 1813,
+            "max_y": 485
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-36",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 548,
+            "max_x": 1813,
+            "max_y": 727
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-37",
+          "room_code": "C404",
+          "display_name": "C404",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 790,
+            "max_x": 1115,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-38",
+          "room_code": "C403",
+          "display_name": "C403",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 790,
+            "max_x": 1464,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-39",
+          "room_code": "C402",
+          "display_name": "C402",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 790,
+            "max_x": 1813,
+            "max_y": 895
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-40",
+          "room_code": "C405",
+          "display_name": "C405",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 895,
+            "max_x": 1115,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-41",
+          "room_code": "C401",
+          "display_name": "C401",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 895,
+            "max_x": 1813,
+            "max_y": 1000
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-42",
+          "room_code": "C406",
+          "display_name": "C406",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1000,
+            "max_x": 1115,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-43",
+          "room_code": "C410",
+          "display_name": "C410",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1000,
+            "max_x": 1813,
+            "max_y": 1105
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-44",
+          "room_code": "C407",
+          "display_name": "C407",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1105,
+            "max_x": 1115,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-45",
+          "room_code": "C408",
+          "display_name": "C408",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 1105,
+            "max_x": 1464,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-46",
+          "room_code": "C409",
+          "display_name": "C409",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1105,
+            "max_x": 1813,
+            "max_y": 1210
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-47",
+          "room_code": "",
+          "display_name": "Giếng trời",
+          "item_type": "skylight",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1283,
+            "max_x": 1813,
+            "max_y": 1452
+          },
+          "name": "Giếng trời"
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-50",
+          "room_code": "429",
+          "display_name": "429",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1525,
+            "max_x": 469,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-51",
+          "room_code": "430",
+          "display_name": "430",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1630,
+            "max_x": 469,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-53",
+          "room_code": "432",
+          "display_name": "432",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1525,
+            "max_x": 1115,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-54",
+          "room_code": "434",
+          "display_name": "434",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1525,
+            "max_x": 1813,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-56",
+          "room_code": "431",
+          "display_name": "431",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 766,
+            "min_y": 1630,
+            "max_x": 1115,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-57",
+          "room_code": "433",
+          "display_name": "433",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 1630,
+            "max_x": 1464,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-58",
+          "room_code": "435",
+          "display_name": "435",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 1464,
+            "min_y": 1630,
+            "max_x": 1813,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-60",
+          "room_code": "437",
+          "display_name": "437",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1525,
+            "max_x": 2460,
+            "max_y": 1630
+          }
+        },
+        {
+          "item_id": "DELTA-F4-user-gen-61",
+          "room_code": "436",
+          "display_name": "436",
+          "item_type": "room",
+          "is_clickable": true,
+          "bbox": {
+            "min_x": 2111,
+            "min_y": 1630,
+            "max_x": 2460,
+            "max_y": 1735
+          }
+        },
+        {
+          "item_id": "PERIMETER-LEFT-F4",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 0,
+            "min_y": 155,
+            "max_x": 120,
+            "max_y": 1855
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-RIGHT-F4",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 2460,
+            "min_y": 155,
+            "max_x": 2580,
+            "max_y": 1855
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-BOTTOM-F4",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 1735,
+            "max_x": 2460,
+            "max_y": 1855
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "PERIMETER-TOP-F4",
+          "item_type": "wall",
+          "bbox": {
+            "min_x": 120,
+            "min_y": 155,
+            "max_x": 2460,
+            "max_y": 275
+          },
+          "is_clickable": false
+        },
+        {
+          "item_id": "BLOCK-C-MIDDLE-4",
+          "room_code": "",
+          "name": "Khoảng trống",
+          "display_name": "",
+          "item_type": "block",
+          "is_clickable": false,
+          "bbox": {
+            "min_x": 1115,
+            "min_y": 895,
+            "max_x": 1464,
+            "max_y": 1105
+          }
+        }
+      ],
+      "image_min_x": 0,
+      "image_min_y": 155
+    }
+  ]
+}

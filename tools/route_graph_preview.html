@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Route Graph Preview</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+    #controls { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    svg { background: #fff; border: 1px solid #ccc; max-width: 100%; height: auto; display: block; }
+    .verified-node { fill: #4CAF50; stroke: #388E3C; stroke-width: 2; }
+    .unverified-node { fill: #FFC107; stroke: #F57C00; stroke-width: 2; stroke-dasharray: 2 2; }
+    .verified-edge { stroke: #2196F3; stroke-width: 3; }
+    .unverified-edge { stroke: #F44336; stroke-width: 3; stroke-dasharray: 4 4; }
+    .room-poly { fill: #E0E0E0; stroke: #BDBDBD; stroke-width: 1; opacity: 0.5; }
+    .label { font-size: 10px; fill: #333; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <h2>Route Graph Preview</h2>
+    <p><em>Run a local server to view this page (e.g., <code>python -m http.server</code> from the project root)</em></p>
+    <label>Select Floor: <select id="floorSelect"></select></label>
+  </div>
+  
+  <svg id="mapSvg" viewBox="0 0 1000 1000"></svg>
+
+  <script>
+    let floorsData = [];
+    let routeData = null;
+
+    async function loadData() {
+      try {
+        const [floorsRes, routeRes] = await Promise.all([
+          fetch('../data/delta_floors.json'),
+          fetch('../data/routing/delta_route_graph.draft.json')
+        ]);
+        
+        const floorsJson = await floorsRes.json();
+        floorsData = floorsJson.floors || [];
+        routeData = await routeRes.json();
+        
+        const select = document.getElementById('floorSelect');
+        floorsData.forEach(f => {
+          const opt = document.createElement('option');
+          opt.value = f.floor_number;
+          opt.textContent = `Floor ${f.floor_number}`;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', () => renderMap(parseInt(select.value)));
+        
+        if(floorsData.length > 0) {
+          renderMap(floorsData[0].floor_number);
+        }
+      } catch (err) {
+        console.error("Failed to load data:", err);
+        alert("Failed to load data. Make sure you are running a local HTTP server.");
+      }
+    }
+
+    function renderMap(floorNum) {
+      const svg = document.getElementById('mapSvg');
+      svg.innerHTML = ''; // Clear
+
+      const floor = floorsData.find(f => f.floor_number === floorNum);
+      if(!floor) return;
+
+      // Draw rooms / map items
+      (floor.items || []).forEach(item => {
+        if (item.polygon && item.polygon.length > 0) {
+          const pts = item.polygon.map(p => `${p[0]},${p[1]}`).join(' ');
+          const poly = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+          poly.setAttribute('points', pts);
+          poly.setAttribute('class', 'room-poly');
+          svg.appendChild(poly);
+        } else if (item.bbox) {
+          const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          rect.setAttribute('x', item.bbox.x1);
+          rect.setAttribute('y', item.bbox.y1);
+          rect.setAttribute('width', item.bbox.x2 - item.bbox.x1);
+          rect.setAttribute('height', item.bbox.y2 - item.bbox.y1);
+          rect.setAttribute('class', 'room-poly');
+          svg.appendChild(rect);
+        }
+      });
+
+      if (!routeData) return;
+
+      // Map nodes for quick edge lookup
+      const nodeMap = {};
+      routeData.nodes.forEach(n => nodeMap[n.node_id] = n);
+
+      // Draw edges for this floor
+      (routeData.edges || []).forEach(e => {
+        if (e.floor !== floorNum) return;
+        const n1 = nodeMap[e.from_node_id];
+        const n2 = nodeMap[e.to_node_id];
+        if (!n1 || !n2 || n1.x == null || n1.y == null || n2.x == null || n2.y == null) return;
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', n1.x);
+        line.setAttribute('y1', n1.y);
+        line.setAttribute('x2', n2.x);
+        line.setAttribute('y2', n2.y);
+        line.setAttribute('class', e.review_status === 'verified' ? 'verified-edge' : 'unverified-edge');
+        svg.appendChild(line);
+      });
+
+      // Draw nodes for this floor
+      (routeData.nodes || []).forEach(n => {
+        if (n.floor !== floorNum || n.x == null || n.y == null) return;
+
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('cx', n.x);
+        circle.setAttribute('cy', n.y);
+        circle.setAttribute('r', 5);
+        circle.setAttribute('class', n.review_status === 'verified' ? 'verified-node' : 'unverified-node');
+        
+        const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+        title.textContent = `${n.node_id} (${n.type})`;
+        circle.appendChild(title);
+        
+        svg.appendChild(circle);
+
+        if (n.label) {
+          const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          text.setAttribute('x', n.x + 8);
+          text.setAttribute('y', n.y + 3);
+          text.setAttribute('class', 'label');
+          text.textContent = n.label;
+          svg.appendChild(text);
+        }
+      });
+    }
+
+    window.onload = loadData;
+  </script>
+</body>
+</html>

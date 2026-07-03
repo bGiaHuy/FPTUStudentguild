@@ -1,0 +1,59 @@
+1. Công tác chuẩn bị
+
+* Thiết bị: Sinh viên bắt buộc phải mang laptop cá nhân đi thi (kể cả khi thi tại phòng LAB).
+* Mạng kết nối: Bắt buộc kết nối vào mạng Wi‑Fi: FPTU-EXAMONLINE.
+* Thi thử: Sinh viên bắt buộc phải tham gia thi thử để kiểm tra độ tương thích của máy tính với phần mềm thi. Nếu có sự cố, cần đọc file "Hướng dẫn xử lý sự cố" hoặc liên hệ phòng IT ngay.
+
+2. Quy định về phần mềm và hành vi
+
+* Phần mềm được phép sử dụng cho từng môn và một số quy tắc: Phan-mem-duoc-dung-va-khong-duoc-dung-thi-PE.xlsx (https://docs.google.com/spreadsheets/d/1ysyFdiGTENOvEAOGtq5wlR6xFdP8l_RB/edit?gid=212372652#gid=212372652)
+* Hành vi/Phần mềm BỊ CẤM:
+  + Nghiêm cấm kết nối Internet ra bên ngoài.
+  + Cấm sử dụng phần mềm chat (Zalo, Skype, Messenger...), phần mềm quay màn hình, phần mềm diệt virus (nên tắt trước khi thi).
+  + Cấm sử dụng công cụ đồng bộ code (Git, OneDrive, Dropbox).
+  + Cấm sử dụng các công cụ AI chạy cục bộ trên máy tính.
+  + Vi phạm sẽ bị hủy kết quả bài thi (0 điểm).
+
+3. Tải và cài đặt phần mềm thi:
+
+* Tùy vào môn thi, sinh viên tải đúng phiên bản phần mềm như đã được gửi qua Gmail trước lịch thi từ 1 - 2 tuần
+* Sau đó giải nén phần mềm trước khi sử dụng. Không chạy trực tiếp từ file nén.
+
+4. Quy trình thực hiện bài thi
+
+* Khởi động: Mở folder phần mềm thi đã giải nén và chạy file PEALogin.exe để hiển thị của sổ đăng nhập
+* Kết nối mạng thi FPTU-EXAMONLINE
+* Đăng nhập:
+  + Nhập Test name: Do giám thị cung cấp tại phòng thi.
+  + Nhập Username/Password: Là tài khoản Wifi mà bạn đã tạo để đăng nhập vào mạng của trường.
+* Cách lấy đề thi và làm bài:![](/assets/huong-dan-thi-cu/image_1.png)
+  + Làm bài: Chọn Show paper để hiển thị đề thi, sau đó chọn Download given materials để lấy folder làm bài. Sau khi tải về sinh viên làm bài luôn vào các file trong folder vừa tải (hoặc có thể làm ở ngoài nhưng sau khi làm xong tuyệt đối phải cho tất cả bài làm vào folder nộp bài và đặt tên theo yêu cầu của đề). Sinh viên có thể chọn Submit guide để xem hướng dẫn chi tiết cách làm và nộp bài
+  + Nộp bài: Chọn Browse, sau đó chọn đường dẫn tới folder nộp bài và câu hỏi bạn muốn nộp. Tiếp đó chọn vào ô Question no để chọn câu hỏi tương ứng. Cuối cùng chọn Submit để nộp bài ![](/assets/huong-dan-thi-cu/image_2.png)
+
+![](/assets/huong-dan-thi-cu/image_3.png)
+
+![](/assets/huong-dan-thi-cu/image_4.png)
+
+* Kết thúc: Show màn hình cho giám thị. Sau đó tích vào dòng dưới cùng của màn hình phần mềm thi, chọn Close để đóng bài thi![](/assets/huong-dan-thi-cu/image_5.png)
+
+5. Quy trình Checkout sau khi nhấn Submit trên phần mềm PEA, sinh viên thực hiện các bước sau:
+
+1. Truy cập trang web: https://fe360.fpt.edu.vn/checkout (https://www.google.com/search?q=https://fe360.fpt.edu.vn/checkout)
+2. Đăng nhập bằng email sinh viên đã đăng ký với trường.
+3. Trên màn hình sẽ hiện nút “Checkout”, sinh viên tích vào môn thi vừa hoàn thành để xác nhận thay cho việc ký tên vào danh sách giấy.
+
+6. Thông tin hỗ trợ trong lúc thi
+
+* Kỹ thuật: Phòng IT tại tòa Alpha (AL-L102), tòa Beta (BE-103), tòa Delta (Thư viện)
+* Khảo thí: Email: Khaothi@fpt.edu.vn | SĐT: 02462597749.
+
+7. Một số sự cố trong lúc thi:
+
+* Lỗi chưa được setup hoặc sinh viên nhập sai account:
+  + Sinh viên check lại account
+  + Nếu đúng account, sinh viên chưa được add vào thi, hãy báo cho giám thị account và môn thi của mình
+
+![](/assets/huong-dan-thi-cu/image_6.png)
+
+* Lỗi bị out ra khỏi bài thi:
+  + Do sinh viên bị out ra khỏi bài thi và muốn đăng nhập lại vào tiếp. Sinh viên cung cấp môn thi + MSSV gửi giám thị để giám thị báo khảo thí cấp quyền cho sinh viên vào thi tiếp![](/assets/huong-dan-thi-cu/image_7.png)

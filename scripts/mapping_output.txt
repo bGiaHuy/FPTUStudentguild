@@ -1,0 +1,36 @@
+- Image Path: `/content/website-guides/fap/registration/fap-registration-common-interface-01.png`
+  - Website: FAP
+  - Group: I. NHÓM DỊCH VỤ ĐĂNG KÝ & THỦ TỤC HỌC VỤ
+  - Guide Item Title: Giao diện thường gặp ở mục này
+- Image Path: `/content/website-guides/fap/admin-procedures/fap-admin-procedures-send-application-02.png`
+  - Website: FAP
+  - Group: Thủ tục thay đổi trạng thái & Hành chính
+  - Guide Item Title: Send Application (Gửi đơn) | View Application (Xem đơn)
+- Image Path: `/content/website-guides/fap/admin-procedures/fap-admin-procedures-student-confirmation-03.png`
+  - Website: FAP
+  - Group: Thủ tục thay đổi trạng thái & Hành chính
+  - Guide Item Title: Xin xác nhận sinh viên
+- Image Path: `/content/website-guides/fap/study-info/fap-study-info-weekly-timetable-04.png`
+  - Website: FAP
+  - Group: Thông tin học tập
+  - Guide Item Title: Weekly timetable (Thời khóa biểu từng tuần)
+- Image Path: `/content/website-guides/fap/study-info/fap-study-info-exam-schedule-05.png`
+  - Website: FAP
+  - Group: Thông tin học tập
+  - Guide Item Title: View exam schedule (Xem lịch thi)
+- Image Path: `/content/website-guides/fap/study-info/fap-study-info-syllabus-guide-06.png`
+  - Website: FAP
+  - Group: Thông tin học tập
+  - Guide Item Title: → Tiếp theo sẽ có 4 phần nội dung cần chọn
+- Image Path: `/content/website-guides/fap/lookup-reports/fap-lookup-reports-attendance-report-07.png`
+  - Website: FAP
+  - Group: Báo cáo & Kết quả
+  - Guide Item Title: Attendance report (Báo cáo điểm danh)
+- Image Path: `/content/website-guides/fap/lookup-reports/fap-lookup-reports-mark-report-08.png`
+  - Website: FAP
+  - Group: Báo cáo & Kết quả
+  - Guide Item Title: Mark Report (Báo cáo điểm)
+- Image Path: `/content/website-guides/fap/lookup-reports/fap-lookup-reports-academic-transcript-09.png`
+  - Website: FAP
+  - Group: Báo cáo & Kết quả
+  - Guide Item Title: Academic Transcript (Báo cáo điểm)

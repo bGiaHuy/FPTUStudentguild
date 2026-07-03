@@ -1,0 +1,18 @@
+{
+  "room_code": "",
+  "display_name": "",
+  "floor": null,
+  "description": "",
+  "tags": [],
+  "photos": [],
+  "opening_hours": null,
+  "contact": null,
+  "source_name": "data/delta_floors.json",
+  "source_url": null,
+  "verified_by": "",
+  "verified_at": null,
+  "review_status": "needs_review",
+  "published": false,
+  "needs_human_confirmation": true,
+  "notes": "Map identifier exists, but room description and usage are not verified."
+}

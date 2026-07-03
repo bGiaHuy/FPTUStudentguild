@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Map Manual Measurement Tool</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 380px; background: #f4f4f4; border-right: 1px solid #ccc; display: flex; flex-direction: column; padding: 10px; box-sizing: border-box; }
+        #main { flex-grow: 1; position: relative; overflow: auto; background: #ddd; }
+        
+        #map-container { position: absolute; transform-origin: top left; }
+        #floor-img { display: block; }
+        
+        /* Overlays */
+        #overlays { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        
+        .room-bbox { position: absolute; border: 2px solid rgba(0, 150, 0, 0.7); background: rgba(0, 255, 0, 0.2); pointer-events: none; }
+        .room-bbox.selected { border-color: yellow; background: rgba(255, 255, 0, 0.4); z-index: 10; border-width: 3px; }
+        .room-bbox.duplicate { border-style: dashed; border-color: red; }
+        
+        .hotspot-dot { position: absolute; width: 10px; height: 10px; background: rgba(0, 150, 0, 0.7); border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+        .hotspot-dot.selected { background: yellow; box-shadow: 0 0 10px yellow; width: 15px; height: 15px; z-index: 10; }
+        
+        .room-label { position: absolute; color: blue; font-weight: bold; background: rgba(255,255,255,0.7); padding: 2px; font-size: 12px; pointer-events: none; transform: translate(-50%, -100%); }
+        .room-label.selected { background: yellow; z-index: 11; font-size: 14px; }
+        
+        /* Drag box */
+        #drag-box { position: absolute; border: 2px dashed #00f; background: rgba(0,0,255,0.2); display: none; pointer-events: none; z-index: 999; }
+        
+        /* Sidebar UI */
+        .section { margin-bottom: 10px; font-size: 13px; }
+        #room-list { flex-grow: 1; overflow-y: auto; background: white; border: 1px solid #ccc; font-size: 12px; }
+        .room-item { padding: 5px; cursor: pointer; border-bottom: 1px solid #eee; display: flex; flex-direction: column; }
+        .room-item:hover { background: #e0e0e0; }
+        .room-item.selected { background: #007bff; color: white; }
+        .room-item.assigned { border-left: 4px solid green; }
+        .room-item.unassigned { border-left: 4px solid red; }
+        
+        .badge { display: inline-block; padding: 2px 4px; font-size: 10px; border-radius: 3px; color: white; margin-right: 2px; }
+        .badge-dup { background: #dc3545; }
+        .badge-type { background: #6c757d; }
+        .badge-id { color: #555; font-size: 10px; font-family: monospace; word-break: break-all; }
+        .room-item.selected .badge-id { color: #ddd; }
+        
+        #export-area { width: 100%; height: 60px; resize: none; font-size: 10px; }
+        #coords-display { position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; pointer-events: none; z-index: 1000; }
+        button { cursor: pointer; padding: 5px 8px; margin: 2px; font-size: 12px; }
+        
+        .mode-btn { background: #e0e0e0; border: 1px solid #999; }
+        .mode-btn.active { background: #007bff; color: white; font-weight: bold; border-color: #0056b3; }
+        
+        select, input[type="text"] { font-size: 12px; padding: 3px; }
+        
+        #selected-info { font-size: 11px; background: #e9ecef; padding: 5px; margin-top: 5px; display: none; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div class="section">
+        <strong>1. Load JSON:</strong> <input type="file" id="json-upload" accept=".json">
+    </div>
+    <div class="section">
+        <strong>2. Image (Opt):</strong> <input type="file" id="img-upload" accept="image/*">
+    </div>
+
+    <div class="section">
+        <strong>Floor:</strong>
+        <select id="floor-select">
+            <option value="1">Floor 1</option>
+            <option value="3">Floor 3</option>
+        </select>
+        &nbsp;
+        <strong>Mode:</strong>
+        <button class="mode-btn active" id="mode-rect" onclick="setMode('rectangle')">Room Region [R]</button>
+        <button class="mode-btn" id="mode-point" onclick="setMode('point')">Point Hotspot [P]</button>
+    </div>
+
+    <div class="section">
+        <input type="text" id="search-box" placeholder="Search display_name, id, code..." style="width: 100%; box-sizing: border-box; margin-bottom: 5px;">
+        <select id="filter-type" style="width: 48%;">
+            <option value="">All Types</option>
+            <option value="room">room</option>
+            <option value="stair">stair</option>
+            <option value="restroom">restroom</option>
+            <option value="hallway">hallway</option>
+            <option value="lobby">lobby</option>
+            <option value="skylight">skylight</option>
+            <option value="entrance">entrance</option>
+            <option value="other">other</option>
+        </select>
+        <select id="filter-status" style="width: 48%;">
+            <option value="">All Status</option>
+            <option value="unassigned">Unassigned</option>
+            <option value="assigned">Assigned</option>
+        </select>
+    </div>
+
+    <div class="section" style="margin-bottom: 5px;">
+        <span id="stat-total">0</span> Total | 
+        <span id="stat-assigned" style="color:green">0</span> Assigned | 
+        <span id="stat-unassigned" style="color:red">0</span> Unassigned
+    </div>
+
+    <div id="room-list"></div>
+    
+    <div id="selected-info"></div>
+
+    <div class="section" style="margin-top: 10px;">
+        <button onclick="clearSelected()">Clear Selected [Del]</button>
+        <button onclick="autoSelectNextUnassigned()">Next [N]</button>
+        <br>
+        <button id="export-btn" style="background:#28a745; color:white; border:none; margin-top:5px;">Generate JSON</button>
+        <button id="copy-btn">Copy</button>
+        <textarea id="export-area" readonly placeholder="Exported JSON here..."></textarea>
+    </div>
+</div>
+
+<div id="main">
+    <div id="map-container">
+        <img id="floor-img" src="../../mapping/floor1.png" alt="Floor Map">
+        <div id="overlays"></div>
+        <div id="drag-box"></div>
+    </div>
+</div>
+
+<div id="coords-display">X: 0, Y: 0</div>
+
+<script>
+    let mapData = [];
+    let duplicateNames = new Set();
+    let currentFloor = 1;
+    let selectedItemId = null;
+    let mode = 'rectangle'; // 'rectangle' or 'point'
+
+    // Drag state
+    let isDragging = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    
+    const floorSelect = document.getElementById('floor-select');
+    const filterType = document.getElementById('filter-type');
+    const filterStatus = document.getElementById('filter-status');
+    const jsonUpload = document.getElementById('json-upload');
+    const imgUpload = document.getElementById('img-upload');
+    const roomListEl = document.getElementById('room-list');
+    const mapContainer = document.getElementById('map-container');
+    const floorImg = document.getElementById('floor-img');
+    const overlays = document.getElementById('overlays');
+    const dragBox = document.getElementById('drag-box');
+    const coordsDisplay = document.getElementById('coords-display');
+    const searchBox = document.getElementById('search-box');
+    const exportArea = document.getElementById('export-area');
+    const selectedInfo = document.getElementById('selected-info');
+
+    function setMode(newMode) {
+        mode = newMode;
+        document.getElementById('mode-rect').classList.toggle('active', mode === 'rectangle');
+        document.getElementById('mode-point').classList.toggle('active', mode === 'point');
+    }
+
+    function computeDuplicates() {
+        duplicateNames.clear();
+        let nameCounts = {};
+        mapData.forEach(item => {
+            nameCounts[item.display_name] = (nameCounts[item.display_name] || 0) + 1;
+        });
+        for (let name in nameCounts) {
+            if (nameCounts[name] > 1) duplicateNames.add(name);
+        }
+    }
+
+    jsonUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                mapData = JSON.parse(event.target.result);
+                computeDuplicates();
+                renderApp();
+            } catch (err) {
+                alert("Invalid JSON file.");
+            }
+        };
+        reader.readAsText(file);
+    });
+
+    imgUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            floorImg.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+    });
+
+    floorSelect.addEventListener('change', (e) => {
+        currentFloor = parseInt(e.target.value);
+        floorImg.src = `../../mapping/floor${currentFloor}.png`;
+        selectedItemId = null;
+        renderApp();
+    });
+
+    searchBox.addEventListener('input', renderRoomList);
+    filterType.addEventListener('change', renderRoomList);
+    filterStatus.addEventListener('change', renderRoomList);
+
+    function getMouseCoords(e) {
+        const rect = floorImg.getBoundingClientRect();
+        const x = Math.round(e.clientX - rect.left);
+        const y = Math.round(e.clientY - rect.top);
+        return {x, y};
+    }
+
+    mapContainer.addEventListener('mousemove', (e) => {
+        const {x, y} = getMouseCoords(e);
+        coordsDisplay.innerText = `X: ${x}, Y: ${y}`;
+
+        if (isDragging && mode === 'rectangle') {
+            const minX = Math.min(dragStartX, x);
+            const maxX = Math.max(dragStartX, x);
+            const minY = Math.min(dragStartY, y);
+            const maxY = Math.max(dragStartY, y);
+            
+            dragBox.style.left = minX + 'px';
+            dragBox.style.top = minY + 'px';
+            dragBox.style.width = (maxX - minX) + 'px';
+            dragBox.style.height = (maxY - minY) + 'px';
+        }
+    });
+
+    mapContainer.addEventListener('mousedown', (e) => {
+        if (!selectedItemId) return;
+        const {x, y} = getMouseCoords(e);
+        
+        if (mode === 'rectangle') {
+            isDragging = true;
+            dragStartX = x;
+            dragStartY = y;
+            dragBox.style.display = 'block';
+            dragBox.style.left = x + 'px';
+            dragBox.style.top = y + 'px';
+            dragBox.style.width = '0px';
+            dragBox.style.height = '0px';
+        }
+    });
+
+    mapContainer.addEventListener('mouseup', (e) => {
+        if (!selectedItemId) return;
+        const {x, y} = getMouseCoords(e);
+
+        if (mode === 'rectangle' && isDragging) {
+            isDragging = false;
+            dragBox.style.display = 'none';
+
+            const minX = Math.min(dragStartX, x);
+            const maxX = Math.max(dragStartX, x);
+            const minY = Math.min(dragStartY, y);
+            const maxY = Math.max(dragStartY, y);
+
+            if (maxX - minX > 5 && maxY - minY > 5) {
+                const cx = Math.round((minX + maxX) / 2);
+                const cy = Math.round((minY + maxY) / 2);
+                updateItemData(selectedItemId, {
+                    bbox: { min_x: minX, min_y: minY, max_x: maxX, max_y: maxY },
+                    center_x: cx, center_y: cy,
+                    x: cx, y: cy,
+                    label_x: cx, label_y: cy - 14,
+                    annotation_mode: "rectangle",
+                    annotation_status: "assigned",
+                    source: "manual_region_annotation"
+                });
+                renderApp();
+                autoSelectNextUnassigned();
+            }
+        } else if (mode === 'point') {
+            updateItemData(selectedItemId, {
+                center_x: x, center_y: y,
+                x: x, y: y,
+                label_x: x, label_y: y - 14,
+                bbox: { min_x: x-5, min_y: y-5, max_x: x+5, max_y: y+5 },
+                annotation_mode: "point",
+                annotation_status: "assigned",
+                source: "manual_point_annotation"
+            });
+            renderApp();
+            autoSelectNextUnassigned();
+        }
+    });
+
+    function updateItemData(itemId, updates) {
+        const item = mapData.find(r => r.item_id === itemId);
+        if (item) {
+            Object.assign(item, updates);
+            item.confidence = "human_marked_needs_review";
+        }
+    }
+
+    function clearSelected() {
+        if (!selectedItemId) return;
+        const item = mapData.find(r => r.item_id === selectedItemId);
+        if (item) {
+            item.center_x = 0; item.center_y = 0;
+            item.x = 0; item.y = 0;
+            item.label_x = 0; item.label_y = 0;
+            item.bbox = { min_x: 0, min_y: 0, max_x: 0, max_y: 0 };
+            item.annotation_status = "unassigned";
+            item.annotation_mode = "";
+        }
+        renderApp();
+    }
+
+    function autoSelectNextUnassigned() {
+        const query = searchBox.value.toLowerCase();
+        const fType = filterType.value;
+        
+        for (const item of mapData) {
+            if (item.floor !== currentFloor) continue;
+            if (fType && item.item_type !== fType) continue;
+            if (query && !item.display_name.toLowerCase().includes(query) && !item.item_id.toLowerCase().includes(query)) continue;
+            
+            if (item.annotation_status === 'unassigned') {
+                selectedItemId = item.item_id;
+                renderRoomList();
+                renderOverlays();
+                return;
+            }
+        }
+        selectedItemId = null;
+        renderApp();
+    }
+
+    function renderApp() {
+        renderRoomList();
+        renderOverlays();
+        updateStats();
+        
+        if (selectedItemId) {
+            const item = mapData.find(r => r.item_id === selectedItemId);
+            if (item && item.annotation_status === 'assigned') {
+                selectedInfo.style.display = 'block';
+                selectedInfo.innerHTML = `
+                    <strong>Selected BBox:</strong><br>
+                    min_x: ${item.bbox.min_x}, min_y: ${item.bbox.min_y}<br>
+                    max_x: ${item.bbox.max_x}, max_y: ${item.bbox.max_y}<br>
+                    center: (${item.center_x}, ${item.center_y})
+                `;
+            } else {
+                selectedInfo.style.display = 'none';
+            }
+        } else {
+            selectedInfo.style.display = 'none';
+        }
+    }
+
+    function renderRoomList() {
+        roomListEl.innerHTML = '';
+        const query = searchBox.value.toLowerCase();
+        const fType = filterType.value;
+        const fStatus = filterStatus.value;
+
+        mapData.filter(item => item.floor === currentFloor).forEach(item => {
+            if (fType && item.item_type !== fType) return;
+            if (fStatus && item.annotation_status !== fStatus) return;
+            if (query && !item.display_name.toLowerCase().includes(query) && !item.item_id.toLowerCase().includes(query)) return;
+
+            const isAssigned = item.annotation_status === 'assigned';
+            const isDup = duplicateNames.has(item.display_name);
+            const isSelected = selectedItemId === item.item_id;
+
+            const div = document.createElement('div');
+            div.className = `room-item ${isAssigned ? 'assigned' : 'unassigned'} ${isSelected ? 'selected' : ''}`;
+            
+            let badges = `<span class="badge badge-type">${item.item_type}</span>`;
+            if (isDup) badges += `<span class="badge badge-dup">duplicate name</span>`;
+            
+            div.innerHTML = `
+                <div><strong>${item.display_name}</strong> ${isAssigned ? '&#10003;' : ''}</div>
+                <div>${badges}</div>
+                <div class="badge-id">${item.item_id}</div>
+            `;
+            
+            div.onclick = () => {
+                selectedItemId = item.item_id;
+                renderRoomList();
+                renderOverlays();
+            };
+            roomListEl.appendChild(div);
+        });
+        
+        const selectedEl = roomListEl.querySelector('.selected');
+        if (selectedEl) selectedEl.scrollIntoView({block: 'nearest'});
+    }
+
+    function renderOverlays() {
+        overlays.innerHTML = '';
+        mapData.filter(item => item.floor === currentFloor).forEach(item => {
+            if (item.annotation_status === 'assigned') {
+                const isSelected = selectedItemId === item.item_id;
+                const isDup = duplicateNames.has(item.display_name);
+
+                if (item.annotation_mode === 'rectangle') {
+                    const box = document.createElement('div');
+                    box.className = `room-bbox ${isSelected ? 'selected' : ''} ${isDup ? 'duplicate' : ''}`;
+                    box.style.left = item.bbox.min_x + 'px';
+                    box.style.top = item.bbox.min_y + 'px';
+                    box.style.width = (item.bbox.max_x - item.bbox.min_x) + 'px';
+                    box.style.height = (item.bbox.max_y - item.bbox.min_y) + 'px';
+                    overlays.appendChild(box);
+                } else if (item.annotation_mode === 'point' || item.center_x > 0) {
+                    const dot = document.createElement('div');
+                    dot.className = `hotspot-dot ${isSelected ? 'selected' : ''}`;
+                    dot.style.left = item.center_x + 'px';
+                    dot.style.top = item.center_y + 'px';
+                    overlays.appendChild(dot);
+                }
+
+                const label = document.createElement('div');
+                label.className = `room-label ${isSelected ? 'selected' : ''}`;
+                label.innerText = isDup ? `${item.display_name} (${item.source_row},${item.source_col})` : item.display_name;
+                label.style.left = item.label_x + 'px';
+                label.style.top = item.label_y + 'px';
+                overlays.appendChild(label);
+            }
+        });
+    }
+
+    function updateStats() {
+        let total = 0, assigned = 0, unassigned = 0;
+        mapData.filter(f => f.floor === currentFloor).forEach(r => {
+            total++;
+            if (r.annotation_status === 'assigned') assigned++;
+            else unassigned++;
+        });
+        document.getElementById('stat-total').innerText = total;
+        document.getElementById('stat-assigned').innerText = assigned;
+        document.getElementById('stat-unassigned').innerText = unassigned;
+    }
+
+    document.getElementById('export-btn').addEventListener('click', () => {
+        exportArea.value = JSON.stringify(mapData, null, 2);
+    });
+
+    document.getElementById('copy-btn').addEventListener('click', () => {
+        exportArea.select();
+        document.execCommand('copy');
+        alert('Copied to clipboard!');
+    });
+
+    // Keyboard Shortcuts
+    document.addEventListener('keydown', (e) => {
+        if (e.target.tagName.toLowerCase() === 'input' || e.target.tagName.toLowerCase() === 'textarea') return;
+        
+        if (e.key === 'Delete' || e.key === 'Backspace') clearSelected();
+        else if (e.key.toLowerCase() === 'n') autoSelectNextUnassigned();
+        else if (e.key.toLowerCase() === 'r') setMode('rectangle');
+        else if (e.key.toLowerCase() === 'p') setMode('point');
+    });
+
+</script>
+
+</body>
+</html>

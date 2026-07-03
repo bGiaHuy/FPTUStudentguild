@@ -1,0 +1,74 @@
+DELTA BBOX COUNT DISCREPANCY ANALYSIS
+=====================================
+
+OLD COUNT: 179 -> NEW COUNT: 180
+Difference: +1 item in Floor 2
+
+FLOOR BREAKDOWN (raw grid):
+  Floor 1: 30 items
+  Floor 2: 43 items  <-- had 42 in old count, now 43 from raw grid
+  Floor 3: 53 items
+  Floor 4: 54 items
+  TOTAL:  180
+
+FLOOR 2 ROOM CODES (43 rooms from raw_parsed_grid.json):
+  220   (row=3, col=1)
+  219   (row=3, col=3)
+  218   (row=3, col=5)
+  216   (row=3, col=7)
+  214   (row=3, col=10)
+  213   (row=5, col=10)
+  Cầu thang (row=6, col=1)
+  Hành lang (row=6, col=3)
+  Cầu thang (row=6, col=10)
+  Giếng trời (row=7, col=3)
+  222   (row=8, col=1)
+  212   (row=8, col=10)
+  223   (row=9, col=1)
+  C204  (row=9, col=3)
+  C203  (row=9, col=5)
+  C202  (row=9, col=7)
+  224A  (row=10, col=1)
+  211   (row=10, col=10)
+  NVS Nữ (row=11, col=1)
+  C205  (row=11, col=3)
+  Giếng trời (row=11, col=5)
+  C201  (row=11, col=7)
+  NVS Nam (row=11, col=10)
+  NVS Nam (row=12, col=1)
+  C206  (row=12, col=3)
+  C210  (row=12, col=7)
+  NVS Nữ (row=12, col=10)
+  224B  (row=13, col=1)
+  C207  (row=13, col=3)
+  C208  (row=13, col=5)
+  C209  (row=13, col=7)
+  ???   (row=13, col=10)
+  224C  (row=14, col=1)
+  ???   (row=14, col=10)
+  225   (row=15, col=1)
+  Hành lang (row=15, col=3)
+  227   (row=15, col=10)
+  cầu thang (row=16, col=1)
+  Giếng trời (row=16, col=3)
+  Cầu thang (row=16, col=10)
+  tường (row=17, col=1)
+  tường (row=17, col=10)
+  Thư viện (row=18, col=2)
+
+NOTE: The extra item in F2 (43 vs old 42) needs manual review to determine
+which room was newly added to the raw grid. The ??? entries at row=13,col=10 
+and row=14,col=10 are unlabeled cells that may account for the discrepancy.
+
+CURRENT MANUAL DRAFT STATUS:
+  Floor 1: 30 items (present)
+  Floor 2: 0 items  (NOT present in old manual draft)
+  Floor 3: 53 items (present)
+  Floor 4: 0 items  (NOT present in old manual draft)
+  TOTAL: 83
+
+The old delta_manual_measurements_draft.json only contained 83 items 
+because F2 and F4 were never manually measured. The 179 figure was 
+likely an estimate based on partial data. The true total from the 
+raw Excel grid is 180 items across all 4 floors.
+（内容由AI生成，仅供参考）

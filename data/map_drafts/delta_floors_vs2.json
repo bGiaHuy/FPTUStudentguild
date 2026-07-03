@@ -1,0 +1,8159 @@
+{
+  "building": {
+    "name": "MAPPING DELTA",
+    "code": "DELTA",
+    "version": "vs2",
+    "generated_at": "2026-06-28",
+    "source_images": [
+      "mapping/floor1vs2.jpg",
+      "mapping/floor2vs2.jpg",
+      "mapping/floor3vs2.jpg",
+      "mapping/floor4vs2.jpg"
+    ],
+    "grid_system": "uniform_20x12",
+    "image_dimensions": {
+      "width": 2048,
+      "height": 1489
+    }
+  },
+  "floors": [
+    {
+      "floor_number": 1,
+      "floor_name": "Tầng 1",
+      "floor_code": "F1",
+      "image_file": "floor1vs2.jpg",
+      "grid_config": {
+        "rows": 20,
+        "cols": 12,
+        "image_width": 2048,
+        "image_height": 1489,
+        "margin_left": 40,
+        "margin_right": 40,
+        "margin_top": 80,
+        "margin_bottom": 220,
+        "cell_width": 164.0,
+        "cell_height": 59.5
+      },
+      "items": [
+        {
+          "item_id": "DELTA-F1-lab-112-r00-c01",
+          "room_code": "112",
+          "display_code": "DE-112 (LAB)",
+          "display_name": "DE-112 (LAB)",
+          "item_type": "lab",
+          "bbox": {
+            "x1": 331,
+            "y1": 1247,
+            "x2": 403,
+            "y2": 1287
+          },
+          "center": {
+            "x": 367,
+            "y": 1267
+          },
+          "polygon": [
+            [
+              331,
+              1247
+            ],
+            [
+              403,
+              1247
+            ],
+            [
+              403,
+              1287
+            ],
+            [
+              331,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 1,
+            "span_rows": 3,
+            "span_cols": 2
+          },
+          "aliases": [
+            "112",
+            "DE-112",
+            "LAB 112"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-111-r00-c03",
+          "room_code": "111",
+          "display_code": "DE-111",
+          "display_name": "DE-111",
+          "item_type": "room",
+          "bbox": {
+            "x1": 532,
+            "y1": 80,
+            "x2": 696,
+            "y2": 258
+          },
+          "center": {
+            "x": 614,
+            "y": 169
+          },
+          "polygon": [
+            [
+              532,
+              80
+            ],
+            [
+              696,
+              80
+            ],
+            [
+              696,
+              258
+            ],
+            [
+              532,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 3,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "111",
+            "DE-111"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-stair-cau-thang-top-r00-c04",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên)",
+          "display_name": "Cầu thang (trên)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 696,
+            "y1": 80,
+            "x2": 860,
+            "y2": 258
+          },
+          "center": {
+            "x": 778,
+            "y": 169
+          },
+          "polygon": [
+            [
+              696,
+              80
+            ],
+            [
+              860,
+              80
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              696,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 4,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "cầu thang",
+            "cầu thang trên",
+            "stair top"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-110-r00-c05",
+          "room_code": "110",
+          "display_code": "DE-110",
+          "display_name": "DE-110",
+          "item_type": "room",
+          "bbox": {
+            "x1": 700,
+            "y1": 374,
+            "x2": 746,
+            "y2": 404
+          },
+          "center": {
+            "x": 723,
+            "y": 389
+          },
+          "polygon": [
+            [
+              700,
+              374
+            ],
+            [
+              746,
+              374
+            ],
+            [
+              746,
+              404
+            ],
+            [
+              700,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 5,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "110",
+            "DE-110"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-toilet-nam-top-r00-c06",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (trên)",
+          "display_name": "WC Nam (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 80,
+            "x2": 1188,
+            "y2": 258
+          },
+          "center": {
+            "x": 1106,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1024,
+              80
+            ],
+            [
+              1188,
+              80
+            ],
+            [
+              1188,
+              258
+            ],
+            [
+              1024,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 6,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "WC Nam",
+            "toilet nam",
+            "nhà vệ sinh nam"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-toilet-nu-top-r00-c07",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (trên)",
+          "display_name": "WC Nữ (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 80,
+            "x2": 1352,
+            "y2": 258
+          },
+          "center": {
+            "x": 1270,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1188,
+              80
+            ],
+            [
+              1352,
+              80
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1188,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 7,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "WC Nữ",
+            "toilet nữ",
+            "nhà vệ sinh nữ"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-109-r00-c08",
+          "room_code": "109",
+          "display_code": "DE-109",
+          "display_name": "DE-109",
+          "item_type": "room",
+          "bbox": {
+            "x1": 812,
+            "y1": 374,
+            "x2": 866,
+            "y2": 404
+          },
+          "center": {
+            "x": 839,
+            "y": 389
+          },
+          "polygon": [
+            [
+              812,
+              374
+            ],
+            [
+              866,
+              374
+            ],
+            [
+              866,
+              404
+            ],
+            [
+              812,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 8,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "109",
+            "DE-109"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-108c-r00-c09",
+          "room_code": "108C",
+          "display_code": "DE-108C",
+          "display_name": "DE-108C",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1516,
+            "y1": 80,
+            "x2": 1680,
+            "y2": 139
+          },
+          "center": {
+            "x": 1598,
+            "y": 110
+          },
+          "polygon": [
+            [
+              1516,
+              80
+            ],
+            [
+              1680,
+              80
+            ],
+            [
+              1680,
+              139
+            ],
+            [
+              1516,
+              139
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 9,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "108C",
+            "DE-108C"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-108b-r01-c09",
+          "room_code": "108B",
+          "display_code": "DE-108B",
+          "display_name": "DE-108B",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1516,
+            "y1": 139,
+            "x2": 1680,
+            "y2": 199
+          },
+          "center": {
+            "x": 1598,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1516,
+              139
+            ],
+            [
+              1680,
+              139
+            ],
+            [
+              1680,
+              199
+            ],
+            [
+              1516,
+              199
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 1,
+            "col": 9,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "108B",
+            "DE-108B"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-108a-r02-c09",
+          "room_code": "108A",
+          "display_code": "DE-108A",
+          "display_name": "DE-108A",
+          "item_type": "room",
+          "bbox": {
+            "x1": 211,
+            "y1": 1245,
+            "x2": 311,
+            "y2": 1287
+          },
+          "center": {
+            "x": 261,
+            "y": 1266
+          },
+          "polygon": [
+            [
+              211,
+              1245
+            ],
+            [
+              311,
+              1245
+            ],
+            [
+              311,
+              1287
+            ],
+            [
+              211,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 9,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "108A",
+            "DE-108A"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-atrium-sanh-trung-tam-r03-c02",
+          "room_code": "sảnh",
+          "display_code": "Sảnh trung tâm",
+          "display_name": "Sảnh trung tâm",
+          "item_type": "atrium",
+          "bbox": {
+            "x1": 368,
+            "y1": 258,
+            "x2": 1516,
+            "y2": 793
+          },
+          "center": {
+            "x": 942,
+            "y": 526
+          },
+          "polygon": [
+            [
+              368,
+              258
+            ],
+            [
+              1516,
+              258
+            ],
+            [
+              1516,
+              793
+            ],
+            [
+              368,
+              793
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 2,
+            "span_rows": 9,
+            "span_cols": 7
+          },
+          "aliases": [
+            "sảnh",
+            "sảnh trung tâm",
+            "atrium",
+            "central hall"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-101-r04-c00",
+          "room_code": "101",
+          "display_code": "DE-101",
+          "display_name": "DE-101",
+          "item_type": "room",
+          "bbox": {
+            "x1": 40,
+            "y1": 318,
+            "x2": 368,
+            "y2": 556
+          },
+          "center": {
+            "x": 204,
+            "y": 437
+          },
+          "polygon": [
+            [
+              40,
+              318
+            ],
+            [
+              368,
+              318
+            ],
+            [
+              368,
+              556
+            ],
+            [
+              40,
+              556
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 4,
+            "col": 0,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "101",
+            "DE-101"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-102-r08-c00",
+          "room_code": "102",
+          "display_code": "DE-102",
+          "display_name": "DE-102",
+          "item_type": "room",
+          "bbox": {
+            "x1": 40,
+            "y1": 556,
+            "x2": 368,
+            "y2": 793
+          },
+          "center": {
+            "x": 204,
+            "y": 674
+          },
+          "polygon": [
+            [
+              40,
+              556
+            ],
+            [
+              368,
+              556
+            ],
+            [
+              368,
+              793
+            ],
+            [
+              40,
+              793
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 8,
+            "col": 0,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "102",
+            "DE-102"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-103-r12-c01",
+          "room_code": "103",
+          "display_code": "DE-103",
+          "display_name": "DE-103",
+          "item_type": "room",
+          "bbox": {
+            "x1": 580,
+            "y1": 946,
+            "x2": 632,
+            "y2": 976
+          },
+          "center": {
+            "x": 606,
+            "y": 961
+          },
+          "polygon": [
+            [
+              580,
+              946
+            ],
+            [
+              632,
+              946
+            ],
+            [
+              632,
+              976
+            ],
+            [
+              580,
+              976
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 1,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "103",
+            "DE-103"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-104-r12-c03",
+          "room_code": "104",
+          "display_code": "DE-104",
+          "display_name": "DE-104",
+          "item_type": "room",
+          "bbox": {
+            "x1": 696,
+            "y1": 946,
+            "x2": 748,
+            "y2": 976
+          },
+          "center": {
+            "x": 722,
+            "y": 961
+          },
+          "polygon": [
+            [
+              696,
+              946
+            ],
+            [
+              748,
+              946
+            ],
+            [
+              748,
+              976
+            ],
+            [
+              696,
+              976
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 3,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "104",
+            "DE-104"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-105-r12-c04",
+          "room_code": "105",
+          "display_code": "DE-105",
+          "display_name": "DE-105",
+          "item_type": "room",
+          "bbox": {
+            "x1": 812,
+            "y1": 946,
+            "x2": 864,
+            "y2": 976
+          },
+          "center": {
+            "x": 838,
+            "y": 961
+          },
+          "polygon": [
+            [
+              812,
+              946
+            ],
+            [
+              864,
+              946
+            ],
+            [
+              864,
+              976
+            ],
+            [
+              812,
+              976
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 4,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "105",
+            "DE-105"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-elevator-thang-may-r12-c05",
+          "room_code": "thang máy",
+          "display_code": "Thang máy",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "bbox": {
+            "x1": 860,
+            "y1": 793,
+            "x2": 1024,
+            "y2": 1031
+          },
+          "center": {
+            "x": 942,
+            "y": 912
+          },
+          "polygon": [
+            [
+              860,
+              793
+            ],
+            [
+              1024,
+              793
+            ],
+            [
+              1024,
+              1031
+            ],
+            [
+              860,
+              1031
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 12,
+            "col": 5,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "thang máy",
+            "thang may",
+            "elevator",
+            "lift"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-toilet-nu-bottom-r12-c06",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (dưới)",
+          "display_name": "WC Nữ (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 793,
+            "x2": 1188,
+            "y2": 1031
+          },
+          "center": {
+            "x": 1106,
+            "y": 912
+          },
+          "polygon": [
+            [
+              1024,
+              793
+            ],
+            [
+              1188,
+              793
+            ],
+            [
+              1188,
+              1031
+            ],
+            [
+              1024,
+              1031
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 12,
+            "col": 6,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "WC Nữ",
+            "toilet nữ",
+            "nhà vệ sinh nữ dưới"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-toilet-nam-bottom-r12-c07",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (dưới)",
+          "display_name": "WC Nam (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 793,
+            "x2": 1352,
+            "y2": 1031
+          },
+          "center": {
+            "x": 1270,
+            "y": 912
+          },
+          "polygon": [
+            [
+              1188,
+              793
+            ],
+            [
+              1352,
+              793
+            ],
+            [
+              1352,
+              1031
+            ],
+            [
+              1188,
+              1031
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 12,
+            "col": 7,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "WC Nam",
+            "toilet nam",
+            "nhà vệ sinh nam dưới"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-106a-r12-c08",
+          "room_code": "106A",
+          "display_code": "DE-106A",
+          "display_name": "DE-106A",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 793,
+            "x2": 1516,
+            "y2": 1031
+          },
+          "center": {
+            "x": 1434,
+            "y": 912
+          },
+          "polygon": [
+            [
+              1352,
+              793
+            ],
+            [
+              1516,
+              793
+            ],
+            [
+              1516,
+              1031
+            ],
+            [
+              1352,
+              1031
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 12,
+            "col": 8,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "106A",
+            "DE-106A"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-room-106b-r12-c09",
+          "room_code": "106B",
+          "display_code": "DE-106B",
+          "display_name": "DE-106B",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1516,
+            "y1": 793,
+            "x2": 1680,
+            "y2": 1031
+          },
+          "center": {
+            "x": 1598,
+            "y": 912
+          },
+          "polygon": [
+            [
+              1516,
+              793
+            ],
+            [
+              1680,
+              793
+            ],
+            [
+              1680,
+              1031
+            ],
+            [
+              1516,
+              1031
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 12,
+            "col": 9,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "106B",
+            "DE-106B"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-library-thu-vien-r00-c10",
+          "room_code": "thư viện",
+          "display_code": "Thư viện",
+          "display_name": "Thư viện",
+          "item_type": "library",
+          "bbox": {
+            "x1": 204,
+            "y1": 1326,
+            "x2": 370,
+            "y2": 1374
+          },
+          "center": {
+            "x": 287,
+            "y": 1350
+          },
+          "polygon": [
+            [
+              204,
+              1326
+            ],
+            [
+              370,
+              1326
+            ],
+            [
+              370,
+              1374
+            ],
+            [
+              204,
+              1374
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 10,
+            "span_rows": 16,
+            "span_cols": 2
+          },
+          "aliases": [
+            "thư viện",
+            "thu vien",
+            "library",
+            "Thư viện"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-stair-cau-thang-bottom-r14-c10",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (dưới)",
+          "display_name": "Cầu thang (dưới)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1680,
+            "y1": 912,
+            "x2": 2008,
+            "y2": 1150
+          },
+          "center": {
+            "x": 1844,
+            "y": 1031
+          },
+          "polygon": [
+            [
+              1680,
+              912
+            ],
+            [
+              2008,
+              912
+            ],
+            [
+              2008,
+              1150
+            ],
+            [
+              1680,
+              1150
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 14,
+            "col": 10,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "cầu thang dưới",
+            "stair bottom"
+          ]
+        },
+        {
+          "item_id": "DELTA-F1-hallway-hanh-lang-top-r00-c02",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trên)",
+          "display_name": "Hành lang (trên)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 368,
+            "y1": 80,
+            "x2": 532,
+            "y2": 258
+          },
+          "center": {
+            "x": 450,
+            "y": 169
+          },
+          "polygon": [
+            [
+              368,
+              80
+            ],
+            [
+              532,
+              80
+            ],
+            [
+              532,
+              258
+            ],
+            [
+              368,
+              258
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 2,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F1-hallway-hanh-lang-bottom-r12-c00",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (dưới)",
+          "display_name": "Hành lang (dưới)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 40,
+            "y1": 793,
+            "x2": 204,
+            "y2": 1031
+          },
+          "center": {
+            "x": 122,
+            "y": 912
+          },
+          "polygon": [
+            [
+              40,
+              793
+            ],
+            [
+              204,
+              793
+            ],
+            [
+              204,
+              1031
+            ],
+            [
+              40,
+              1031
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 12,
+            "col": 0,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F1-entrance-cua-chinh-trai-r06-c00",
+          "room_code": "cửa ra",
+          "display_code": "Cửa ra vào (trái)",
+          "display_name": "Cửa ra vào (trái)",
+          "item_type": "entrance",
+          "bbox": {
+            "x1": 40,
+            "y1": 437,
+            "x2": 204,
+            "y2": 496
+          },
+          "center": {
+            "x": 122,
+            "y": 466
+          },
+          "polygon": [
+            [
+              40,
+              437
+            ],
+            [
+              204,
+              437
+            ],
+            [
+              204,
+              496
+            ],
+            [
+              40,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 6,
+            "col": 0,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "cửa ra",
+            "cửa ra vào",
+            "entrance",
+            "cửa chính"
+          ],
+          "is_door": true
+        },
+        {
+          "item_id": "DELTA-F1-entrance-cua-chinh-phai-r06-c10",
+          "room_code": "cửa ra",
+          "display_code": "Cửa ra vào (phải)",
+          "display_name": "Cửa ra vào (phải)",
+          "item_type": "entrance",
+          "bbox": {
+            "x1": 1680,
+            "y1": 437,
+            "x2": 1844,
+            "y2": 496
+          },
+          "center": {
+            "x": 1762,
+            "y": 466
+          },
+          "polygon": [
+            [
+              1680,
+              437
+            ],
+            [
+              1844,
+              437
+            ],
+            [
+              1844,
+              496
+            ],
+            [
+              1680,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 6,
+            "col": 10,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "cửa ra",
+            "cửa ra vào",
+            "entrance"
+          ],
+          "is_door": true
+        }
+      ]
+    },
+    {
+      "floor_number": 2,
+      "floor_name": "Tầng 2",
+      "floor_code": "F2",
+      "image_file": "floor2vs2.jpg",
+      "grid_config": {
+        "rows": 20,
+        "cols": 12,
+        "image_width": 2048,
+        "image_height": 1489,
+        "margin_left": 40,
+        "margin_right": 40,
+        "margin_top": 80,
+        "margin_bottom": 220,
+        "cell_width": 164.0,
+        "cell_height": 59.5
+      },
+      "items": [
+        {
+          "item_id": "DELTA-F2-room-214-r00-c02",
+          "room_code": "214",
+          "display_code": "DE-214",
+          "display_name": "DE-214",
+          "item_type": "room",
+          "bbox": {
+            "x1": 234,
+            "y1": 374,
+            "x2": 284,
+            "y2": 404
+          },
+          "center": {
+            "x": 259,
+            "y": 389
+          },
+          "polygon": [
+            [
+              234,
+              374
+            ],
+            [
+              284,
+              374
+            ],
+            [
+              284,
+              404
+            ],
+            [
+              234,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "214",
+            "DE-214"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-213-r00-c03",
+          "room_code": "213",
+          "display_code": "DE-213",
+          "display_name": "DE-213",
+          "item_type": "room",
+          "bbox": {
+            "x1": 350,
+            "y1": 374,
+            "x2": 400,
+            "y2": 404
+          },
+          "center": {
+            "x": 375,
+            "y": 389
+          },
+          "polygon": [
+            [
+              350,
+              374
+            ],
+            [
+              400,
+              374
+            ],
+            [
+              400,
+              404
+            ],
+            [
+              350,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "213",
+            "DE-213"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-stair-cau-thang-top-left-r00-c04",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên-trái)",
+          "display_name": "Cầu thang (trên-trái)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 696,
+            "y1": 80,
+            "x2": 860,
+            "y2": 258
+          },
+          "center": {
+            "x": 778,
+            "y": 169
+          },
+          "polygon": [
+            [
+              696,
+              80
+            ],
+            [
+              860,
+              80
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              696,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 4,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "cầu thang",
+            "stair"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-212-r00-c05",
+          "room_code": "212",
+          "display_code": "DE-212",
+          "display_name": "DE-212",
+          "item_type": "room",
+          "bbox": {
+            "x1": 638,
+            "y1": 374,
+            "x2": 690,
+            "y2": 404
+          },
+          "center": {
+            "x": 664,
+            "y": 389
+          },
+          "polygon": [
+            [
+              638,
+              374
+            ],
+            [
+              690,
+              374
+            ],
+            [
+              690,
+              404
+            ],
+            [
+              638,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 5,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "212",
+            "DE-212"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-211-r00-c06",
+          "room_code": "211",
+          "display_code": "DE-211",
+          "display_name": "DE-211",
+          "item_type": "room",
+          "bbox": {
+            "x1": 207,
+            "y1": 1245,
+            "x2": 275,
+            "y2": 1287
+          },
+          "center": {
+            "x": 241,
+            "y": 1266
+          },
+          "polygon": [
+            [
+              207,
+              1245
+            ],
+            [
+              275,
+              1245
+            ],
+            [
+              275,
+              1287
+            ],
+            [
+              207,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 6,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "211",
+            "DE-211"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-toilet-nam-top-r00-c07",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (trên)",
+          "display_name": "WC Nam (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 80,
+            "x2": 1352,
+            "y2": 258
+          },
+          "center": {
+            "x": 1270,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1188,
+              80
+            ],
+            [
+              1352,
+              80
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1188,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 7,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-toilet-nu-top-r00-c08",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (trên)",
+          "display_name": "WC Nữ (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1352,
+            "y1": 80,
+            "x2": 1516,
+            "y2": 258
+          },
+          "center": {
+            "x": 1434,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1352,
+              80
+            ],
+            [
+              1516,
+              80
+            ],
+            [
+              1516,
+              258
+            ],
+            [
+              1352,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 8,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-library-thu-vien-top-r00-c09",
+          "room_code": "thư viện",
+          "display_code": "Thư viện (trên)",
+          "display_name": "Thư viện (trên)",
+          "item_type": "library",
+          "bbox": {
+            "x1": 1630,
+            "y1": 653,
+            "x2": 1785,
+            "y2": 694
+          },
+          "center": {
+            "x": 1707,
+            "y": 673
+          },
+          "polygon": [
+            [
+              1630,
+              653
+            ],
+            [
+              1785,
+              653
+            ],
+            [
+              1785,
+              694
+            ],
+            [
+              1630,
+              694
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 9,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "thư viện",
+            "library"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-stair-cau-thang-top-right-r00-c10",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên-phải)",
+          "display_name": "Cầu thang (trên-phải)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1680,
+            "y1": 80,
+            "x2": 1844,
+            "y2": 258
+          },
+          "center": {
+            "x": 1762,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1680,
+              80
+            ],
+            [
+              1844,
+              80
+            ],
+            [
+              1844,
+              258
+            ],
+            [
+              1680,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 10,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-room-227-r00-c11",
+          "room_code": "227",
+          "display_code": "DE-227",
+          "display_name": "DE-227",
+          "item_type": "room",
+          "bbox": {
+            "x1": 307,
+            "y1": 1331,
+            "x2": 381,
+            "y2": 1371
+          },
+          "center": {
+            "x": 344,
+            "y": 1351
+          },
+          "polygon": [
+            [
+              307,
+              1331
+            ],
+            [
+              381,
+              1331
+            ],
+            [
+              381,
+              1371
+            ],
+            [
+              307,
+              1371
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 11,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "227",
+            "DE-227"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-216-r03-c00",
+          "room_code": "216",
+          "display_code": "DE-216",
+          "display_name": "DE-216",
+          "item_type": "room",
+          "bbox": {
+            "x1": 234,
+            "y1": 548,
+            "x2": 284,
+            "y2": 578
+          },
+          "center": {
+            "x": 259,
+            "y": 563
+          },
+          "polygon": [
+            [
+              234,
+              548
+            ],
+            [
+              284,
+              548
+            ],
+            [
+              284,
+              578
+            ],
+            [
+              234,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 3,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "216",
+            "DE-216"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-217-r05-c00",
+          "room_code": "217",
+          "display_code": "DE-217",
+          "display_name": "DE-217",
+          "item_type": "room",
+          "bbox": {
+            "x1": 40,
+            "y1": 377,
+            "x2": 204,
+            "y2": 496
+          },
+          "center": {
+            "x": 122,
+            "y": 436
+          },
+          "polygon": [
+            [
+              40,
+              377
+            ],
+            [
+              204,
+              377
+            ],
+            [
+              204,
+              496
+            ],
+            [
+              40,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "217",
+            "DE-217"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-218-r07-c00",
+          "room_code": "218",
+          "display_code": "DE-218",
+          "display_name": "DE-218",
+          "item_type": "room",
+          "bbox": {
+            "x1": 234,
+            "y1": 662,
+            "x2": 284,
+            "y2": 692
+          },
+          "center": {
+            "x": 259,
+            "y": 677
+          },
+          "polygon": [
+            [
+              234,
+              662
+            ],
+            [
+              284,
+              662
+            ],
+            [
+              284,
+              692
+            ],
+            [
+              234,
+              692
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 7,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "218",
+            "DE-218"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-219-r09-c00",
+          "room_code": "219",
+          "display_code": "DE-219",
+          "display_name": "DE-219",
+          "item_type": "room",
+          "bbox": {
+            "x1": 350,
+            "y1": 780,
+            "x2": 400,
+            "y2": 810
+          },
+          "center": {
+            "x": 375,
+            "y": 795
+          },
+          "polygon": [
+            [
+              350,
+              780
+            ],
+            [
+              400,
+              780
+            ],
+            [
+              400,
+              810
+            ],
+            [
+              350,
+              810
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "219",
+            "DE-219"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-skylight-gieng-troi-left-r03-c03",
+          "room_code": "giếng trời",
+          "display_code": "Giếng trời (trái)",
+          "display_name": "Giếng trời (trái)",
+          "item_type": "skylight",
+          "bbox": {
+            "x1": 532,
+            "y1": 258,
+            "x2": 860,
+            "y2": 556
+          },
+          "center": {
+            "x": 696,
+            "y": 407
+          },
+          "polygon": [
+            [
+              532,
+              258
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              860,
+              556
+            ],
+            [
+              532,
+              556
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 3,
+            "span_rows": 5,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F2-skylight-gieng-troi-right-r03-c06",
+          "room_code": "giếng trời",
+          "display_code": "Giếng trời (phải)",
+          "display_name": "Giếng trời (phải)",
+          "item_type": "skylight",
+          "bbox": {
+            "x1": 1024,
+            "y1": 258,
+            "x2": 1352,
+            "y2": 556
+          },
+          "center": {
+            "x": 1188,
+            "y": 407
+          },
+          "polygon": [
+            [
+              1024,
+              258
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1352,
+              556
+            ],
+            [
+              1024,
+              556
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 6,
+            "span_rows": 5,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F2-computer-202c-r03-c02",
+          "room_code": "202c",
+          "display_code": "DE-202c",
+          "display_name": "DE-202c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 368,
+            "y1": 258,
+            "x2": 532,
+            "y2": 377
+          },
+          "center": {
+            "x": 450,
+            "y": 318
+          },
+          "polygon": [
+            [
+              368,
+              258
+            ],
+            [
+              532,
+              258
+            ],
+            [
+              532,
+              377
+            ],
+            [
+              368,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "202c",
+            "DE-202c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-201c-r03-c01",
+          "room_code": "201c",
+          "display_code": "DE-201c",
+          "display_name": "DE-201c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 204,
+            "y1": 258,
+            "x2": 368,
+            "y2": 377
+          },
+          "center": {
+            "x": 286,
+            "y": 318
+          },
+          "polygon": [
+            [
+              204,
+              258
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              368,
+              377
+            ],
+            [
+              204,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 1,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "201c",
+            "DE-201c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-210c-r03-c08",
+          "room_code": "210c",
+          "display_code": "DE-210c",
+          "display_name": "DE-210c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 258,
+            "x2": 1516,
+            "y2": 377
+          },
+          "center": {
+            "x": 1434,
+            "y": 318
+          },
+          "polygon": [
+            [
+              1352,
+              258
+            ],
+            [
+              1516,
+              258
+            ],
+            [
+              1516,
+              377
+            ],
+            [
+              1352,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "210c",
+            "DE-210c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-209c-r03-c09",
+          "room_code": "209c",
+          "display_code": "DE-209c",
+          "display_name": "DE-209c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1516,
+            "y1": 258,
+            "x2": 1680,
+            "y2": 377
+          },
+          "center": {
+            "x": 1598,
+            "y": 318
+          },
+          "polygon": [
+            [
+              1516,
+              258
+            ],
+            [
+              1680,
+              258
+            ],
+            [
+              1680,
+              377
+            ],
+            [
+              1516,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "209c",
+            "DE-209c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-203c-r05-c03",
+          "room_code": "203c",
+          "display_code": "DE-203c",
+          "display_name": "DE-203c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 532,
+            "y1": 377,
+            "x2": 696,
+            "y2": 496
+          },
+          "center": {
+            "x": 614,
+            "y": 436
+          },
+          "polygon": [
+            [
+              532,
+              377
+            ],
+            [
+              696,
+              377
+            ],
+            [
+              696,
+              496
+            ],
+            [
+              532,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "203c",
+            "DE-203c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-208c-r05-c08",
+          "room_code": "208c",
+          "display_code": "DE-208c",
+          "display_name": "DE-208c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 377,
+            "x2": 1516,
+            "y2": 496
+          },
+          "center": {
+            "x": 1434,
+            "y": 436
+          },
+          "polygon": [
+            [
+              1352,
+              377
+            ],
+            [
+              1516,
+              377
+            ],
+            [
+              1516,
+              496
+            ],
+            [
+              1352,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "208c",
+            "DE-208c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-204c-r07-c02",
+          "room_code": "204c",
+          "display_code": "DE-204c",
+          "display_name": "DE-204c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 368,
+            "y1": 496,
+            "x2": 532,
+            "y2": 615
+          },
+          "center": {
+            "x": 450,
+            "y": 556
+          },
+          "polygon": [
+            [
+              368,
+              496
+            ],
+            [
+              532,
+              496
+            ],
+            [
+              532,
+              615
+            ],
+            [
+              368,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "204c",
+            "DE-204c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-205c-r07-c03",
+          "room_code": "205c",
+          "display_code": "DE-205c",
+          "display_name": "DE-205c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 532,
+            "y1": 496,
+            "x2": 696,
+            "y2": 615
+          },
+          "center": {
+            "x": 614,
+            "y": 556
+          },
+          "polygon": [
+            [
+              532,
+              496
+            ],
+            [
+              696,
+              496
+            ],
+            [
+              696,
+              615
+            ],
+            [
+              532,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "205c",
+            "DE-205c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-206c-r07-c07",
+          "room_code": "206c",
+          "display_code": "DE-206c",
+          "display_name": "DE-206c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1188,
+            "y1": 496,
+            "x2": 1352,
+            "y2": 615
+          },
+          "center": {
+            "x": 1270,
+            "y": 556
+          },
+          "polygon": [
+            [
+              1188,
+              496
+            ],
+            [
+              1352,
+              496
+            ],
+            [
+              1352,
+              615
+            ],
+            [
+              1188,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 7,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "206c",
+            "DE-206c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-computer-207c-r07-c08",
+          "room_code": "207c",
+          "display_code": "DE-207c",
+          "display_name": "DE-207c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 496,
+            "x2": 1516,
+            "y2": 615
+          },
+          "center": {
+            "x": 1434,
+            "y": 556
+          },
+          "polygon": [
+            [
+              1352,
+              496
+            ],
+            [
+              1516,
+              496
+            ],
+            [
+              1516,
+              615
+            ],
+            [
+              1352,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "207c",
+            "DE-207c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-library-thu-vien-main-r03-c10",
+          "room_code": "thư viện",
+          "display_code": "Thư viện",
+          "display_name": "Thư viện",
+          "item_type": "library",
+          "bbox": {
+            "x1": 1680,
+            "y1": 258,
+            "x2": 2008,
+            "y2": 674
+          },
+          "center": {
+            "x": 1844,
+            "y": 466
+          },
+          "polygon": [
+            [
+              1680,
+              258
+            ],
+            [
+              2008,
+              258
+            ],
+            [
+              2008,
+              674
+            ],
+            [
+              1680,
+              674
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 10,
+            "span_rows": 7,
+            "span_cols": 2
+          },
+          "aliases": [
+            "thư viện",
+            "library",
+            "Thư viện"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-220-r10-c00",
+          "room_code": "220",
+          "display_code": "DE-220",
+          "display_name": "DE-220",
+          "item_type": "room",
+          "bbox": {
+            "x1": 288,
+            "y1": 948,
+            "x2": 346,
+            "y2": 978
+          },
+          "center": {
+            "x": 317,
+            "y": 963
+          },
+          "polygon": [
+            [
+              288,
+              948
+            ],
+            [
+              346,
+              948
+            ],
+            [
+              346,
+              978
+            ],
+            [
+              288,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 0,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "220",
+            "DE-220"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-elevator-thang-may-r10-c02",
+          "room_code": "thang máy",
+          "display_code": "Thang máy",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "bbox": {
+            "x1": 368,
+            "y1": 674,
+            "x2": 532,
+            "y2": 912
+          },
+          "center": {
+            "x": 450,
+            "y": 793
+          },
+          "polygon": [
+            [
+              368,
+              674
+            ],
+            [
+              532,
+              674
+            ],
+            [
+              532,
+              912
+            ],
+            [
+              368,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 2,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-room-222-r10-c03",
+          "room_code": "222",
+          "display_code": "DE-222",
+          "display_name": "DE-222",
+          "item_type": "room",
+          "bbox": {
+            "x1": 580,
+            "y1": 948,
+            "x2": 634,
+            "y2": 978
+          },
+          "center": {
+            "x": 607,
+            "y": 963
+          },
+          "polygon": [
+            [
+              580,
+              948
+            ],
+            [
+              634,
+              948
+            ],
+            [
+              634,
+              978
+            ],
+            [
+              580,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 3,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "222",
+            "DE-222"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-223-r10-c04",
+          "room_code": "223",
+          "display_code": "DE-223",
+          "display_name": "DE-223",
+          "item_type": "room",
+          "bbox": {
+            "x1": 694,
+            "y1": 948,
+            "x2": 750,
+            "y2": 978
+          },
+          "center": {
+            "x": 722,
+            "y": 963
+          },
+          "polygon": [
+            [
+              694,
+              948
+            ],
+            [
+              750,
+              948
+            ],
+            [
+              750,
+              978
+            ],
+            [
+              694,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 4,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "223",
+            "DE-223"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-room-224-r10-c05",
+          "room_code": "224",
+          "display_code": "DE-224",
+          "display_name": "DE-224",
+          "item_type": "room",
+          "bbox": {
+            "x1": 860,
+            "y1": 674,
+            "x2": 1024,
+            "y2": 912
+          },
+          "center": {
+            "x": 942,
+            "y": 793
+          },
+          "polygon": [
+            [
+              860,
+              674
+            ],
+            [
+              1024,
+              674
+            ],
+            [
+              1024,
+              912
+            ],
+            [
+              860,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 5,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "224",
+            "DE-224"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-toilet-nu-bottom-r10-c06",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (dưới)",
+          "display_name": "WC Nữ (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 674,
+            "x2": 1188,
+            "y2": 912
+          },
+          "center": {
+            "x": 1106,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1024,
+              674
+            ],
+            [
+              1188,
+              674
+            ],
+            [
+              1188,
+              912
+            ],
+            [
+              1024,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 6,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-toilet-nam-bottom-r10-c07",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (dưới)",
+          "display_name": "WC Nam (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 674,
+            "x2": 1352,
+            "y2": 912
+          },
+          "center": {
+            "x": 1270,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1188,
+              674
+            ],
+            [
+              1352,
+              674
+            ],
+            [
+              1352,
+              912
+            ],
+            [
+              1188,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 7,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-room-225-r10-c08",
+          "room_code": "225",
+          "display_code": "DE-225",
+          "display_name": "DE-225",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1332,
+            "y1": 948,
+            "x2": 1388,
+            "y2": 978
+          },
+          "center": {
+            "x": 1360,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1332,
+              948
+            ],
+            [
+              1388,
+              948
+            ],
+            [
+              1388,
+              978
+            ],
+            [
+              1332,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 8,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "225",
+            "DE-225"
+          ]
+        },
+        {
+          "item_id": "DELTA-F2-stair-cau-thang-bottom-r10-c09",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (dưới)",
+          "display_name": "Cầu thang (dưới)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1516,
+            "y1": 674,
+            "x2": 1844,
+            "y2": 912
+          },
+          "center": {
+            "x": 1680,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1516,
+              674
+            ],
+            [
+              1844,
+              674
+            ],
+            [
+              1844,
+              912
+            ],
+            [
+              1516,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 9,
+            "span_rows": 4,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F2-hallway-hanh-lang-top-r00-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trên)",
+          "display_name": "Hành lang (trên)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 80,
+            "x2": 368,
+            "y2": 258
+          },
+          "center": {
+            "x": 286,
+            "y": 169
+          },
+          "polygon": [
+            [
+              204,
+              80
+            ],
+            [
+              368,
+              80
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              204,
+              258
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 1,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-hallway-hanh-lang-left-r03-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trái)",
+          "display_name": "Hành lang (trái)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 258,
+            "x2": 368,
+            "y2": 674
+          },
+          "center": {
+            "x": 286,
+            "y": 466
+          },
+          "polygon": [
+            [
+              204,
+              258
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              368,
+              674
+            ],
+            [
+              204,
+              674
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 1,
+            "span_rows": 7,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-hallway-hanh-lang-bottom-r10-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (dưới)",
+          "display_name": "Hành lang (dưới)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 674,
+            "x2": 368,
+            "y2": 912
+          },
+          "center": {
+            "x": 286,
+            "y": 793
+          },
+          "polygon": [
+            [
+              204,
+              674
+            ],
+            [
+              368,
+              674
+            ],
+            [
+              368,
+              912
+            ],
+            [
+              204,
+              912
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 1,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-wall-tuong-left-r08-c01",
+          "room_code": "tường",
+          "display_code": "Tường (trái)",
+          "display_name": "Tường (trái)",
+          "item_type": "wall",
+          "bbox": {
+            "x1": 204,
+            "y1": 556,
+            "x2": 368,
+            "y2": 615
+          },
+          "center": {
+            "x": 286,
+            "y": 586
+          },
+          "polygon": [
+            [
+              204,
+              556
+            ],
+            [
+              368,
+              556
+            ],
+            [
+              368,
+              615
+            ],
+            [
+              204,
+              615
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 8,
+            "col": 1,
+            "span_rows": 1,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F2-wall-tuong-right-r08-c09",
+          "room_code": "tường",
+          "display_code": "Tường (phải)",
+          "display_name": "Tường (phải)",
+          "item_type": "wall",
+          "bbox": {
+            "x1": 1516,
+            "y1": 556,
+            "x2": 1680,
+            "y2": 615
+          },
+          "center": {
+            "x": 1598,
+            "y": 586
+          },
+          "polygon": [
+            [
+              1516,
+              556
+            ],
+            [
+              1680,
+              556
+            ],
+            [
+              1680,
+              615
+            ],
+            [
+              1516,
+              615
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 8,
+            "col": 9,
+            "span_rows": 1,
+            "span_cols": 1
+          }
+        }
+      ]
+    },
+    {
+      "floor_number": 3,
+      "floor_name": "Tầng 3",
+      "floor_code": "F3",
+      "image_file": "floor3vs2.jpg",
+      "grid_config": {
+        "rows": 20,
+        "cols": 12,
+        "image_width": 2048,
+        "image_height": 1489,
+        "margin_left": 40,
+        "margin_right": 40,
+        "margin_top": 80,
+        "margin_bottom": 220,
+        "cell_width": 164.0,
+        "cell_height": 59.5
+      },
+      "items": [
+        {
+          "item_id": "DELTA-F3-room-315-r00-c02",
+          "room_code": "315",
+          "display_code": "DE-315",
+          "display_name": "DE-315",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 374,
+            "x2": 282,
+            "y2": 404
+          },
+          "center": {
+            "x": 259,
+            "y": 389
+          },
+          "polygon": [
+            [
+              236,
+              374
+            ],
+            [
+              282,
+              374
+            ],
+            [
+              282,
+              404
+            ],
+            [
+              236,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "315",
+            "DE-315"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-314-r00-c03",
+          "room_code": "314",
+          "display_code": "DE-314",
+          "display_name": "DE-314",
+          "item_type": "room",
+          "bbox": {
+            "x1": 352,
+            "y1": 374,
+            "x2": 400,
+            "y2": 404
+          },
+          "center": {
+            "x": 376,
+            "y": 389
+          },
+          "polygon": [
+            [
+              352,
+              374
+            ],
+            [
+              400,
+              374
+            ],
+            [
+              400,
+              404
+            ],
+            [
+              352,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "314",
+            "DE-314"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-stair-cau-thang-top-left-r00-c04",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên-trái)",
+          "display_name": "Cầu thang (trên-trái)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 696,
+            "y1": 80,
+            "x2": 860,
+            "y2": 258
+          },
+          "center": {
+            "x": 778,
+            "y": 169
+          },
+          "polygon": [
+            [
+              696,
+              80
+            ],
+            [
+              860,
+              80
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              696,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 4,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-room-313-r00-c05",
+          "room_code": "313",
+          "display_code": "DE-313",
+          "display_name": "DE-313",
+          "item_type": "room",
+          "bbox": {
+            "x1": 584,
+            "y1": 374,
+            "x2": 632,
+            "y2": 404
+          },
+          "center": {
+            "x": 608,
+            "y": 389
+          },
+          "polygon": [
+            [
+              584,
+              374
+            ],
+            [
+              632,
+              374
+            ],
+            [
+              632,
+              404
+            ],
+            [
+              584,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 5,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "313",
+            "DE-313"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-312-r01-c05",
+          "room_code": "312",
+          "display_code": "DE-312",
+          "display_name": "DE-312",
+          "item_type": "room",
+          "bbox": {
+            "x1": 700,
+            "y1": 374,
+            "x2": 748,
+            "y2": 404
+          },
+          "center": {
+            "x": 724,
+            "y": 389
+          },
+          "polygon": [
+            [
+              700,
+              374
+            ],
+            [
+              748,
+              374
+            ],
+            [
+              748,
+              404
+            ],
+            [
+              700,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 1,
+            "col": 5,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "312",
+            "DE-312"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-311-r02-c05",
+          "room_code": "311",
+          "display_code": "DE-311",
+          "display_name": "DE-311",
+          "item_type": "room",
+          "bbox": {
+            "x1": 207,
+            "y1": 1245,
+            "x2": 275,
+            "y2": 1287
+          },
+          "center": {
+            "x": 241,
+            "y": 1266
+          },
+          "polygon": [
+            [
+              207,
+              1245
+            ],
+            [
+              275,
+              1245
+            ],
+            [
+              275,
+              1287
+            ],
+            [
+              207,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 5,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "311",
+            "DE-311"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-toilet-nam-top-r00-c06",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (trên)",
+          "display_name": "WC Nam (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 80,
+            "x2": 1188,
+            "y2": 258
+          },
+          "center": {
+            "x": 1106,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1024,
+              80
+            ],
+            [
+              1188,
+              80
+            ],
+            [
+              1188,
+              258
+            ],
+            [
+              1024,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 6,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-toilet-nu-top-r00-c07",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (trên)",
+          "display_name": "WC Nữ (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 80,
+            "x2": 1352,
+            "y2": 258
+          },
+          "center": {
+            "x": 1270,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1188,
+              80
+            ],
+            [
+              1352,
+              80
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1188,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 7,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-room-339-r00-c08",
+          "room_code": "339",
+          "display_code": "DE-339",
+          "display_name": "DE-339",
+          "item_type": "room",
+          "bbox": {
+            "x1": 305,
+            "y1": 1331,
+            "x2": 381,
+            "y2": 1373
+          },
+          "center": {
+            "x": 343,
+            "y": 1352
+          },
+          "polygon": [
+            [
+              305,
+              1331
+            ],
+            [
+              381,
+              1331
+            ],
+            [
+              381,
+              1373
+            ],
+            [
+              305,
+              1373
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 8,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "339",
+            "DE-339"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-338-r01-c08",
+          "room_code": "338",
+          "display_code": "DE-338",
+          "display_name": "DE-338",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1276,
+            "y1": 374,
+            "x2": 1330,
+            "y2": 404
+          },
+          "center": {
+            "x": 1303,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1276,
+              374
+            ],
+            [
+              1330,
+              374
+            ],
+            [
+              1330,
+              404
+            ],
+            [
+              1276,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 1,
+            "col": 8,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "338",
+            "DE-338"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-337-r02-c08",
+          "room_code": "337",
+          "display_code": "DE-337",
+          "display_name": "DE-337",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1392,
+            "y1": 374,
+            "x2": 1444,
+            "y2": 404
+          },
+          "center": {
+            "x": 1418,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1392,
+              374
+            ],
+            [
+              1444,
+              374
+            ],
+            [
+              1444,
+              404
+            ],
+            [
+              1392,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 8,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "337",
+            "DE-337"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-stair-cau-thang-top-right-r00-c09",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên-phải)",
+          "display_name": "Cầu thang (trên-phải)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1516,
+            "y1": 80,
+            "x2": 1680,
+            "y2": 258
+          },
+          "center": {
+            "x": 1598,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1516,
+              80
+            ],
+            [
+              1680,
+              80
+            ],
+            [
+              1680,
+              258
+            ],
+            [
+              1516,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 9,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-room-336-r00-c10",
+          "room_code": "336",
+          "display_code": "DE-336",
+          "display_name": "DE-336",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1626,
+            "y1": 374,
+            "x2": 1680,
+            "y2": 404
+          },
+          "center": {
+            "x": 1653,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1626,
+              374
+            ],
+            [
+              1680,
+              374
+            ],
+            [
+              1680,
+              404
+            ],
+            [
+              1626,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "336",
+            "DE-336"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-335-r02-c10",
+          "room_code": "335",
+          "display_code": "DE-335",
+          "display_name": "DE-335",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1734,
+            "y1": 374,
+            "x2": 1788,
+            "y2": 404
+          },
+          "center": {
+            "x": 1761,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1734,
+              374
+            ],
+            [
+              1788,
+              374
+            ],
+            [
+              1788,
+              404
+            ],
+            [
+              1734,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 10,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "335",
+            "DE-335"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-316-r03-c00",
+          "room_code": "316",
+          "display_code": "DE-316",
+          "display_name": "DE-316",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 548,
+            "x2": 284,
+            "y2": 578
+          },
+          "center": {
+            "x": 260,
+            "y": 563
+          },
+          "polygon": [
+            [
+              236,
+              548
+            ],
+            [
+              284,
+              548
+            ],
+            [
+              284,
+              578
+            ],
+            [
+              236,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 3,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "316",
+            "DE-316"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-317-r05-c00",
+          "room_code": "317",
+          "display_code": "DE-317",
+          "display_name": "DE-317",
+          "item_type": "room",
+          "bbox": {
+            "x1": 352,
+            "y1": 548,
+            "x2": 398,
+            "y2": 578
+          },
+          "center": {
+            "x": 375,
+            "y": 563
+          },
+          "polygon": [
+            [
+              352,
+              548
+            ],
+            [
+              398,
+              548
+            ],
+            [
+              398,
+              578
+            ],
+            [
+              352,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 5,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "317",
+            "DE-317"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-318-r07-c00",
+          "room_code": "318",
+          "display_code": "DE-318",
+          "display_name": "DE-318",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 662,
+            "x2": 284,
+            "y2": 692
+          },
+          "center": {
+            "x": 260,
+            "y": 677
+          },
+          "polygon": [
+            [
+              236,
+              662
+            ],
+            [
+              284,
+              662
+            ],
+            [
+              284,
+              692
+            ],
+            [
+              236,
+              692
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 7,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "318",
+            "DE-318"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-320-r09-c00",
+          "room_code": "320",
+          "display_code": "DE-320",
+          "display_name": "DE-320",
+          "item_type": "room",
+          "bbox": {
+            "x1": 40,
+            "y1": 615,
+            "x2": 204,
+            "y2": 734
+          },
+          "center": {
+            "x": 122,
+            "y": 674
+          },
+          "polygon": [
+            [
+              40,
+              615
+            ],
+            [
+              204,
+              615
+            ],
+            [
+              204,
+              734
+            ],
+            [
+              40,
+              734
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 9,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "320",
+            "DE-320"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-319-r09-c02",
+          "room_code": "319",
+          "display_code": "DE-319",
+          "display_name": "DE-319",
+          "item_type": "room",
+          "bbox": {
+            "x1": 352,
+            "y1": 780,
+            "x2": 400,
+            "y2": 810
+          },
+          "center": {
+            "x": 376,
+            "y": 795
+          },
+          "polygon": [
+            [
+              352,
+              780
+            ],
+            [
+              400,
+              780
+            ],
+            [
+              400,
+              810
+            ],
+            [
+              352,
+              810
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "319",
+            "DE-319"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-skylight-gieng-troi-left-r03-c03",
+          "room_code": "giếng trời",
+          "display_code": "Giếng trời (trái)",
+          "display_name": "Giếng trời (trái)",
+          "item_type": "skylight",
+          "bbox": {
+            "x1": 532,
+            "y1": 258,
+            "x2": 860,
+            "y2": 556
+          },
+          "center": {
+            "x": 696,
+            "y": 407
+          },
+          "polygon": [
+            [
+              532,
+              258
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              860,
+              556
+            ],
+            [
+              532,
+              556
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 3,
+            "span_rows": 5,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F3-skylight-gieng-troi-right-r03-c06",
+          "room_code": "giếng trời",
+          "display_code": "Giếng trời (phải)",
+          "display_name": "Giếng trời (phải)",
+          "item_type": "skylight",
+          "bbox": {
+            "x1": 1024,
+            "y1": 258,
+            "x2": 1352,
+            "y2": 556
+          },
+          "center": {
+            "x": 1188,
+            "y": 407
+          },
+          "polygon": [
+            [
+              1024,
+              258
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1352,
+              556
+            ],
+            [
+              1024,
+              556
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 6,
+            "span_rows": 5,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F3-computer-302c-r03-c02",
+          "room_code": "302c",
+          "display_code": "DE-302c",
+          "display_name": "DE-302c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 368,
+            "y1": 258,
+            "x2": 532,
+            "y2": 377
+          },
+          "center": {
+            "x": 450,
+            "y": 318
+          },
+          "polygon": [
+            [
+              368,
+              258
+            ],
+            [
+              532,
+              258
+            ],
+            [
+              532,
+              377
+            ],
+            [
+              368,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "302c",
+            "DE-302c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-301c-r03-c01",
+          "room_code": "301c",
+          "display_code": "DE-301c",
+          "display_name": "DE-301c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 204,
+            "y1": 258,
+            "x2": 368,
+            "y2": 377
+          },
+          "center": {
+            "x": 286,
+            "y": 318
+          },
+          "polygon": [
+            [
+              204,
+              258
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              368,
+              377
+            ],
+            [
+              204,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 1,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "301c",
+            "DE-301c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-310c-r03-c08",
+          "room_code": "310c",
+          "display_code": "DE-310c",
+          "display_name": "DE-310c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 258,
+            "x2": 1516,
+            "y2": 377
+          },
+          "center": {
+            "x": 1434,
+            "y": 318
+          },
+          "polygon": [
+            [
+              1352,
+              258
+            ],
+            [
+              1516,
+              258
+            ],
+            [
+              1516,
+              377
+            ],
+            [
+              1352,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "310c",
+            "DE-310c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-309c-r03-c09",
+          "room_code": "309c",
+          "display_code": "DE-309c",
+          "display_name": "DE-309c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1516,
+            "y1": 258,
+            "x2": 1680,
+            "y2": 377
+          },
+          "center": {
+            "x": 1598,
+            "y": 318
+          },
+          "polygon": [
+            [
+              1516,
+              258
+            ],
+            [
+              1680,
+              258
+            ],
+            [
+              1680,
+              377
+            ],
+            [
+              1516,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "309c",
+            "DE-309c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-303c-r05-c03",
+          "room_code": "303c",
+          "display_code": "DE-303c",
+          "display_name": "DE-303c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 532,
+            "y1": 377,
+            "x2": 696,
+            "y2": 496
+          },
+          "center": {
+            "x": 614,
+            "y": 436
+          },
+          "polygon": [
+            [
+              532,
+              377
+            ],
+            [
+              696,
+              377
+            ],
+            [
+              696,
+              496
+            ],
+            [
+              532,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "303c",
+            "DE-303c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-308c-r05-c08",
+          "room_code": "308c",
+          "display_code": "DE-308c",
+          "display_name": "DE-308c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 377,
+            "x2": 1516,
+            "y2": 496
+          },
+          "center": {
+            "x": 1434,
+            "y": 436
+          },
+          "polygon": [
+            [
+              1352,
+              377
+            ],
+            [
+              1516,
+              377
+            ],
+            [
+              1516,
+              496
+            ],
+            [
+              1352,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "308c",
+            "DE-308c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-304c-r07-c02",
+          "room_code": "304c",
+          "display_code": "DE-304c",
+          "display_name": "DE-304c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 368,
+            "y1": 496,
+            "x2": 532,
+            "y2": 615
+          },
+          "center": {
+            "x": 450,
+            "y": 556
+          },
+          "polygon": [
+            [
+              368,
+              496
+            ],
+            [
+              532,
+              496
+            ],
+            [
+              532,
+              615
+            ],
+            [
+              368,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "304c",
+            "DE-304c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-305c-r07-c03",
+          "room_code": "305c",
+          "display_code": "DE-305c",
+          "display_name": "DE-305c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 532,
+            "y1": 496,
+            "x2": 696,
+            "y2": 615
+          },
+          "center": {
+            "x": 614,
+            "y": 556
+          },
+          "polygon": [
+            [
+              532,
+              496
+            ],
+            [
+              696,
+              496
+            ],
+            [
+              696,
+              615
+            ],
+            [
+              532,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "305c",
+            "DE-305c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-306c-r07-c07",
+          "room_code": "306c",
+          "display_code": "DE-306c",
+          "display_name": "DE-306c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1188,
+            "y1": 496,
+            "x2": 1352,
+            "y2": 615
+          },
+          "center": {
+            "x": 1270,
+            "y": 556
+          },
+          "polygon": [
+            [
+              1188,
+              496
+            ],
+            [
+              1352,
+              496
+            ],
+            [
+              1352,
+              615
+            ],
+            [
+              1188,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 7,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "306c",
+            "DE-306c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-computer-307c-r07-c08",
+          "room_code": "307c",
+          "display_code": "DE-307c",
+          "display_name": "DE-307c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 496,
+            "x2": 1516,
+            "y2": 615
+          },
+          "center": {
+            "x": 1434,
+            "y": 556
+          },
+          "polygon": [
+            [
+              1352,
+              496
+            ],
+            [
+              1516,
+              496
+            ],
+            [
+              1516,
+              615
+            ],
+            [
+              1352,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "307c",
+            "DE-307c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-334-r03-c10",
+          "room_code": "334",
+          "display_code": "DE-334",
+          "display_name": "DE-334",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1740,
+            "y1": 548,
+            "x2": 1794,
+            "y2": 578
+          },
+          "center": {
+            "x": 1767,
+            "y": 563
+          },
+          "polygon": [
+            [
+              1740,
+              548
+            ],
+            [
+              1794,
+              548
+            ],
+            [
+              1794,
+              578
+            ],
+            [
+              1740,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 3,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "334",
+            "DE-334"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-333-r05-c10",
+          "room_code": "333",
+          "display_code": "DE-333",
+          "display_name": "DE-333",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1624,
+            "y1": 548,
+            "x2": 1678,
+            "y2": 578
+          },
+          "center": {
+            "x": 1651,
+            "y": 563
+          },
+          "polygon": [
+            [
+              1624,
+              548
+            ],
+            [
+              1678,
+              548
+            ],
+            [
+              1678,
+              578
+            ],
+            [
+              1624,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 5,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "333",
+            "DE-333"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-322-r07-c10",
+          "room_code": "322",
+          "display_code": "DE-322",
+          "display_name": "DE-322",
+          "item_type": "room",
+          "bbox": {
+            "x1": 580,
+            "y1": 948,
+            "x2": 634,
+            "y2": 980
+          },
+          "center": {
+            "x": 607,
+            "y": 964
+          },
+          "polygon": [
+            [
+              580,
+              948
+            ],
+            [
+              634,
+              948
+            ],
+            [
+              634,
+              980
+            ],
+            [
+              580,
+              980
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 7,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "322",
+            "DE-322"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-331-r09-c10",
+          "room_code": "331",
+          "display_code": "DE-331",
+          "display_name": "DE-331",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1622,
+            "y1": 776,
+            "x2": 1672,
+            "y2": 806
+          },
+          "center": {
+            "x": 1647,
+            "y": 791
+          },
+          "polygon": [
+            [
+              1622,
+              776
+            ],
+            [
+              1672,
+              776
+            ],
+            [
+              1672,
+              806
+            ],
+            [
+              1622,
+              806
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "331",
+            "DE-331"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-330-r09-c09",
+          "room_code": "330",
+          "display_code": "DE-330",
+          "display_name": "DE-330",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1738,
+            "y1": 780,
+            "x2": 1794,
+            "y2": 810
+          },
+          "center": {
+            "x": 1766,
+            "y": 795
+          },
+          "polygon": [
+            [
+              1738,
+              780
+            ],
+            [
+              1794,
+              780
+            ],
+            [
+              1794,
+              810
+            ],
+            [
+              1738,
+              810
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "330",
+            "DE-330"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-321-r10-c00",
+          "room_code": "321",
+          "display_code": "DE-321",
+          "display_name": "DE-321",
+          "item_type": "room",
+          "bbox": {
+            "x1": 292,
+            "y1": 948,
+            "x2": 340,
+            "y2": 978
+          },
+          "center": {
+            "x": 316,
+            "y": 963
+          },
+          "polygon": [
+            [
+              292,
+              948
+            ],
+            [
+              340,
+              948
+            ],
+            [
+              340,
+              978
+            ],
+            [
+              292,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 0,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "321",
+            "DE-321"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-elevator-thang-may-r10-c02",
+          "room_code": "thang máy",
+          "display_code": "Thang máy",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "bbox": {
+            "x1": 368,
+            "y1": 674,
+            "x2": 532,
+            "y2": 912
+          },
+          "center": {
+            "x": 450,
+            "y": 793
+          },
+          "polygon": [
+            [
+              368,
+              674
+            ],
+            [
+              532,
+              674
+            ],
+            [
+              532,
+              912
+            ],
+            [
+              368,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 2,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-room-323-r10-c03",
+          "room_code": "323",
+          "display_code": "DE-323",
+          "display_name": "DE-323",
+          "item_type": "room",
+          "bbox": {
+            "x1": 696,
+            "y1": 948,
+            "x2": 750,
+            "y2": 978
+          },
+          "center": {
+            "x": 723,
+            "y": 963
+          },
+          "polygon": [
+            [
+              696,
+              948
+            ],
+            [
+              750,
+              948
+            ],
+            [
+              750,
+              978
+            ],
+            [
+              696,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 3,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "323",
+            "DE-323"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-324-r10-c04",
+          "room_code": "324",
+          "display_code": "DE-324",
+          "display_name": "DE-324",
+          "item_type": "room",
+          "bbox": {
+            "x1": 301,
+            "y1": 1247,
+            "x2": 377,
+            "y2": 1287
+          },
+          "center": {
+            "x": 339,
+            "y": 1267
+          },
+          "polygon": [
+            [
+              301,
+              1247
+            ],
+            [
+              377,
+              1247
+            ],
+            [
+              377,
+              1287
+            ],
+            [
+              301,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 4,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "324",
+            "DE-324"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-toilet-nu-bottom-r10-c05",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (dưới)",
+          "display_name": "WC Nữ (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 860,
+            "y1": 674,
+            "x2": 1024,
+            "y2": 912
+          },
+          "center": {
+            "x": 942,
+            "y": 793
+          },
+          "polygon": [
+            [
+              860,
+              674
+            ],
+            [
+              1024,
+              674
+            ],
+            [
+              1024,
+              912
+            ],
+            [
+              860,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 5,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-toilet-nam-bottom-r10-c06",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (dưới)",
+          "display_name": "WC Nam (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 674,
+            "x2": 1188,
+            "y2": 912
+          },
+          "center": {
+            "x": 1106,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1024,
+              674
+            ],
+            [
+              1188,
+              674
+            ],
+            [
+              1188,
+              912
+            ],
+            [
+              1024,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 6,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-room-325-r10-c07",
+          "room_code": "325",
+          "display_code": "DE-325",
+          "display_name": "DE-325",
+          "item_type": "room",
+          "bbox": {
+            "x1": 209,
+            "y1": 1331,
+            "x2": 285,
+            "y2": 1373
+          },
+          "center": {
+            "x": 247,
+            "y": 1352
+          },
+          "polygon": [
+            [
+              209,
+              1331
+            ],
+            [
+              285,
+              1331
+            ],
+            [
+              285,
+              1373
+            ],
+            [
+              209,
+              1373
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 7,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "325",
+            "DE-325"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-326-r10-c08",
+          "room_code": "326",
+          "display_code": "DE-326",
+          "display_name": "DE-326",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1276,
+            "y1": 948,
+            "x2": 1330,
+            "y2": 978
+          },
+          "center": {
+            "x": 1303,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1276,
+              948
+            ],
+            [
+              1330,
+              948
+            ],
+            [
+              1330,
+              978
+            ],
+            [
+              1276,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 8,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "326",
+            "DE-326"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-327-r10-c09",
+          "room_code": "327",
+          "display_code": "DE-327",
+          "display_name": "DE-327",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1392,
+            "y1": 948,
+            "x2": 1444,
+            "y2": 978
+          },
+          "center": {
+            "x": 1418,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1392,
+              948
+            ],
+            [
+              1444,
+              948
+            ],
+            [
+              1444,
+              978
+            ],
+            [
+              1392,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 9,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "327",
+            "DE-327"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-stair-cau-thang-bottom-r10-c10",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (dưới)",
+          "display_name": "Cầu thang (dưới)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1680,
+            "y1": 674,
+            "x2": 1844,
+            "y2": 912
+          },
+          "center": {
+            "x": 1762,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1680,
+              674
+            ],
+            [
+              1844,
+              674
+            ],
+            [
+              1844,
+              912
+            ],
+            [
+              1680,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 10,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-room-328-r12-c09",
+          "room_code": "328",
+          "display_code": "DE-328",
+          "display_name": "DE-328",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1624,
+            "y1": 948,
+            "x2": 1678,
+            "y2": 978
+          },
+          "center": {
+            "x": 1651,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1624,
+              948
+            ],
+            [
+              1678,
+              948
+            ],
+            [
+              1678,
+              978
+            ],
+            [
+              1624,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "328",
+            "DE-328"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-room-329-r12-c10",
+          "room_code": "329",
+          "display_code": "DE-329",
+          "display_name": "DE-329",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1740,
+            "y1": 948,
+            "x2": 1794,
+            "y2": 978
+          },
+          "center": {
+            "x": 1767,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1740,
+              948
+            ],
+            [
+              1794,
+              948
+            ],
+            [
+              1794,
+              978
+            ],
+            [
+              1740,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "329",
+            "DE-329"
+          ]
+        },
+        {
+          "item_id": "DELTA-F3-hallway-hanh-lang-top-r00-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trên)",
+          "display_name": "Hành lang (trên)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 80,
+            "x2": 368,
+            "y2": 258
+          },
+          "center": {
+            "x": 286,
+            "y": 169
+          },
+          "polygon": [
+            [
+              204,
+              80
+            ],
+            [
+              368,
+              80
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              204,
+              258
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 1,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-hallway-hanh-lang-left-r03-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trái)",
+          "display_name": "Hành lang (trái)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 258,
+            "x2": 368,
+            "y2": 674
+          },
+          "center": {
+            "x": 286,
+            "y": 466
+          },
+          "polygon": [
+            [
+              204,
+              258
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              368,
+              674
+            ],
+            [
+              204,
+              674
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 1,
+            "span_rows": 7,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F3-hallway-hanh-lang-bottom-r10-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (dưới)",
+          "display_name": "Hành lang (dưới)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 674,
+            "x2": 368,
+            "y2": 912
+          },
+          "center": {
+            "x": 286,
+            "y": 793
+          },
+          "polygon": [
+            [
+              204,
+              674
+            ],
+            [
+              368,
+              674
+            ],
+            [
+              368,
+              912
+            ],
+            [
+              204,
+              912
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 1,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        }
+      ]
+    },
+    {
+      "floor_number": 4,
+      "floor_name": "Tầng 4",
+      "floor_code": "F4",
+      "image_file": "floor4vs2.jpg",
+      "grid_config": {
+        "rows": 20,
+        "cols": 12,
+        "image_width": 2048,
+        "image_height": 1489,
+        "margin_left": 40,
+        "margin_right": 40,
+        "margin_top": 80,
+        "margin_bottom": 220,
+        "cell_width": 164.0,
+        "cell_height": 59.5
+      },
+      "items": [
+        {
+          "item_id": "DELTA-F4-room-415-r00-c02",
+          "room_code": "415",
+          "display_code": "DE-415",
+          "display_name": "DE-415",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 374,
+            "x2": 282,
+            "y2": 404
+          },
+          "center": {
+            "x": 259,
+            "y": 389
+          },
+          "polygon": [
+            [
+              236,
+              374
+            ],
+            [
+              282,
+              374
+            ],
+            [
+              282,
+              404
+            ],
+            [
+              236,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "415",
+            "DE-415"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-414-r00-c03",
+          "room_code": "414",
+          "display_code": "DE-414",
+          "display_name": "DE-414",
+          "item_type": "room",
+          "bbox": {
+            "x1": 352,
+            "y1": 374,
+            "x2": 400,
+            "y2": 404
+          },
+          "center": {
+            "x": 376,
+            "y": 389
+          },
+          "polygon": [
+            [
+              352,
+              374
+            ],
+            [
+              400,
+              374
+            ],
+            [
+              400,
+              404
+            ],
+            [
+              352,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "414",
+            "DE-414"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-stair-cau-thang-top-left-r00-c04",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên-trái)",
+          "display_name": "Cầu thang (trên-trái)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 696,
+            "y1": 80,
+            "x2": 860,
+            "y2": 258
+          },
+          "center": {
+            "x": 778,
+            "y": 169
+          },
+          "polygon": [
+            [
+              696,
+              80
+            ],
+            [
+              860,
+              80
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              696,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 4,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-room-413-r00-c05",
+          "room_code": "413",
+          "display_code": "DE-413",
+          "display_name": "DE-413",
+          "item_type": "room",
+          "bbox": {
+            "x1": 584,
+            "y1": 374,
+            "x2": 632,
+            "y2": 404
+          },
+          "center": {
+            "x": 608,
+            "y": 389
+          },
+          "polygon": [
+            [
+              584,
+              374
+            ],
+            [
+              632,
+              374
+            ],
+            [
+              632,
+              404
+            ],
+            [
+              584,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 5,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "413",
+            "DE-413"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-412-r01-c05",
+          "room_code": "412",
+          "display_code": "DE-412",
+          "display_name": "DE-412",
+          "item_type": "room",
+          "bbox": {
+            "x1": 700,
+            "y1": 374,
+            "x2": 748,
+            "y2": 404
+          },
+          "center": {
+            "x": 724,
+            "y": 389
+          },
+          "polygon": [
+            [
+              700,
+              374
+            ],
+            [
+              748,
+              374
+            ],
+            [
+              748,
+              404
+            ],
+            [
+              700,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 1,
+            "col": 5,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "412",
+            "DE-412"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-411-r02-c05",
+          "room_code": "411",
+          "display_code": "DE-411",
+          "display_name": "DE-411",
+          "item_type": "room",
+          "bbox": {
+            "x1": 207,
+            "y1": 1247,
+            "x2": 273,
+            "y2": 1287
+          },
+          "center": {
+            "x": 240,
+            "y": 1267
+          },
+          "polygon": [
+            [
+              207,
+              1247
+            ],
+            [
+              273,
+              1247
+            ],
+            [
+              273,
+              1287
+            ],
+            [
+              207,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 5,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "411",
+            "DE-411"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-toilet-nam-top-r00-c06",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (trên)",
+          "display_name": "WC Nam (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 80,
+            "x2": 1188,
+            "y2": 258
+          },
+          "center": {
+            "x": 1106,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1024,
+              80
+            ],
+            [
+              1188,
+              80
+            ],
+            [
+              1188,
+              258
+            ],
+            [
+              1024,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 6,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-toilet-nu-top-r00-c07",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (trên)",
+          "display_name": "WC Nữ (trên)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 80,
+            "x2": 1352,
+            "y2": 258
+          },
+          "center": {
+            "x": 1270,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1188,
+              80
+            ],
+            [
+              1352,
+              80
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1188,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 7,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-room-440-r00-c08",
+          "room_code": "440",
+          "display_code": "DE-440",
+          "display_name": "DE-440",
+          "item_type": "room",
+          "bbox": {
+            "x1": 307,
+            "y1": 1331,
+            "x2": 381,
+            "y2": 1371
+          },
+          "center": {
+            "x": 344,
+            "y": 1351
+          },
+          "polygon": [
+            [
+              307,
+              1331
+            ],
+            [
+              381,
+              1331
+            ],
+            [
+              381,
+              1371
+            ],
+            [
+              307,
+              1371
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 8,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "440",
+            "DE-440"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-439-r01-c08",
+          "room_code": "439",
+          "display_code": "DE-439",
+          "display_name": "DE-439",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1276,
+            "y1": 374,
+            "x2": 1330,
+            "y2": 404
+          },
+          "center": {
+            "x": 1303,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1276,
+              374
+            ],
+            [
+              1330,
+              374
+            ],
+            [
+              1330,
+              404
+            ],
+            [
+              1276,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 1,
+            "col": 8,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "439",
+            "DE-439"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-438-r02-c08",
+          "room_code": "438",
+          "display_code": "DE-438",
+          "display_name": "DE-438",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1392,
+            "y1": 374,
+            "x2": 1446,
+            "y2": 404
+          },
+          "center": {
+            "x": 1419,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1392,
+              374
+            ],
+            [
+              1446,
+              374
+            ],
+            [
+              1446,
+              404
+            ],
+            [
+              1392,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 8,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "438",
+            "DE-438"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-stair-cau-thang-top-right-r00-c09",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (trên-phải)",
+          "display_name": "Cầu thang (trên-phải)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1516,
+            "y1": 80,
+            "x2": 1680,
+            "y2": 258
+          },
+          "center": {
+            "x": 1598,
+            "y": 169
+          },
+          "polygon": [
+            [
+              1516,
+              80
+            ],
+            [
+              1680,
+              80
+            ],
+            [
+              1680,
+              258
+            ],
+            [
+              1516,
+              258
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 9,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-room-437-r00-c10",
+          "room_code": "437",
+          "display_code": "DE-437",
+          "display_name": "DE-437",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1626,
+            "y1": 374,
+            "x2": 1678,
+            "y2": 404
+          },
+          "center": {
+            "x": 1652,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1626,
+              374
+            ],
+            [
+              1678,
+              374
+            ],
+            [
+              1678,
+              404
+            ],
+            [
+              1626,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 0,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "437",
+            "DE-437"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-436-r02-c10",
+          "room_code": "436",
+          "display_code": "DE-436",
+          "display_name": "DE-436",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1734,
+            "y1": 374,
+            "x2": 1788,
+            "y2": 404
+          },
+          "center": {
+            "x": 1761,
+            "y": 389
+          },
+          "polygon": [
+            [
+              1734,
+              374
+            ],
+            [
+              1788,
+              374
+            ],
+            [
+              1788,
+              404
+            ],
+            [
+              1734,
+              404
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 2,
+            "col": 10,
+            "span_rows": 1,
+            "span_cols": 1
+          },
+          "aliases": [
+            "436",
+            "DE-436"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-416-r03-c00",
+          "room_code": "416",
+          "display_code": "DE-416",
+          "display_name": "DE-416",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 548,
+            "x2": 284,
+            "y2": 578
+          },
+          "center": {
+            "x": 260,
+            "y": 563
+          },
+          "polygon": [
+            [
+              236,
+              548
+            ],
+            [
+              284,
+              548
+            ],
+            [
+              284,
+              578
+            ],
+            [
+              236,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 3,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "416",
+            "DE-416"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-417-r05-c00",
+          "room_code": "417",
+          "display_code": "DE-417",
+          "display_name": "DE-417",
+          "item_type": "room",
+          "bbox": {
+            "x1": 352,
+            "y1": 548,
+            "x2": 398,
+            "y2": 576
+          },
+          "center": {
+            "x": 375,
+            "y": 562
+          },
+          "polygon": [
+            [
+              352,
+              548
+            ],
+            [
+              398,
+              548
+            ],
+            [
+              398,
+              576
+            ],
+            [
+              352,
+              576
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 5,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "417",
+            "DE-417"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-418-r07-c00",
+          "room_code": "418",
+          "display_code": "DE-418",
+          "display_name": "DE-418",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 662,
+            "x2": 284,
+            "y2": 692
+          },
+          "center": {
+            "x": 260,
+            "y": 677
+          },
+          "polygon": [
+            [
+              236,
+              662
+            ],
+            [
+              284,
+              662
+            ],
+            [
+              284,
+              692
+            ],
+            [
+              236,
+              692
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 7,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "418",
+            "DE-418"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-420-r09-c00",
+          "room_code": "420",
+          "display_code": "DE-420",
+          "display_name": "DE-420",
+          "item_type": "room",
+          "bbox": {
+            "x1": 232,
+            "y1": 780,
+            "x2": 288,
+            "y2": 810
+          },
+          "center": {
+            "x": 260,
+            "y": 795
+          },
+          "polygon": [
+            [
+              232,
+              780
+            ],
+            [
+              288,
+              780
+            ],
+            [
+              288,
+              810
+            ],
+            [
+              232,
+              810
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 0,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "420",
+            "DE-420"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-419-r09-c02",
+          "room_code": "419",
+          "display_code": "DE-419",
+          "display_name": "DE-419",
+          "item_type": "room",
+          "bbox": {
+            "x1": 352,
+            "y1": 780,
+            "x2": 400,
+            "y2": 810
+          },
+          "center": {
+            "x": 376,
+            "y": 795
+          },
+          "polygon": [
+            [
+              352,
+              780
+            ],
+            [
+              400,
+              780
+            ],
+            [
+              400,
+              810
+            ],
+            [
+              352,
+              810
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "419",
+            "DE-419"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-skylight-gieng-troi-left-r03-c03",
+          "room_code": "giếng trời",
+          "display_code": "Giếng trời (trái)",
+          "display_name": "Giếng trời (trái)",
+          "item_type": "skylight",
+          "bbox": {
+            "x1": 532,
+            "y1": 258,
+            "x2": 860,
+            "y2": 556
+          },
+          "center": {
+            "x": 696,
+            "y": 407
+          },
+          "polygon": [
+            [
+              532,
+              258
+            ],
+            [
+              860,
+              258
+            ],
+            [
+              860,
+              556
+            ],
+            [
+              532,
+              556
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 3,
+            "span_rows": 5,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F4-skylight-gieng-troi-right-r03-c06",
+          "room_code": "giếng trời",
+          "display_code": "Giếng trời (phải)",
+          "display_name": "Giếng trời (phải)",
+          "item_type": "skylight",
+          "bbox": {
+            "x1": 1024,
+            "y1": 258,
+            "x2": 1352,
+            "y2": 556
+          },
+          "center": {
+            "x": 1188,
+            "y": 407
+          },
+          "polygon": [
+            [
+              1024,
+              258
+            ],
+            [
+              1352,
+              258
+            ],
+            [
+              1352,
+              556
+            ],
+            [
+              1024,
+              556
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 6,
+            "span_rows": 5,
+            "span_cols": 2
+          }
+        },
+        {
+          "item_id": "DELTA-F4-computer-402c-r03-c02",
+          "room_code": "402c",
+          "display_code": "DE-402c",
+          "display_name": "DE-402c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 368,
+            "y1": 258,
+            "x2": 532,
+            "y2": 377
+          },
+          "center": {
+            "x": 450,
+            "y": 318
+          },
+          "polygon": [
+            [
+              368,
+              258
+            ],
+            [
+              532,
+              258
+            ],
+            [
+              532,
+              377
+            ],
+            [
+              368,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "402c",
+            "DE-402c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-401c-r03-c01",
+          "room_code": "401c",
+          "display_code": "DE-401c",
+          "display_name": "DE-401c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 204,
+            "y1": 258,
+            "x2": 368,
+            "y2": 377
+          },
+          "center": {
+            "x": 286,
+            "y": 318
+          },
+          "polygon": [
+            [
+              204,
+              258
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              368,
+              377
+            ],
+            [
+              204,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 1,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "401c",
+            "DE-401c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-410c-r03-c08",
+          "room_code": "410c",
+          "display_code": "DE-410c",
+          "display_name": "DE-410c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 258,
+            "x2": 1516,
+            "y2": 377
+          },
+          "center": {
+            "x": 1434,
+            "y": 318
+          },
+          "polygon": [
+            [
+              1352,
+              258
+            ],
+            [
+              1516,
+              258
+            ],
+            [
+              1516,
+              377
+            ],
+            [
+              1352,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "410c",
+            "DE-410c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-409c-r03-c09",
+          "room_code": "409c",
+          "display_code": "DE-409c",
+          "display_name": "DE-409c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1516,
+            "y1": 258,
+            "x2": 1680,
+            "y2": 377
+          },
+          "center": {
+            "x": 1598,
+            "y": 318
+          },
+          "polygon": [
+            [
+              1516,
+              258
+            ],
+            [
+              1680,
+              258
+            ],
+            [
+              1680,
+              377
+            ],
+            [
+              1516,
+              377
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "409c",
+            "DE-409c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-403c-r05-c03",
+          "room_code": "403c",
+          "display_code": "DE-403c",
+          "display_name": "DE-403c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 532,
+            "y1": 377,
+            "x2": 696,
+            "y2": 496
+          },
+          "center": {
+            "x": 614,
+            "y": 436
+          },
+          "polygon": [
+            [
+              532,
+              377
+            ],
+            [
+              696,
+              377
+            ],
+            [
+              696,
+              496
+            ],
+            [
+              532,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "403c",
+            "DE-403c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-408c-r05-c08",
+          "room_code": "408c",
+          "display_code": "DE-408c",
+          "display_name": "DE-408c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 377,
+            "x2": 1516,
+            "y2": 496
+          },
+          "center": {
+            "x": 1434,
+            "y": 436
+          },
+          "polygon": [
+            [
+              1352,
+              377
+            ],
+            [
+              1516,
+              377
+            ],
+            [
+              1516,
+              496
+            ],
+            [
+              1352,
+              496
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 5,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "408c",
+            "DE-408c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-404c-r07-c02",
+          "room_code": "404c",
+          "display_code": "DE-404c",
+          "display_name": "DE-404c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 368,
+            "y1": 496,
+            "x2": 532,
+            "y2": 615
+          },
+          "center": {
+            "x": 450,
+            "y": 556
+          },
+          "polygon": [
+            [
+              368,
+              496
+            ],
+            [
+              532,
+              496
+            ],
+            [
+              532,
+              615
+            ],
+            [
+              368,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 2,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "404c",
+            "DE-404c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-405c-r07-c03",
+          "room_code": "405c",
+          "display_code": "DE-405c",
+          "display_name": "DE-405c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 532,
+            "y1": 496,
+            "x2": 696,
+            "y2": 615
+          },
+          "center": {
+            "x": 614,
+            "y": 556
+          },
+          "polygon": [
+            [
+              532,
+              496
+            ],
+            [
+              696,
+              496
+            ],
+            [
+              696,
+              615
+            ],
+            [
+              532,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 3,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "405c",
+            "DE-405c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-406c-r07-c07",
+          "room_code": "406c",
+          "display_code": "DE-406c",
+          "display_name": "DE-406c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1188,
+            "y1": 496,
+            "x2": 1352,
+            "y2": 615
+          },
+          "center": {
+            "x": 1270,
+            "y": 556
+          },
+          "polygon": [
+            [
+              1188,
+              496
+            ],
+            [
+              1352,
+              496
+            ],
+            [
+              1352,
+              615
+            ],
+            [
+              1188,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 7,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "406c",
+            "DE-406c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-computer-407c-r07-c08",
+          "room_code": "407c",
+          "display_code": "DE-407c",
+          "display_name": "DE-407c",
+          "item_type": "computer_room",
+          "bbox": {
+            "x1": 1352,
+            "y1": 496,
+            "x2": 1516,
+            "y2": 615
+          },
+          "center": {
+            "x": 1434,
+            "y": 556
+          },
+          "polygon": [
+            [
+              1352,
+              496
+            ],
+            [
+              1516,
+              496
+            ],
+            [
+              1516,
+              615
+            ],
+            [
+              1352,
+              615
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 7,
+            "col": 8,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "407c",
+            "DE-407c"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-435-r03-c10",
+          "room_code": "435",
+          "display_code": "DE-435",
+          "display_name": "DE-435",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1740,
+            "y1": 548,
+            "x2": 1794,
+            "y2": 578
+          },
+          "center": {
+            "x": 1767,
+            "y": 563
+          },
+          "polygon": [
+            [
+              1740,
+              548
+            ],
+            [
+              1794,
+              548
+            ],
+            [
+              1794,
+              578
+            ],
+            [
+              1740,
+              578
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 3,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "435",
+            "DE-435"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-434-r05-c10",
+          "room_code": "434",
+          "display_code": "DE-434",
+          "display_name": "DE-434",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1624,
+            "y1": 548,
+            "x2": 1678,
+            "y2": 576
+          },
+          "center": {
+            "x": 1651,
+            "y": 562
+          },
+          "polygon": [
+            [
+              1624,
+              548
+            ],
+            [
+              1678,
+              548
+            ],
+            [
+              1678,
+              576
+            ],
+            [
+              1624,
+              576
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 5,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "434",
+            "DE-434"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-433-r07-c10",
+          "room_code": "433",
+          "display_code": "DE-433",
+          "display_name": "DE-433",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1740,
+            "y1": 662,
+            "x2": 1794,
+            "y2": 692
+          },
+          "center": {
+            "x": 1767,
+            "y": 677
+          },
+          "polygon": [
+            [
+              1740,
+              662
+            ],
+            [
+              1794,
+              662
+            ],
+            [
+              1794,
+              692
+            ],
+            [
+              1740,
+              692
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 7,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "433",
+            "DE-433"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-432-r09-c10",
+          "room_code": "432",
+          "display_code": "DE-432",
+          "display_name": "DE-432",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1620,
+            "y1": 776,
+            "x2": 1674,
+            "y2": 806
+          },
+          "center": {
+            "x": 1647,
+            "y": 791
+          },
+          "polygon": [
+            [
+              1620,
+              776
+            ],
+            [
+              1674,
+              776
+            ],
+            [
+              1674,
+              806
+            ],
+            [
+              1620,
+              806
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "432",
+            "DE-432"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-431-r09-c09",
+          "room_code": "431",
+          "display_code": "DE-431",
+          "display_name": "DE-431",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1742,
+            "y1": 780,
+            "x2": 1788,
+            "y2": 808
+          },
+          "center": {
+            "x": 1765,
+            "y": 794
+          },
+          "polygon": [
+            [
+              1742,
+              780
+            ],
+            [
+              1788,
+              780
+            ],
+            [
+              1788,
+              808
+            ],
+            [
+              1742,
+              808
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 9,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "431",
+            "DE-431"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-421-r10-c00",
+          "room_code": "421",
+          "display_code": "DE-421",
+          "display_name": "DE-421",
+          "item_type": "room",
+          "bbox": {
+            "x1": 236,
+            "y1": 950,
+            "x2": 284,
+            "y2": 978
+          },
+          "center": {
+            "x": 260,
+            "y": 964
+          },
+          "polygon": [
+            [
+              236,
+              950
+            ],
+            [
+              284,
+              950
+            ],
+            [
+              284,
+              978
+            ],
+            [
+              236,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 0,
+            "span_rows": 4,
+            "span_cols": 2
+          },
+          "aliases": [
+            "421",
+            "DE-421"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-elevator-thang-may-r10-c02",
+          "room_code": "thang máy",
+          "display_code": "Thang máy",
+          "display_name": "Thang máy",
+          "item_type": "elevator",
+          "bbox": {
+            "x1": 368,
+            "y1": 674,
+            "x2": 532,
+            "y2": 912
+          },
+          "center": {
+            "x": 450,
+            "y": 793
+          },
+          "polygon": [
+            [
+              368,
+              674
+            ],
+            [
+              532,
+              674
+            ],
+            [
+              532,
+              912
+            ],
+            [
+              368,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 2,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-room-423-r10-c03",
+          "room_code": "423",
+          "display_code": "DE-423",
+          "display_name": "DE-423",
+          "item_type": "room",
+          "bbox": {
+            "x1": 580,
+            "y1": 948,
+            "x2": 634,
+            "y2": 978
+          },
+          "center": {
+            "x": 607,
+            "y": 963
+          },
+          "polygon": [
+            [
+              580,
+              948
+            ],
+            [
+              634,
+              948
+            ],
+            [
+              634,
+              978
+            ],
+            [
+              580,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 3,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "423",
+            "DE-423"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-424-r10-c04",
+          "room_code": "424",
+          "display_code": "DE-424",
+          "display_name": "DE-424",
+          "item_type": "room",
+          "bbox": {
+            "x1": 696,
+            "y1": 948,
+            "x2": 750,
+            "y2": 978
+          },
+          "center": {
+            "x": 723,
+            "y": 963
+          },
+          "polygon": [
+            [
+              696,
+              948
+            ],
+            [
+              750,
+              948
+            ],
+            [
+              750,
+              978
+            ],
+            [
+              696,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 4,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "424",
+            "DE-424"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-425-r10-c05",
+          "room_code": "425",
+          "display_code": "DE-425",
+          "display_name": "DE-425",
+          "item_type": "room",
+          "bbox": {
+            "x1": 303,
+            "y1": 1247,
+            "x2": 375,
+            "y2": 1287
+          },
+          "center": {
+            "x": 339,
+            "y": 1267
+          },
+          "polygon": [
+            [
+              303,
+              1247
+            ],
+            [
+              375,
+              1247
+            ],
+            [
+              375,
+              1287
+            ],
+            [
+              303,
+              1287
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 5,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "425",
+            "DE-425"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-toilet-nu-bottom-r10-c06",
+          "room_code": "WC Nữ",
+          "display_code": "WC Nữ (dưới)",
+          "display_name": "WC Nữ (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1024,
+            "y1": 674,
+            "x2": 1188,
+            "y2": 912
+          },
+          "center": {
+            "x": 1106,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1024,
+              674
+            ],
+            [
+              1188,
+              674
+            ],
+            [
+              1188,
+              912
+            ],
+            [
+              1024,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 6,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-toilet-nam-bottom-r10-c07",
+          "room_code": "WC Nam",
+          "display_code": "WC Nam (dưới)",
+          "display_name": "WC Nam (dưới)",
+          "item_type": "toilet",
+          "bbox": {
+            "x1": 1188,
+            "y1": 674,
+            "x2": 1352,
+            "y2": 912
+          },
+          "center": {
+            "x": 1270,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1188,
+              674
+            ],
+            [
+              1352,
+              674
+            ],
+            [
+              1352,
+              912
+            ],
+            [
+              1188,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 7,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-room-426-r10-c08",
+          "room_code": "426",
+          "display_code": "DE-426",
+          "display_name": "DE-426",
+          "item_type": "room",
+          "bbox": {
+            "x1": 211,
+            "y1": 1331,
+            "x2": 285,
+            "y2": 1371
+          },
+          "center": {
+            "x": 248,
+            "y": 1351
+          },
+          "polygon": [
+            [
+              211,
+              1331
+            ],
+            [
+              285,
+              1331
+            ],
+            [
+              285,
+              1371
+            ],
+            [
+              211,
+              1371
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 8,
+            "span_rows": 4,
+            "span_cols": 1
+          },
+          "aliases": [
+            "426",
+            "DE-426"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-427-r10-c09",
+          "room_code": "427",
+          "display_code": "DE-427",
+          "display_name": "DE-427",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1276,
+            "y1": 948,
+            "x2": 1328,
+            "y2": 978
+          },
+          "center": {
+            "x": 1302,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1276,
+              948
+            ],
+            [
+              1328,
+              948
+            ],
+            [
+              1328,
+              978
+            ],
+            [
+              1276,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 10,
+            "col": 9,
+            "span_rows": 3,
+            "span_cols": 1
+          },
+          "aliases": [
+            "427",
+            "DE-427"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-stair-cau-thang-bottom-r10-c10",
+          "room_code": "cầu thang",
+          "display_code": "Cầu thang (dưới)",
+          "display_name": "Cầu thang (dưới)",
+          "item_type": "stair",
+          "bbox": {
+            "x1": 1680,
+            "y1": 674,
+            "x2": 1844,
+            "y2": 912
+          },
+          "center": {
+            "x": 1762,
+            "y": 793
+          },
+          "polygon": [
+            [
+              1680,
+              674
+            ],
+            [
+              1844,
+              674
+            ],
+            [
+              1844,
+              912
+            ],
+            [
+              1680,
+              912
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 10,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-room-428-r12-c09",
+          "room_code": "428",
+          "display_code": "DE-428",
+          "display_name": "DE-428",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1392,
+            "y1": 948,
+            "x2": 1446,
+            "y2": 978
+          },
+          "center": {
+            "x": 1419,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1392,
+              948
+            ],
+            [
+              1446,
+              948
+            ],
+            [
+              1446,
+              978
+            ],
+            [
+              1392,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 9,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "428",
+            "DE-428"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-429-r12-c10",
+          "room_code": "429",
+          "display_code": "DE-429",
+          "display_name": "DE-429",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1624,
+            "y1": 948,
+            "x2": 1678,
+            "y2": 978
+          },
+          "center": {
+            "x": 1651,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1624,
+              948
+            ],
+            [
+              1678,
+              948
+            ],
+            [
+              1678,
+              978
+            ],
+            [
+              1624,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 10,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "429",
+            "DE-429"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-room-430-r12-c11",
+          "room_code": "430",
+          "display_code": "DE-430",
+          "display_name": "DE-430",
+          "item_type": "room",
+          "bbox": {
+            "x1": 1738,
+            "y1": 948,
+            "x2": 1796,
+            "y2": 978
+          },
+          "center": {
+            "x": 1767,
+            "y": 963
+          },
+          "polygon": [
+            [
+              1738,
+              948
+            ],
+            [
+              1796,
+              948
+            ],
+            [
+              1796,
+              978
+            ],
+            [
+              1738,
+              978
+            ]
+          ],
+          "is_clickable": true,
+          "is_searchable": true,
+          "review_status": "auto-mapped-ocr",
+          "grid_position": {
+            "row": 12,
+            "col": 11,
+            "span_rows": 2,
+            "span_cols": 1
+          },
+          "aliases": [
+            "430",
+            "DE-430"
+          ]
+        },
+        {
+          "item_id": "DELTA-F4-hallway-hanh-lang-top-r00-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trên)",
+          "display_name": "Hành lang (trên)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 80,
+            "x2": 368,
+            "y2": 258
+          },
+          "center": {
+            "x": 286,
+            "y": 169
+          },
+          "polygon": [
+            [
+              204,
+              80
+            ],
+            [
+              368,
+              80
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              204,
+              258
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 0,
+            "col": 1,
+            "span_rows": 3,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-hallway-hanh-lang-left-r03-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (trái)",
+          "display_name": "Hành lang (trái)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 258,
+            "x2": 368,
+            "y2": 674
+          },
+          "center": {
+            "x": 286,
+            "y": 466
+          },
+          "polygon": [
+            [
+              204,
+              258
+            ],
+            [
+              368,
+              258
+            ],
+            [
+              368,
+              674
+            ],
+            [
+              204,
+              674
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 3,
+            "col": 1,
+            "span_rows": 7,
+            "span_cols": 1
+          }
+        },
+        {
+          "item_id": "DELTA-F4-hallway-hanh-lang-bottom-r10-c01",
+          "room_code": "hành lang",
+          "display_code": "Hành lang (dưới)",
+          "display_name": "Hành lang (dưới)",
+          "item_type": "hallway",
+          "bbox": {
+            "x1": 204,
+            "y1": 674,
+            "x2": 368,
+            "y2": 912
+          },
+          "center": {
+            "x": 286,
+            "y": 793
+          },
+          "polygon": [
+            [
+              204,
+              674
+            ],
+            [
+              368,
+              674
+            ],
+            [
+              368,
+              912
+            ],
+            [
+              204,
+              912
+            ]
+          ],
+          "is_clickable": false,
+          "is_searchable": false,
+          "review_status": "auto-generated",
+          "grid_position": {
+            "row": 10,
+            "col": 1,
+            "span_rows": 4,
+            "span_cols": 1
+          }
+        }
+      ]
+    }
+  ]
+}

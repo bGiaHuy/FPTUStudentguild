@@ -1,0 +1,84 @@
+# ==========================================
+# Node.js & React Frontend
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.next/
+.vercel/
+
+# ==========================================
+# Python Backend
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+*.env
+# Ensure .env.example is NOT ignored
+!.env.example
+
+# ==========================================
+# IDEs & OS Files
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# ==========================================
+# Project Specific & Generated Junk
+# ==========================================
+frontend_qa/
+topology_review/
+data/*_conversion_report.json
+data/*manual_review_questions.md
+scripts/temp_*.py
+delta_json_backend_integration_plan.md
+delta_xlsx_mapping_plan.md
+implementation_plan.md
+walkthrough.md
+task.md
+
+# Logs and Debug outputs
+*.log
+debug*.txt
+temp_*.py
+snippet.txt
+titles.txt
+flow3_headers.txt
+flow3_rawdata/
+pathfinding_context.txt
+render_grid.py
+failed map/
+floor_*_grid.png
+Report FPTU_Student_Guide.docx.pdf

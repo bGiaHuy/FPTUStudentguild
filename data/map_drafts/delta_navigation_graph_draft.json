@@ -1,0 +1,40 @@
+[
+  {
+    "floor": 1,
+    "nodes": [
+      {
+        "id": "F1_CORRIDOR_01",
+        "x": 500,
+        "y": 400,
+        "type": "corridor"
+      },
+      {
+        "id": "F1_STAIRS_A",
+        "x": 600,
+        "y": 400,
+        "type": "stairs"
+      }
+    ],
+    "edges": [
+      {
+        "from": "F1_CORRIDOR_01",
+        "to": "F1_STAIRS_A",
+        "type": "walkable"
+      }
+    ],
+    "room_connections": []
+  },
+  {
+    "floor": 3,
+    "nodes": [
+      {
+        "id": "F3_CORRIDOR_01",
+        "x": 1000,
+        "y": 800,
+        "type": "corridor"
+      }
+    ],
+    "edges": [],
+    "room_connections": []
+  }
+]

@@ -1,0 +1,203 @@
+0: =============================Hướng dẫn sử dụng phần mềm thi cử (SEB, PEA, EOS, USB)
+1: =============================
+3: SEB: Safe Exam Browser
+4: Phần 1: Công dụng và chức năng của phần mềm
+6: - SEB được Đại học FPT sử dụng như một công cụ kiểm tra trong các buổi học và những buổi thi PT của nhà trường (nhằm tạo môi trường thi nghiêm túc, tránh gian lận). Các công dụng chính bao gồm:
+8: Bảo vệ tính công bằng và minh bạch (Toàn vẹn học thuật): Ngăn chặn tương đối các hành vi gian lận kỹ thuật số trong quá trình thi như tra cứu tài liệu trên mạng, trao đổi với người khác qua ứng dụng chat, hoặc nhờ người thi hộ qua phần mềm điều khiển từ xa.
+10: Bảo mật nội dung đề thi: Tránh tình trạng rò rỉ, sao chép hoặc phát tán ngân hàng câu hỏi của nhà trường bằng cách chặn các công cụ chụp ảnh màn hình, quay video và tính năng Copy/Paste.
+12: Tạo môi trường tập trung cao độ: Bằng cách khóa thiết bị vào một cửa sổ duy nhất, SEB loại bỏ các yếu tố gây xao nhãng từ hệ điều hành (thông báo tin nhắn, email, cập nhật phần mềm), buộc sinh viên phải tập trung 100% vào bài thi, không thể rời hoặc chuyển tab khi thực hiện thi.
+14: Đồng bộ: Đảm bảo mọi sinh viên đều làm bài trên một giao diện và điều kiện kỹ thuật giống hệt nhau, bất kể họ đang sử dụng thiết bị cá nhân nào.
+15: Phần 2: Chuẩn bị và Yêu cầu hệ thống
+16: Hệ điều hành: Khuyến cáo sử dụng phiên bản WINDOW cao nhất, hoặc hệ điều hành MACBOOK để tương thích tốt nhất với phần mềm thi của trường.
+18: Kết nối mạng: Đảm bảo kết nối Internet ổn định. Khi thi trực tiếp tại trường, sinh viên sử dụng mạng nội bộ/WiFi DAI HOC FPT.
+20: Tài khoản: Sử dụng tài khoản gmail mà sinh viên đăng ký với nhà trường khi làm thủ tục nhập học.
+21: Phần 3: Tải và Cài đặt phần mềm
+22: Tuyệt đối không tải SEB tự do trên mạng mà phải sử dụng file do giảng viên cung cấp hoặc nhà trường cung cấp qua cổng dịch vụ FAP (thường được cập nhật xuyên suốt các kỳ học).
+23: Tải file: Tải file nén chứa bộ cài đặt (SEB_3.10.0.794_AutoSettings.zip), để lấy file này xin vui lòng truy cập FAP.
+25: Giải nén: Extract (giải nén) file vừa tải về thành một thư mục trên máy tính.
+27: Khởi chạy bộ cài: Tìm và nhấp đúp chuột vào file cài đặt duy nhất ở trong thư mục bạn vừa giải nén (phiên bản có thể thay đổi tùy kỳ thi).
+29: Cài đặt:
+30: Tích chọn vào ô "I agree to the license terms and conditions".
+31: Bấm Install và đợi quá trình cài đặt diễn ra.
+32: Sau khi màn hình báo "Installation Successfully Completed", bấm Close.
+33: Phần 4: Đăng nhập và Làm bài thi
+34: Mở SEB:
+35: Khởi chạy phần mềm từ thanh taskbar hoặc từ màn hình Desktop (VD: mở thanh tìm kiếm nhập: ‘Safe Exam Browser’).
+36: Lưu ý: SEB sẽ chặn mọi thao tác của bạn với môi trường bên ngoài trừ những cài đặt như âm lượng và wifi.
+38: Đăng nhập hệ thống:
+39: Màn hình SEB sẽ chuyển hướng đến trang đăng nhập. Sau đó bạn hãy nhập tài khoản gmail đã đăng ký.
+41: Vào phòng thi (Course):
+42: Bài kiểm tra mà giảng viên yêu cầu sẽ được cập nhật ngay ở giao diện chính. Dựa theo mã bài thi để tìm bài thi giảng viên yêu cầu.
+43: Nhập mã vào bài thi (do giảng viên hoặc cán bộ coi thi cung cấp) và chọn START .
+45: Nộp bài:
+46: Sau khi hoàn thành các câu hỏi, nhấn vào Finish attempt ở cuối bài, sau đó chọn Submit all and finish để nộp bài.
+47: Nếu hết giờ, hệ thống thường sẽ tự động thu bài. Đợi màn hình xác nhận điểm hoặc thông báo lưu bài thành công trước khi thoát SEB.
+50: PEA:
+51: 1. Công tác chuẩn bị
+52: Thiết bị: Sinh viên bắt buộc phải mang laptop cá nhân đi thi (kể cả khi thi tại phòng LAB).
+53: Mạng kết nối: Bắt buộc kết nối vào mạng Wi‑Fi: FPTU-EXAMONLINE.
+54: Thi thử: Sinh viên bắt buộc phải tham gia thi thử để kiểm tra độ tương thích của máy tính với phần mềm thi. Nếu có sự cố, cần đọc file "Hướng dẫn xử lý sự cố" hoặc liên hệ phòng IT ngay.
+55: 2. Quy định về phần mềm và hành vi
+56: Phần mềm được phép sử dụng cho từng môn và một số quy tắc: Phan-mem-duoc-dung-va-khong-duoc-dung-thi-PE.xlsx
+57: Hành vi/Phần mềm BỊ CẤM:
+58: Nghiêm cấm kết nối Internet ra bên ngoài.
+59: Cấm sử dụng phần mềm chat (Zalo, Skype, Messenger...), phần mềm quay màn hình, phần mềm diệt virus (nên tắt trước khi thi).
+60: Cấm sử dụng công cụ đồng bộ code (Git, OneDrive, Dropbox).
+61: Cấm sử dụng các công cụ AI chạy cục bộ trên máy tính.
+62: Vi phạm sẽ bị hủy kết quả bài thi (0 điểm).
+63: 3. Tải và cài đặt phần mềm thi:
+64: Tùy vào môn thi, sinh viên tải đúng phiên bản phần mềm như đã được gửi qua Gmail trước lịch thi từ 1 - 2 tuần
+65: Sau đó giải nén phần mềm trước khi sử dụng. Không chạy trực tiếp từ file nén.
+66: 4. Quy trình thực hiện bài thi
+67: Khởi động: Mở folder phần mềm thi đã giải nén và chạy file PEALogin.exe để hiển thị của sổ đăng nhập
+68: Kết nối mạng thi FPTU-EXAMONLINE
+69: Đăng nhập:
+70: Nhập Test name: Do giám thị cung cấp tại phòng thi.
+71: Nhập Username/Password: Là tài khoản Wifi mà bạn đã tạo để đăng nhập vào mạng của trường.
+72: Cách lấy đề thi và làm bài:
+73: Làm bài: Chọn Show paper để hiển thị đề thi, sau đó chọn Download given materials để lấy folder làm bài. Sau khi tải về sinh viên làm bài luôn vào các file trong folder vừa tải (hoặc có thể làm ở ngoài nhưng sau khi làm xong tuyệt đối phải cho tất cả bài làm vào folder nộp bài và đặt tên theo yêu cầu của đề). Sinh viên có thể chọn Submit guide để xem hướng dẫn chi tiết cách làm và nộp bài
+74: Nộp bài: Chọn Browse, sau đó chọn đường dẫn tới folder nộp bài và câu hỏi bạn muốn nộp. Tiếp đó chọn vào ô Question no để chọn câu hỏi tương ứng. Cuối cùng chọn Submit để nộp bài
+77: Kết thúc: Show màn hình cho giám thị. Sau đó tích vào dòng dưới cùng của màn hình phần mềm thi, chọn Close để đóng bài thi
+78: 5. Quy trình Checkout sau khi nhấn Submit trên phần mềm PEA, sinh viên thực hiện các bước sau:
+79: Truy cập trang web: https://fe360.fpt.edu.vn/checkout
+80: Đăng nhập bằng email sinh viên đã đăng ký với trường.
+81: Trên màn hình sẽ hiện nút “Checkout”, sinh viên tích vào môn thi vừa hoàn thành để xác nhận thay cho việc ký tên vào danh sách giấy.
+82: 6. Thông tin hỗ trợ trong lúc thi
+83: Kỹ thuật: Phòng IT tại tòa Alpha (AL-L102), tòa Beta (BE-103), tòa Delta (Thư viện)
+84: Khảo thí: Email: Khaothi@fpt.edu.vn | SĐT: 02462597749.
+85: 7. Một số sự cố trong lúc thi:
+86: Lỗi chưa được setup hoặc sinh viên nhập sai account:
+87: Sinh viên check lại account
+88: Nếu đúng account, sinh viên chưa được add vào thi, hãy báo cho giám thị account và môn thi của mình
+90: Lỗi bị out ra khỏi bài thi:
+91: Do sinh viên bị out ra khỏi bài thi và muốn đăng nhập lại vào tiếp. Sinh viên cung cấp môn thi + MSSV gửi giám thị để giám thị báo khảo thí cấp quyền cho sinh viên vào thi tiếp
+92: EOS:
+93: Phần 1: Công dụng chính của phần mềm thi EOS:
+94: EOS là môi trường thi được sử dụng cho các bài thi cuối kỳ (FE) bằng trắc nghiệm, nghe, nói, đọc, viết.
+96: Giúp sinh viên có môi trường thi rõ ràng, nghiêm ngặt, trung thực, phòng tránh những hành vi gian lận.
+98: Phần 2: Hướng dẫn cài đặt phần mềm thi EOS:
+99: Để tải phần mềm: Sinh viên đăng nhập FAP → Mục Others(Khác) → Click vào dòng Download EOS Client.
+101: Khi tải xuống, file nén có tên: EOSClient_SinhvienHL_13032026
+103: Lưu ý: Sinh viên cài win ảo không thi được trên phần mềm này.
+105: → Khi tải về xong sinh viên thực hiện giải nén tập tin vừa rồi.
+107: Phần 3: Hướng dẫn sử dụng phần mềm thi EOS:
+108: - Trước khi mở phần mềm thi cần lưu ý:
+110: + Tất cả các ứng dụng đang chạy chỉ sử dụng phần mềm thi do nhà trường cấp.
+111: + Tắt bộ gõ Tiếng Việt (chuyển từ V → E, VIE → ENG).
+112: + Không sử dụng tài liệu.
+114: - Chuyển đổi mạng thành mạng “FPTU-EXAMONLINE”.
+116: - Mở tập tin đã giải nén từ trước, tiến hành ấn đúp vào mục EOSClient.exe (lưu ý file có kích thước 28Kb) chọn Run as administrator.
+117: → Xuất hiện màn hình đăng nhập:
+120: - Sau khi điền đầy đủ thông tin và ấn Login màn hình chụp ảnh sẽ xuất hiện yêu cầu bạn chụp ảnh xác minh khuôn mặt, Ấn chụp → Ấn Retry để chụp lại, Ấn mũi tên để tiếp tục.
+122: Phần 4: Quy trình thi với các môn thi Tiếng Anh, Nhật, Hàn, Trung:
+123: A. Phần thi Listening (Nghe):
+124: -  Lưu ý: Sinh viên BẮT BUỘC sử dụng tai nghe có dây.
+126: - Kiểm tra tai nghe: Sinh viên phải cắm tai nghe vào máy tính trước, sau đó mở cửa sổ đăng nhập, âm lượng máy tính để từ 50 – 60, ấn check sound để kiểm tra tai nghe, thấy có nhạc nổi lên là ok, nhập exam code rồi mới ấn Login.
+128: → Sau khi ấn Login để đăng nhập, sẽ xuất hiện màn hình chờ.
+130: + Bước 1: Sinh viên đọc kỹ phần ghi chú để biết bài nghe gồm mấy phần và thứ tự phần thi.
+131: + Bước 2: Nhập open code (giám thị sẽ cung cấp trong phòng thi).
+132: + Bước 3: Ấn Show question để hiển thị câu hỏi và bài nghe.
+136: B. Phần thi Reading (đọc):
+138: + Bao gồm phần chọn đáp án, chuyển câu tiếp theo của mục đang làm, chuyển sang phần đọc tiếp theo.
+140: C. Phần thi FillBlank (điền vào chỗ trống):
+142: - Bao gồm phần chọn tab và điền từ vào chỗ trống.
+144: D. Phần thi Matching (Nối từ):
+146: - Bao gồm phần chọn tab, thêm câu trả lời và xóa câu trả lời nếu muốn thay đổi.
+148: E. Phần thi Grammar và Multiple choice (Chọn phương án đúng ABCD):
+150: - Bao gồm thanh thư mục để chọn phần, chọn phương án và chuyển tiếp.
+152: F. Phần thi Writing (Viết):
+154: - Trước khi đăng nhập vào bài thi viết, sinh viên phải tắt bộ gõ tiếng Việt.
+155: - Khi sinh viên đăng nhập vào phần viết, màn hình thi sẽ chia làm 2, nửa bên trái là đề thi, nửa bên phải là phần để sinh viên viết câu trả lời.
+156: - Khi làm xong, sinh viên bấm save để lưu và bấm finish để nộp bài thi.
+157: - Không dùng lệnh copy khi thi Writing.
+159: Phần 5: Nộp bài kết thúc thi trên EOS:
+160: - Khi sinh viên làm xong bài, cần báo với giám thị. Giám thị sẽ nhập Submission Code, sau đó sinh viên mới tích vào ô xác nhận và ấn Finish để nộp bài. Sinh viên show màn hình nộp bài thành công để giám thị xác nhận.
+162: - Sau khi ấn Finish sinh viên cần báo lại cho giám thị để tiến hành điểm danh tham gia thi trên website https://e360.fpt.edu.vn/checkout  , sau khi điểm danh thành công thí sinh có thể ra về.
+164: Phần 6: Các sự cố hay gặp khi thi:
+165: - Khi đăng nhập giao diện EOS trước khi vào thi sinh viên thường hay có tình trạng quên mật khẩu và tài khoản đăng nhập wifi, trong trường hợp như vậy sinh viên cần phải biết thao tác đổi mật khẩu:
+167: + Đăng nhập vào mạng FPTU-Register → Dẫn bạn đến trang web → Lướt xuống dưới ấn vào mục Change Password.
+169: → Nếu nhớ mật khẩu và muốn đổi bạn có thể nhập mật khẩu cũ và mật khẩu mới, trong trường hợp quên mật khẩu hãy nhập tài khoản email đăng ký với nhà trường, mật khẩu mới sẽ được gửi đến đó.
+171: → Thoát ra đăng nhập lại vào EOS với mật khẩu mới.
+173: - Nếu muốn biết chi tiết thêm hãy tham khảo tại đây: Xu-ly-su-co-trong-khi-thi-EOS.pptx
+174: USB:
+175: Phần 1: Công dụng và chức năng khi thi USB:
+176: - Thi USB bản chất vẫn là phần mềm thi EOS, nhưng khác với EOS được chạy local trên giao diện máy tính cá nhân của bạn giờ đây chúng được chạy trên giao diện hệ điều hành của USB.
+178: → Giúp tăng tính bảo mật và tránh được tối đa những trường hợp gian lận, cài phần mềm không cho phép vào máy.
+180: → USB theo dõi và nhận diện những hành vi thao tác bất thường của máy.
+182: Phần 2: Hướng dẫn thao tác với USB:
+183: - Yêu cầu:
+184: Sinh viên cần đảm bảo ít nhất 2 cổng USB của máy tính còn trống và còn khả năng đọc ghi dữ liệu (đủ chức năng của 1 cổng USB) trước khi vào phòng thi.
+185: Sinh viên mang theo chuột rời có kết nối dây hoặc receiver với laptop (khuyến khích kết nối dây, không sử dụng được kết nối bluetooth), phòng trường hợp touchpad không hoạt động.
+187: - Quy trình:
+188: A. Boot vào hệ điều hành trong USB:
+189: Cách 1: Thay đổi lựa chọn khởi động vào Windows to go (đơn giản):
+190: Khởi động máy tính vào hệ điều hành windows.
+191: Cắm usb thi được giám thị cấp vào máy.
+192: Search từ thanh search của windows từ khóa “windows to go” và chọn “Change Windows To Go startup options”
+195: Hình 1: Thay đổi ưu tiên khởi động vào windows to go (ảnh windows 11)
+197: Chọn “Yes” rồi chọn “Save changes”
+198: Khởi động lại máy.
+199: Sau khi thi thao tác lại và chuyển option về “No”
+200: Cách 2 (khuyến khích): Advanced startup:
+201: Sinh viên khởi động máy tính vào hệ điều hành windows.
+202: Cắm usb thi được giám thị cấp vào máy.
+203: Giữ phím “Shift” trên bàn phím và “Khởi động lại (Restart)” máy tính, có thể nhả nút shift sau khi máy tắt.
+204: Máy sẽ restart và hiển thị màn hình dưới, chọn “Use a device”
+206: Hình 2: Màn hình advanced startup
+208: Chọn các lựa chọn liên quan đến bộ nhớ rời như  “EFI USB Device”
+209: - Hoặc “USB Entry for Windows to go”
+210: - Hoặc “UEFI USB Device”
+211: - Hoặc “Removable device”
+212: B. Sử dụng hệ điều hành trong USB để tham gia thi:
+214: - Màn hình khởi đầu hệ điều hành của USB thi:
+216: Hình 3: Màn hình của hệ điều hành trong USB thi
+218: Các công cụ bao gồm:
+219: EOSClient: phần mềm sinh viên sử dụng để tham gia thi.
+220: Wifi Config: cấu hình mạng WiFi.
+221: File Explorer: truy cập folder thi.
+222: Keyboard Test: phần mềm cho phép sinh viên test bàn phím các ngôn ngữ đặc biệt (cho các sinh viên thi phần thi viết).
+223: Re_Submit: Dùng cho trường hợp nộp bài thi lỗi
+224: DriverInstaller: Dùng cho trường hợp lỗi âm thanh hoặc Wi-Fi.
+226: Kết nối mạng chọn “Wifi Config”, đăng nhập mạng “FPTU-EXAMONLINE”
+227: Sau khi nối mạng “FPT-EXAMONLINE”, bật phần mềm ”EOSClient” để tham gia thi.
+228: Sau khi thi xong, sinh viên submit bài xong rồi tắt máy tính. CHỜ MÁY TÍNH TẮT HẲN sau đó mới rút usb và nộp lại USB cho giám thị.
+229: Hình 4: Tắt máy thoát khỏi hệ điều hành USB thi
+231: Lưu ý:
+232: Lưu ý khi thi nghe
+233: Trong trường hợp không có âm thanh, sinh viên dùng app “DriverInstaller” để sửa lỗi âm thanh.
+234: Mở app “DriverInstaller”.
+235: Bấm “Install Driver” ở tab Audio Driver
+236: Chờ chạy xong, có thể cần chạy 2-3 lần để âm thanh chạy lại (chỉ cần chờ lần đầu, các lần sau chạy chủ yếu active driver sẽ nhanh hơn).
+238: Lưu ý khi thi viết
+239: Đổi ngôn ngữ phím: sử dụng tổ hợp phím “Windows” + “Space” hoặc tổ hợp phím “Alt” + “Shift”
+240: Thử gõ phím ngôn ngữ đặc biệt: chạy phần mềm “Test Ban Phim”.
+242: Hình 6: Phần mềm gõ thử bàn phím ngôn ngữ
+244: Các tổ hợp phím thường dùng để chuyển đổi bàn phím không thay đổi, ví dụ tổ hợp phím “Alt” + “~” để chuyển giữa chữ latinh và tượng hình.
+245: Khắc phục sự cố mạng
+246: Trong trường hợp bấm Wi-Fi nhưng không hiện mạng Wifi nào, dùng phần mềm “DriverInstaller” để sửa lỗi không có Wi-Fi.
+247: Mở phần mềm “DriverInstaller”.
+248: Bấm “Install Driver” ở tab Wi-Fi Driver.
+249: Chờ chương trình chạy xong, có thể cần chạy 2-3 lần để Wifi hoạt động lại (chỉ cần chờ lần đầu, các lần sau chạy chủ yếu active driver sẽ nhanh hơn).
+252: Hình 6: Sửa lỗi mạng bằng DriverInstaller
+253: Phần 3: Quy định và trách nhiệm:
+254: Sinh viên chỉ được sử dụng usb thi do giám thị giao cho ở đầu ca thi.
+255: Trong quá trình thi, sinh viên phải có ý thức bảo quản USB, các hành vi cố tình phá hoại sẽ bị xử lý theo quy định.
+256: Sinh viên có trách nhiệm bàn giao nguyên vẹn USB thi cho giám thị trước khi ra khỏi phòng thi.
+258: Phần 4: Lưu ý khi sử dụng USB thi:
+259: Khuyến cáo tắt tính năng “Fast Boot” trong BIOS.
+260: Khuyến cáo cắm USB vào khe USB bên trái laptop để tránh vướng tay khi di chuyển chuột.
+261: Khuyến cáo chỉnh cấu hình độ sáng máy tính, ngày giờ máy tính trước khi boot vào hệ điều hành trong USB.
+262: Khi tắt máy khuyến cáo chờ máy tắt hẳn khoảng 5s sau khi màn hình và đèn bàn phím (nếu có) tắt hẳn rồi mới rút USB ra.
+263: USB thi không ảnh hưởng đến máy tính cá nhân của sinh viên, không truy cập, sửa đổi hay xóa dữ liệu trong máy.
+265: Phần 5: Chú ý lịch thi thử USB:
+266: THI THỬ:
+267: Sinh viên bắt buộc phải vào thi thử để  kiểm tra laptop của mình đã phù hợp để thi hay chưa, trường hợp không đăng nhập được, liên hệ với phòng IT để được hỗ trợ. Nhà Alpha (AL-L102), nhà Beta (BE-103), nhà Delta (thư viện).
+269: Những ngày thi vào thứ 7 và chủ nhật, phòng IT support sẽ hỗ trợ ở  Nhà Alpha (AL-L102), nhà Beta (BE-206, BE-317).
+271: Phòng Khảo thí có bố trí USB test ở khu vực thư viện nhà Delta (30 chiếc), sinh viên có thể đến đó để test phần mềm EOS trên USB.
+273: MỤC TIÊU:
+274: Giúp sinh viên kiểm tra laptop có tương thích với phần mềm hay không.
+276: Check lại mật khẩu Wi‑Fi – hỗ trợ hướng dẫn sinh viên đổi mật khẩu Wi‑Fi.
+278: Giúp sinh viên tải đúng phần mềm thi, biết cách đăng nhập và nộp bài lên hệ thống.
+281: Nội quy thi cử:
+282: QD 1234 DHFPT Ban hanh Noi quy ky thi Truong Dai hoc FPT.pdf
+283: - Sinh viên có thể vào đây để tham khảo.

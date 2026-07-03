@@ -1,0 +1,3094 @@
+[
+  {
+    "floor": 1,
+    "image": "floor1.png",
+    "image_width": 2600,
+    "image_height": 1600,
+    "rooms": [
+      {
+        "room_code": "icpdp",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 480,
+          "max_x": 433,
+          "max_y": 560
+        },
+        "center_x": 325,
+        "center_y": 520,
+        "label_x": 325,
+        "label_y": 510,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 867,
+          "min_y": 480,
+          "max_x": 1083,
+          "max_y": 560
+        },
+        "center_x": 975,
+        "center_y": 520,
+        "label_x": 975,
+        "label_y": 510,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "112.0",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1733,
+          "min_y": 480,
+          "max_x": 1950,
+          "max_y": 560
+        },
+        "center_x": 1841,
+        "center_y": 520,
+        "label_x": 1841,
+        "label_y": 510,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa ra",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 0,
+          "min_y": 640,
+          "max_x": 217,
+          "max_y": 720
+        },
+        "center_x": 108,
+        "center_y": 680,
+        "label_x": 108,
+        "label_y": 670,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 640,
+          "max_x": 433,
+          "max_y": 720
+        },
+        "center_x": 325,
+        "center_y": 680,
+        "label_x": 325,
+        "label_y": 670,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Sảnh",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 650,
+          "min_y": 640,
+          "max_x": 867,
+          "max_y": 720
+        },
+        "center_x": 758,
+        "center_y": 680,
+        "label_x": 758,
+        "label_y": 670,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 640,
+          "max_x": 2383,
+          "max_y": 720
+        },
+        "center_x": 2275,
+        "center_y": 680,
+        "label_x": 2275,
+        "label_y": 670,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa ra",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2383,
+          "min_y": 640,
+          "max_x": 2600,
+          "max_y": 720
+        },
+        "center_x": 2491,
+        "center_y": 680,
+        "label_x": 2491,
+        "label_y": 670,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "103",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 720,
+          "max_x": 433,
+          "max_y": 800
+        },
+        "center_x": 325,
+        "center_y": 760,
+        "label_x": 325,
+        "label_y": 750,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "111",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 720,
+          "max_x": 2383,
+          "max_y": 800
+        },
+        "center_x": 2275,
+        "center_y": 760,
+        "label_x": 2275,
+        "label_y": 750,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "104",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 800,
+          "max_x": 433,
+          "max_y": 880
+        },
+        "center_x": 325,
+        "center_y": 840,
+        "label_x": 325,
+        "label_y": 830,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "110",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 800,
+          "max_x": 2383,
+          "max_y": 880
+        },
+        "center_x": 2275,
+        "center_y": 840,
+        "label_x": 2275,
+        "label_y": 830,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "105",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 880,
+          "max_x": 433,
+          "max_y": 960
+        },
+        "center_x": 325,
+        "center_y": 920,
+        "label_x": 325,
+        "label_y": 910,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "109",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 880,
+          "max_x": 2383,
+          "max_y": 960
+        },
+        "center_x": 2275,
+        "center_y": 920,
+        "label_x": 2275,
+        "label_y": 910,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 960,
+          "max_x": 433,
+          "max_y": 1040
+        },
+        "center_x": 325,
+        "center_y": 1000,
+        "label_x": 325,
+        "label_y": 990,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 960,
+          "max_x": 2383,
+          "max_y": 1040
+        },
+        "center_x": 2275,
+        "center_y": 1000,
+        "label_x": 2275,
+        "label_y": 990,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 1040,
+          "max_x": 433,
+          "max_y": 1120
+        },
+        "center_x": 325,
+        "center_y": 1080,
+        "label_x": 325,
+        "label_y": 1070,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1040,
+          "max_x": 2383,
+          "max_y": 1120
+        },
+        "center_x": 2275,
+        "center_y": 1080,
+        "label_x": 2275,
+        "label_y": 1070,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "startup",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 1120,
+          "max_x": 433,
+          "max_y": 1200
+        },
+        "center_x": 325,
+        "center_y": 1160,
+        "label_x": 325,
+        "label_y": 1150,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "108C",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1120,
+          "max_x": 2383,
+          "max_y": 1200
+        },
+        "center_x": 2275,
+        "center_y": 1160,
+        "label_x": 2275,
+        "label_y": 1150,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "108B",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1200,
+          "max_x": 2383,
+          "max_y": 1280
+        },
+        "center_x": 2275,
+        "center_y": 1240,
+        "label_x": 2275,
+        "label_y": 1230,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "108A",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1280,
+          "max_x": 2383,
+          "max_y": 1360
+        },
+        "center_x": 2275,
+        "center_y": 1320,
+        "label_x": 2275,
+        "label_y": 1310,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa ra vào",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 1360,
+          "max_x": 433,
+          "max_y": 1440
+        },
+        "center_x": 325,
+        "center_y": 1400,
+        "label_x": 325,
+        "label_y": 1390,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1360,
+          "max_x": 2383,
+          "max_y": 1440
+        },
+        "center_x": 2275,
+        "center_y": 1400,
+        "label_x": 2275,
+        "label_y": 1390,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa ra",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2383,
+          "min_y": 1360,
+          "max_x": 2600,
+          "max_y": 1440
+        },
+        "center_x": 2491,
+        "center_y": 1400,
+        "label_x": 2491,
+        "label_y": 1390,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 1440,
+          "max_x": 433,
+          "max_y": 1520
+        },
+        "center_x": 325,
+        "center_y": 1480,
+        "label_x": 325,
+        "label_y": 1470,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa thư viện",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 433,
+          "min_y": 1440,
+          "max_x": 650,
+          "max_y": 1520
+        },
+        "center_x": 541,
+        "center_y": 1480,
+        "label_x": 541,
+        "label_y": 1470,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cửa 107B",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1440,
+          "max_x": 2383,
+          "max_y": 1520
+        },
+        "center_x": 2275,
+        "center_y": 1480,
+        "label_x": 2275,
+        "label_y": 1470,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Thư viện",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 217,
+          "min_y": 1520,
+          "max_x": 433,
+          "max_y": 1600
+        },
+        "center_x": 325,
+        "center_y": 1560,
+        "label_x": 325,
+        "label_y": 1550,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "kỹ thuật",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2167,
+          "min_y": 1520,
+          "max_x": 2383,
+          "max_y": 1600
+        },
+        "center_x": 2275,
+        "center_y": 1560,
+        "label_x": 2275,
+        "label_y": 1550,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      }
+    ]
+  },
+  {
+    "floor": 2,
+    "image": "floor2.png",
+    "image_width": 2412,
+    "image_height": 1760,
+    "rooms": [
+      {
+        "room_code": "220",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 278,
+          "max_x": 439,
+          "max_y": 371
+        },
+        "center_x": 329,
+        "center_y": 324,
+        "label_x": 329,
+        "label_y": 314,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "219",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 278,
+          "max_x": 877,
+          "max_y": 371
+        },
+        "center_x": 767,
+        "center_y": 324,
+        "label_x": 767,
+        "label_y": 314,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "218",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1096,
+          "min_y": 278,
+          "max_x": 1316,
+          "max_y": 371
+        },
+        "center_x": 1206,
+        "center_y": 324,
+        "label_x": 1206,
+        "label_y": 314,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "216",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1535,
+          "min_y": 278,
+          "max_x": 1754,
+          "max_y": 371
+        },
+        "center_x": 1644,
+        "center_y": 324,
+        "label_x": 1644,
+        "label_y": 314,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "214",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 278,
+          "max_x": 2412,
+          "max_y": 371
+        },
+        "center_x": 2302,
+        "center_y": 324,
+        "label_x": 2302,
+        "label_y": 314,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "213",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 463,
+          "max_x": 2412,
+          "max_y": 556
+        },
+        "center_x": 2302,
+        "center_y": 509,
+        "label_x": 2302,
+        "label_y": 499,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 556,
+          "max_x": 439,
+          "max_y": 648
+        },
+        "center_x": 329,
+        "center_y": 602,
+        "label_x": 329,
+        "label_y": 592,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Hành lang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 556,
+          "max_x": 877,
+          "max_y": 648
+        },
+        "center_x": 767,
+        "center_y": 602,
+        "label_x": 767,
+        "label_y": 592,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 556,
+          "max_x": 2412,
+          "max_y": 648
+        },
+        "center_x": 2302,
+        "center_y": 602,
+        "label_x": 2302,
+        "label_y": 592,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 648,
+          "max_x": 877,
+          "max_y": 741
+        },
+        "center_x": 767,
+        "center_y": 694,
+        "label_x": 767,
+        "label_y": 684,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "222",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 741,
+          "max_x": 439,
+          "max_y": 834
+        },
+        "center_x": 329,
+        "center_y": 787,
+        "label_x": 329,
+        "label_y": 777,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "212",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 741,
+          "max_x": 2412,
+          "max_y": 834
+        },
+        "center_x": 2302,
+        "center_y": 787,
+        "label_x": 2302,
+        "label_y": 777,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "223",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 834,
+          "max_x": 439,
+          "max_y": 926
+        },
+        "center_x": 329,
+        "center_y": 880,
+        "label_x": 329,
+        "label_y": 870,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C204",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 834,
+          "max_x": 877,
+          "max_y": 926
+        },
+        "center_x": 767,
+        "center_y": 880,
+        "label_x": 767,
+        "label_y": 870,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C203",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1096,
+          "min_y": 834,
+          "max_x": 1316,
+          "max_y": 926
+        },
+        "center_x": 1206,
+        "center_y": 880,
+        "label_x": 1206,
+        "label_y": 870,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C202",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1535,
+          "min_y": 834,
+          "max_x": 1754,
+          "max_y": 926
+        },
+        "center_x": 1644,
+        "center_y": 880,
+        "label_x": 1644,
+        "label_y": 870,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "224A",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 926,
+          "max_x": 439,
+          "max_y": 1019
+        },
+        "center_x": 329,
+        "center_y": 972,
+        "label_x": 329,
+        "label_y": 962,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "211",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 926,
+          "max_x": 2412,
+          "max_y": 1019
+        },
+        "center_x": 2302,
+        "center_y": 972,
+        "label_x": 2302,
+        "label_y": 962,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1019,
+          "max_x": 439,
+          "max_y": 1112
+        },
+        "center_x": 329,
+        "center_y": 1065,
+        "label_x": 329,
+        "label_y": 1055,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C205",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 1019,
+          "max_x": 877,
+          "max_y": 1112
+        },
+        "center_x": 767,
+        "center_y": 1065,
+        "label_x": 767,
+        "label_y": 1055,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1096,
+          "min_y": 1019,
+          "max_x": 1316,
+          "max_y": 1112
+        },
+        "center_x": 1206,
+        "center_y": 1065,
+        "label_x": 1206,
+        "label_y": 1055,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C201",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1535,
+          "min_y": 1019,
+          "max_x": 1754,
+          "max_y": 1112
+        },
+        "center_x": 1644,
+        "center_y": 1065,
+        "label_x": 1644,
+        "label_y": 1055,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1019,
+          "max_x": 2412,
+          "max_y": 1112
+        },
+        "center_x": 2302,
+        "center_y": 1065,
+        "label_x": 2302,
+        "label_y": 1055,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1112,
+          "max_x": 439,
+          "max_y": 1204
+        },
+        "center_x": 329,
+        "center_y": 1158,
+        "label_x": 329,
+        "label_y": 1148,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C206",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 1112,
+          "max_x": 877,
+          "max_y": 1204
+        },
+        "center_x": 767,
+        "center_y": 1158,
+        "label_x": 767,
+        "label_y": 1148,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C210",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1535,
+          "min_y": 1112,
+          "max_x": 1754,
+          "max_y": 1204
+        },
+        "center_x": 1644,
+        "center_y": 1158,
+        "label_x": 1644,
+        "label_y": 1148,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1112,
+          "max_x": 2412,
+          "max_y": 1204
+        },
+        "center_x": 2302,
+        "center_y": 1158,
+        "label_x": 2302,
+        "label_y": 1148,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "224B",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1204,
+          "max_x": 439,
+          "max_y": 1297
+        },
+        "center_x": 329,
+        "center_y": 1250,
+        "label_x": 329,
+        "label_y": 1240,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C207",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 1204,
+          "max_x": 877,
+          "max_y": 1297
+        },
+        "center_x": 767,
+        "center_y": 1250,
+        "label_x": 767,
+        "label_y": 1240,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C208",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1096,
+          "min_y": 1204,
+          "max_x": 1316,
+          "max_y": 1297
+        },
+        "center_x": 1206,
+        "center_y": 1250,
+        "label_x": 1206,
+        "label_y": 1240,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C209",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1535,
+          "min_y": 1204,
+          "max_x": 1754,
+          "max_y": 1297
+        },
+        "center_x": 1644,
+        "center_y": 1250,
+        "label_x": 1644,
+        "label_y": 1240,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "???",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1204,
+          "max_x": 2412,
+          "max_y": 1297
+        },
+        "center_x": 2302,
+        "center_y": 1250,
+        "label_x": 2302,
+        "label_y": 1240,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "224C",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1297,
+          "max_x": 439,
+          "max_y": 1389
+        },
+        "center_x": 329,
+        "center_y": 1343,
+        "label_x": 329,
+        "label_y": 1333,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "???",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1297,
+          "max_x": 2412,
+          "max_y": 1389
+        },
+        "center_x": 2302,
+        "center_y": 1343,
+        "label_x": 2302,
+        "label_y": 1333,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "225",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1389,
+          "max_x": 439,
+          "max_y": 1482
+        },
+        "center_x": 329,
+        "center_y": 1435,
+        "label_x": 329,
+        "label_y": 1425,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Hành lang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 1389,
+          "max_x": 877,
+          "max_y": 1482
+        },
+        "center_x": 767,
+        "center_y": 1435,
+        "label_x": 767,
+        "label_y": 1425,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "227",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1389,
+          "max_x": 2412,
+          "max_y": 1482
+        },
+        "center_x": 2302,
+        "center_y": 1435,
+        "label_x": 2302,
+        "label_y": 1425,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1482,
+          "max_x": 439,
+          "max_y": 1575
+        },
+        "center_x": 329,
+        "center_y": 1528,
+        "label_x": 329,
+        "label_y": 1518,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 658,
+          "min_y": 1482,
+          "max_x": 877,
+          "max_y": 1575
+        },
+        "center_x": 767,
+        "center_y": 1528,
+        "label_x": 767,
+        "label_y": 1518,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1482,
+          "max_x": 2412,
+          "max_y": 1575
+        },
+        "center_x": 2302,
+        "center_y": 1528,
+        "label_x": 2302,
+        "label_y": 1518,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "tường",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 219,
+          "min_y": 1575,
+          "max_x": 439,
+          "max_y": 1667
+        },
+        "center_x": 329,
+        "center_y": 1621,
+        "label_x": 329,
+        "label_y": 1611,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "tường",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2193,
+          "min_y": 1575,
+          "max_x": 2412,
+          "max_y": 1667
+        },
+        "center_x": 2302,
+        "center_y": 1621,
+        "label_x": 2302,
+        "label_y": 1611,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Thư viện",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 439,
+          "min_y": 1667,
+          "max_x": 658,
+          "max_y": 1760
+        },
+        "center_x": 548,
+        "center_y": 1713,
+        "label_x": 548,
+        "label_y": 1703,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      }
+    ]
+  },
+  {
+    "floor": 3,
+    "image": "floor3.png",
+    "image_width": 2422,
+    "image_height": 1687,
+    "rooms": [
+      {
+        "room_code": "321",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 253,
+          "max_x": 440,
+          "max_y": 337
+        },
+        "center_x": 330,
+        "center_y": 295,
+        "label_x": 330,
+        "label_y": 285,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "320A",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 253,
+          "max_x": 881,
+          "max_y": 337
+        },
+        "center_x": 771,
+        "center_y": 295,
+        "label_x": 771,
+        "label_y": 285,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "318",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1101,
+          "min_y": 253,
+          "max_x": 1321,
+          "max_y": 337
+        },
+        "center_x": 1211,
+        "center_y": 295,
+        "label_x": 1211,
+        "label_y": 285,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "316",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 253,
+          "max_x": 1761,
+          "max_y": 337
+        },
+        "center_x": 1651,
+        "center_y": 295,
+        "label_x": 1651,
+        "label_y": 285,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "315",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 253,
+          "max_x": 2422,
+          "max_y": 337
+        },
+        "center_x": 2312,
+        "center_y": 295,
+        "label_x": 2312,
+        "label_y": 285,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "319",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 337,
+          "max_x": 881,
+          "max_y": 422
+        },
+        "center_x": 771,
+        "center_y": 379,
+        "label_x": 771,
+        "label_y": 369,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "317",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 337,
+          "max_x": 1761,
+          "max_y": 422
+        },
+        "center_x": 1651,
+        "center_y": 379,
+        "label_x": 1651,
+        "label_y": 369,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "314",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 337,
+          "max_x": 2422,
+          "max_y": 422
+        },
+        "center_x": 2312,
+        "center_y": 379,
+        "label_x": 2312,
+        "label_y": 369,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "213",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 422,
+          "max_x": 2422,
+          "max_y": 506
+        },
+        "center_x": 2312,
+        "center_y": 464,
+        "label_x": 2312,
+        "label_y": 454,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 506,
+          "max_x": 440,
+          "max_y": 590
+        },
+        "center_x": 330,
+        "center_y": 548,
+        "label_x": 330,
+        "label_y": 538,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Hành lang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 506,
+          "max_x": 881,
+          "max_y": 590
+        },
+        "center_x": 771,
+        "center_y": 548,
+        "label_x": 771,
+        "label_y": 538,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 506,
+          "max_x": 2422,
+          "max_y": 590
+        },
+        "center_x": 2312,
+        "center_y": 548,
+        "label_x": 2312,
+        "label_y": 538,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 590,
+          "max_x": 881,
+          "max_y": 675
+        },
+        "center_x": 771,
+        "center_y": 632,
+        "label_x": 771,
+        "label_y": 622,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "322",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 675,
+          "max_x": 440,
+          "max_y": 759
+        },
+        "center_x": 330,
+        "center_y": 717,
+        "label_x": 330,
+        "label_y": 707,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "313",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 675,
+          "max_x": 2422,
+          "max_y": 759
+        },
+        "center_x": 2312,
+        "center_y": 717,
+        "label_x": 2312,
+        "label_y": 707,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "323",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 759,
+          "max_x": 440,
+          "max_y": 844
+        },
+        "center_x": 330,
+        "center_y": 801,
+        "label_x": 330,
+        "label_y": 791,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C304",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 759,
+          "max_x": 881,
+          "max_y": 844
+        },
+        "center_x": 771,
+        "center_y": 801,
+        "label_x": 771,
+        "label_y": 791,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C303",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1101,
+          "min_y": 759,
+          "max_x": 1321,
+          "max_y": 844
+        },
+        "center_x": 1211,
+        "center_y": 801,
+        "label_x": 1211,
+        "label_y": 791,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C302",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 759,
+          "max_x": 1761,
+          "max_y": 844
+        },
+        "center_x": 1651,
+        "center_y": 801,
+        "label_x": 1651,
+        "label_y": 791,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "312",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 759,
+          "max_x": 2422,
+          "max_y": 844
+        },
+        "center_x": 2312,
+        "center_y": 801,
+        "label_x": 2312,
+        "label_y": 791,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "324",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 844,
+          "max_x": 440,
+          "max_y": 928
+        },
+        "center_x": 330,
+        "center_y": 886,
+        "label_x": 330,
+        "label_y": 876,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "311",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 844,
+          "max_x": 2422,
+          "max_y": 928
+        },
+        "center_x": 2312,
+        "center_y": 886,
+        "label_x": 2312,
+        "label_y": 876,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 928,
+          "max_x": 440,
+          "max_y": 1012
+        },
+        "center_x": 330,
+        "center_y": 970,
+        "label_x": 330,
+        "label_y": 960,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C305",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 928,
+          "max_x": 881,
+          "max_y": 1012
+        },
+        "center_x": 771,
+        "center_y": 970,
+        "label_x": 771,
+        "label_y": 960,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1101,
+          "min_y": 928,
+          "max_x": 1321,
+          "max_y": 1012
+        },
+        "center_x": 1211,
+        "center_y": 970,
+        "label_x": 1211,
+        "label_y": 960,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C301",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 928,
+          "max_x": 1761,
+          "max_y": 1012
+        },
+        "center_x": 1651,
+        "center_y": 970,
+        "label_x": 1651,
+        "label_y": 960,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 928,
+          "max_x": 2422,
+          "max_y": 1012
+        },
+        "center_x": 2312,
+        "center_y": 970,
+        "label_x": 2312,
+        "label_y": 960,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1012,
+          "max_x": 440,
+          "max_y": 1097
+        },
+        "center_x": 330,
+        "center_y": 1054,
+        "label_x": 330,
+        "label_y": 1044,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C306",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 1012,
+          "max_x": 881,
+          "max_y": 1097
+        },
+        "center_x": 771,
+        "center_y": 1054,
+        "label_x": 771,
+        "label_y": 1044,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C310",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 1012,
+          "max_x": 1761,
+          "max_y": 1097
+        },
+        "center_x": 1651,
+        "center_y": 1054,
+        "label_x": 1651,
+        "label_y": 1044,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1012,
+          "max_x": 2422,
+          "max_y": 1097
+        },
+        "center_x": 2312,
+        "center_y": 1054,
+        "label_x": 2312,
+        "label_y": 1044,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "325",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1097,
+          "max_x": 440,
+          "max_y": 1181
+        },
+        "center_x": 330,
+        "center_y": 1139,
+        "label_x": 330,
+        "label_y": 1129,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C307",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 1097,
+          "max_x": 881,
+          "max_y": 1181
+        },
+        "center_x": 771,
+        "center_y": 1139,
+        "label_x": 771,
+        "label_y": 1129,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C308",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1101,
+          "min_y": 1097,
+          "max_x": 1321,
+          "max_y": 1181
+        },
+        "center_x": 1211,
+        "center_y": 1139,
+        "label_x": 1211,
+        "label_y": 1129,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C309",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 1097,
+          "max_x": 1761,
+          "max_y": 1181
+        },
+        "center_x": 1651,
+        "center_y": 1139,
+        "label_x": 1651,
+        "label_y": 1129,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "339",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1097,
+          "max_x": 2422,
+          "max_y": 1181
+        },
+        "center_x": 2312,
+        "center_y": 1139,
+        "label_x": 2312,
+        "label_y": 1129,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "326",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1181,
+          "max_x": 440,
+          "max_y": 1265
+        },
+        "center_x": 330,
+        "center_y": 1223,
+        "label_x": 330,
+        "label_y": 1213,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "338",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1181,
+          "max_x": 2422,
+          "max_y": 1265
+        },
+        "center_x": 2312,
+        "center_y": 1223,
+        "label_x": 2312,
+        "label_y": 1213,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "327",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1265,
+          "max_x": 440,
+          "max_y": 1350
+        },
+        "center_x": 330,
+        "center_y": 1307,
+        "label_x": 330,
+        "label_y": 1297,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Hành lang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 1265,
+          "max_x": 881,
+          "max_y": 1350
+        },
+        "center_x": 771,
+        "center_y": 1307,
+        "label_x": 771,
+        "label_y": 1297,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "337",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1265,
+          "max_x": 2422,
+          "max_y": 1350
+        },
+        "center_x": 2312,
+        "center_y": 1307,
+        "label_x": 2312,
+        "label_y": 1297,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1350,
+          "max_x": 440,
+          "max_y": 1434
+        },
+        "center_x": 330,
+        "center_y": 1392,
+        "label_x": 330,
+        "label_y": 1382,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 1350,
+          "max_x": 881,
+          "max_y": 1434
+        },
+        "center_x": 771,
+        "center_y": 1392,
+        "label_x": 771,
+        "label_y": 1382,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1350,
+          "max_x": 2422,
+          "max_y": 1434
+        },
+        "center_x": 2312,
+        "center_y": 1392,
+        "label_x": 2312,
+        "label_y": 1382,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "328",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1434,
+          "max_x": 440,
+          "max_y": 1518
+        },
+        "center_x": 330,
+        "center_y": 1476,
+        "label_x": 330,
+        "label_y": 1466,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "336",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1434,
+          "max_x": 2422,
+          "max_y": 1518
+        },
+        "center_x": 2312,
+        "center_y": 1476,
+        "label_x": 2312,
+        "label_y": 1466,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "331",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 1518,
+          "max_x": 881,
+          "max_y": 1603
+        },
+        "center_x": 771,
+        "center_y": 1560,
+        "label_x": 771,
+        "label_y": 1550,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "333",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 1518,
+          "max_x": 1761,
+          "max_y": 1603
+        },
+        "center_x": 1651,
+        "center_y": 1560,
+        "label_x": 1651,
+        "label_y": 1550,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "329",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 220,
+          "min_y": 1603,
+          "max_x": 440,
+          "max_y": 1687
+        },
+        "center_x": 330,
+        "center_y": 1645,
+        "label_x": 330,
+        "label_y": 1635,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "330",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 661,
+          "min_y": 1603,
+          "max_x": 881,
+          "max_y": 1687
+        },
+        "center_x": 771,
+        "center_y": 1645,
+        "label_x": 771,
+        "label_y": 1635,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "332",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1101,
+          "min_y": 1603,
+          "max_x": 1321,
+          "max_y": 1687
+        },
+        "center_x": 1211,
+        "center_y": 1645,
+        "label_x": 1211,
+        "label_y": 1635,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "334",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1541,
+          "min_y": 1603,
+          "max_x": 1761,
+          "max_y": 1687
+        },
+        "center_x": 1651,
+        "center_y": 1645,
+        "label_x": 1651,
+        "label_y": 1635,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "335",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2202,
+          "min_y": 1603,
+          "max_x": 2422,
+          "max_y": 1687
+        },
+        "center_x": 2312,
+        "center_y": 1645,
+        "label_x": 2312,
+        "label_y": 1635,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      }
+    ]
+  },
+  {
+    "floor": 4,
+    "image": "floor4.png",
+    "image_width": 2380,
+    "image_height": 1760,
+    "rooms": [
+      {
+        "room_code": "421",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 264,
+          "max_x": 433,
+          "max_y": 352
+        },
+        "center_x": 324,
+        "center_y": 308,
+        "label_x": 324,
+        "label_y": 298,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "420",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 264,
+          "max_x": 865,
+          "max_y": 352
+        },
+        "center_x": 757,
+        "center_y": 308,
+        "label_x": 757,
+        "label_y": 298,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "418",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1082,
+          "min_y": 264,
+          "max_x": 1298,
+          "max_y": 352
+        },
+        "center_x": 1190,
+        "center_y": 308,
+        "label_x": 1190,
+        "label_y": 298,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "416",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 264,
+          "max_x": 1731,
+          "max_y": 352
+        },
+        "center_x": 1623,
+        "center_y": 308,
+        "label_x": 1623,
+        "label_y": 298,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "415",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 264,
+          "max_x": 2380,
+          "max_y": 352
+        },
+        "center_x": 2272,
+        "center_y": 308,
+        "label_x": 2272,
+        "label_y": 298,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "422",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 352,
+          "max_x": 433,
+          "max_y": 440
+        },
+        "center_x": 324,
+        "center_y": 396,
+        "label_x": 324,
+        "label_y": 386,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "419",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 352,
+          "max_x": 865,
+          "max_y": 440
+        },
+        "center_x": 757,
+        "center_y": 396,
+        "label_x": 757,
+        "label_y": 386,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "417",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 352,
+          "max_x": 1731,
+          "max_y": 440
+        },
+        "center_x": 1623,
+        "center_y": 396,
+        "label_x": 1623,
+        "label_y": 386,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "414",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 352,
+          "max_x": 2380,
+          "max_y": 440
+        },
+        "center_x": 2272,
+        "center_y": 396,
+        "label_x": 2272,
+        "label_y": 386,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "213",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 440,
+          "max_x": 2380,
+          "max_y": 528
+        },
+        "center_x": 2272,
+        "center_y": 484,
+        "label_x": 2272,
+        "label_y": 474,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 528,
+          "max_x": 433,
+          "max_y": 616
+        },
+        "center_x": 324,
+        "center_y": 572,
+        "label_x": 324,
+        "label_y": 562,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Hành lang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 528,
+          "max_x": 865,
+          "max_y": 616
+        },
+        "center_x": 757,
+        "center_y": 572,
+        "label_x": 757,
+        "label_y": 562,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 528,
+          "max_x": 2380,
+          "max_y": 616
+        },
+        "center_x": 2272,
+        "center_y": 572,
+        "label_x": 2272,
+        "label_y": 562,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 616,
+          "max_x": 865,
+          "max_y": 704
+        },
+        "center_x": 757,
+        "center_y": 660,
+        "label_x": 757,
+        "label_y": 650,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "423",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 704,
+          "max_x": 433,
+          "max_y": 792
+        },
+        "center_x": 324,
+        "center_y": 748,
+        "label_x": 324,
+        "label_y": 738,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "413",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 704,
+          "max_x": 2380,
+          "max_y": 792
+        },
+        "center_x": 2272,
+        "center_y": 748,
+        "label_x": 2272,
+        "label_y": 738,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "424",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 792,
+          "max_x": 433,
+          "max_y": 880
+        },
+        "center_x": 324,
+        "center_y": 836,
+        "label_x": 324,
+        "label_y": 826,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C404",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 792,
+          "max_x": 865,
+          "max_y": 880
+        },
+        "center_x": 757,
+        "center_y": 836,
+        "label_x": 757,
+        "label_y": 826,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C403",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1082,
+          "min_y": 792,
+          "max_x": 1298,
+          "max_y": 880
+        },
+        "center_x": 1190,
+        "center_y": 836,
+        "label_x": 1190,
+        "label_y": 826,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C402",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 792,
+          "max_x": 1731,
+          "max_y": 880
+        },
+        "center_x": 1623,
+        "center_y": 836,
+        "label_x": 1623,
+        "label_y": 826,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "412",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 792,
+          "max_x": 2380,
+          "max_y": 880
+        },
+        "center_x": 2272,
+        "center_y": 836,
+        "label_x": 2272,
+        "label_y": 826,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "425",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 880,
+          "max_x": 433,
+          "max_y": 968
+        },
+        "center_x": 324,
+        "center_y": 924,
+        "label_x": 324,
+        "label_y": 914,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "411",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 880,
+          "max_x": 2380,
+          "max_y": 968
+        },
+        "center_x": 2272,
+        "center_y": 924,
+        "label_x": 2272,
+        "label_y": 914,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 968,
+          "max_x": 433,
+          "max_y": 1056
+        },
+        "center_x": 324,
+        "center_y": 1012,
+        "label_x": 324,
+        "label_y": 1002,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C405",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 968,
+          "max_x": 865,
+          "max_y": 1056
+        },
+        "center_x": 757,
+        "center_y": 1012,
+        "label_x": 757,
+        "label_y": 1002,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1082,
+          "min_y": 968,
+          "max_x": 1298,
+          "max_y": 1056
+        },
+        "center_x": 1190,
+        "center_y": 1012,
+        "label_x": 1190,
+        "label_y": 1002,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C401",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 968,
+          "max_x": 1731,
+          "max_y": 1056
+        },
+        "center_x": 1623,
+        "center_y": 1012,
+        "label_x": 1623,
+        "label_y": 1002,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 968,
+          "max_x": 2380,
+          "max_y": 1056
+        },
+        "center_x": 2272,
+        "center_y": 1012,
+        "label_x": 2272,
+        "label_y": 1002,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nam",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1056,
+          "max_x": 433,
+          "max_y": 1144
+        },
+        "center_x": 324,
+        "center_y": 1100,
+        "label_x": 324,
+        "label_y": 1090,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C406",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 1056,
+          "max_x": 865,
+          "max_y": 1144
+        },
+        "center_x": 757,
+        "center_y": 1100,
+        "label_x": 757,
+        "label_y": 1090,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C410",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 1056,
+          "max_x": 1731,
+          "max_y": 1144
+        },
+        "center_x": 1623,
+        "center_y": 1100,
+        "label_x": 1623,
+        "label_y": 1090,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "NVS Nữ",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1056,
+          "max_x": 2380,
+          "max_y": 1144
+        },
+        "center_x": 2272,
+        "center_y": 1100,
+        "label_x": 2272,
+        "label_y": 1090,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "426",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1144,
+          "max_x": 433,
+          "max_y": 1232
+        },
+        "center_x": 324,
+        "center_y": 1188,
+        "label_x": 324,
+        "label_y": 1178,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C407",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 1144,
+          "max_x": 865,
+          "max_y": 1232
+        },
+        "center_x": 757,
+        "center_y": 1188,
+        "label_x": 757,
+        "label_y": 1178,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C408",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1082,
+          "min_y": 1144,
+          "max_x": 1298,
+          "max_y": 1232
+        },
+        "center_x": 1190,
+        "center_y": 1188,
+        "label_x": 1190,
+        "label_y": 1178,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "C409",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 1144,
+          "max_x": 1731,
+          "max_y": 1232
+        },
+        "center_x": 1623,
+        "center_y": 1188,
+        "label_x": 1623,
+        "label_y": 1178,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "440",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1144,
+          "max_x": 2380,
+          "max_y": 1232
+        },
+        "center_x": 2272,
+        "center_y": 1188,
+        "label_x": 2272,
+        "label_y": 1178,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "427",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1232,
+          "max_x": 433,
+          "max_y": 1320
+        },
+        "center_x": 324,
+        "center_y": 1276,
+        "label_x": 324,
+        "label_y": 1266,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "439",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1232,
+          "max_x": 2380,
+          "max_y": 1320
+        },
+        "center_x": 2272,
+        "center_y": 1276,
+        "label_x": 2272,
+        "label_y": 1266,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "428",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1320,
+          "max_x": 433,
+          "max_y": 1408
+        },
+        "center_x": 324,
+        "center_y": 1364,
+        "label_x": 324,
+        "label_y": 1354,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Hành lang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 1320,
+          "max_x": 865,
+          "max_y": 1408
+        },
+        "center_x": 757,
+        "center_y": 1364,
+        "label_x": 757,
+        "label_y": 1354,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "438",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1320,
+          "max_x": 2380,
+          "max_y": 1408
+        },
+        "center_x": 2272,
+        "center_y": 1364,
+        "label_x": 2272,
+        "label_y": 1354,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1408,
+          "max_x": 433,
+          "max_y": 1496
+        },
+        "center_x": 324,
+        "center_y": 1452,
+        "label_x": 324,
+        "label_y": 1442,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Giếng trời",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 1408,
+          "max_x": 865,
+          "max_y": 1496
+        },
+        "center_x": 757,
+        "center_y": 1452,
+        "label_x": 757,
+        "label_y": 1442,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "Cầu thang",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1408,
+          "max_x": 2380,
+          "max_y": 1496
+        },
+        "center_x": 2272,
+        "center_y": 1452,
+        "label_x": 2272,
+        "label_y": 1442,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "429",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1496,
+          "max_x": 433,
+          "max_y": 1584
+        },
+        "center_x": 324,
+        "center_y": 1540,
+        "label_x": 324,
+        "label_y": 1530,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "437",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1496,
+          "max_x": 2380,
+          "max_y": 1584
+        },
+        "center_x": 2272,
+        "center_y": 1540,
+        "label_x": 2272,
+        "label_y": 1530,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "432",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 1584,
+          "max_x": 865,
+          "max_y": 1672
+        },
+        "center_x": 757,
+        "center_y": 1628,
+        "label_x": 757,
+        "label_y": 1618,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "434",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 1584,
+          "max_x": 1731,
+          "max_y": 1672
+        },
+        "center_x": 1623,
+        "center_y": 1628,
+        "label_x": 1623,
+        "label_y": 1618,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "430",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 216,
+          "min_y": 1672,
+          "max_x": 433,
+          "max_y": 1760
+        },
+        "center_x": 324,
+        "center_y": 1716,
+        "label_x": 324,
+        "label_y": 1706,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "431",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 649,
+          "min_y": 1672,
+          "max_x": 865,
+          "max_y": 1760
+        },
+        "center_x": 757,
+        "center_y": 1716,
+        "label_x": 757,
+        "label_y": 1706,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "433",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1082,
+          "min_y": 1672,
+          "max_x": 1298,
+          "max_y": 1760
+        },
+        "center_x": 1190,
+        "center_y": 1716,
+        "label_x": 1190,
+        "label_y": 1706,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "435",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 1515,
+          "min_y": 1672,
+          "max_x": 1731,
+          "max_y": 1760
+        },
+        "center_x": 1623,
+        "center_y": 1716,
+        "label_x": 1623,
+        "label_y": 1706,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      },
+      {
+        "room_code": "436",
+        "item_type": "room",
+        "bbox": {
+          "min_x": 2164,
+          "min_y": 1672,
+          "max_x": 2380,
+          "max_y": 1760
+        },
+        "center_x": 2272,
+        "center_y": 1716,
+        "label_x": 2272,
+        "label_y": 1706,
+        "source": "auto_mapped_from_calibrated_grid",
+        "geometry_confidence": "medium",
+        "review_notes": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,616 @@
+[
+  {
+    "website": "FAP",
+    "group": "GIỚI THIỆU TỔNG QUAN",
+    "title": "Thông tin chung",
+    "instructions": "FAP (FPT Academic Portal) đóng vai trò là \"bách khoa toàn thư\" dành cho sinh viên FPT University. Đây là hệ thống thông tin học thuật trung tâm, cung cấp đầy đủ các công cụ, dữ liệu và thủ tục hành chính cần thiết để sinh viên quản lý lộ trình học tập, theo dõi kết quả, thực hiện các giao dịch học vụ và tra cứu thông tin quy định một cách minh bạch và trực tuyến.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "I. NHÓM DỊCH VỤ ĐĂNG KÝ & THỦ TỤC HỌC VỤ",
+    "title": "Giao diện thường gặp ở mục này",
+    "instructions": "Giao diện thường gặp ở mục này:",
+    "images": [
+      "/content/website-guides/fap/registration/fap-registration-common-interface-01.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Thông tin chung",
+    "instructions": "Suspend one semester to take repeated course (Xin tạm hoãn tiến độ một học kỳ để học lại | Hủy bỏ việc xin tạm hoãn):\n- Dùng để làm đơn xin tạm hoãn tiến độ 1 học kỳ để học lại một môn nào đó bản thân chưa pass và hủy bỏ xin tạm hoãn dùng để hủy yêu cầu tạm hoãn ở trên.\n- LƯU Ý : xin tạm hoãn hay hủy tạm hoãn phải làm thủ tục trước 1 tuần của kỳ học mới.\nSuspend one semester (Xin tạm nghỉ một học kỳ | Hủy bỏ việc xin tạm nghỉ):\n- Dùng để bảo lưu một học kỳ, trong học kỳ đó mọi tiến độ của sinh viên sẽ dừng lại và bản thân có thể làm những dự định khác mà không lo đến kết quả trên trường.\n- Hủy bỏ việc xin tạm nghỉ kết thúc bảo lưu sinh viên sẽ quay trở lại học tập như thường.\n- LƯU Ý : xin tạm nghỉ hay hủy tạm nghỉ phải làm thủ tục trước 7-10 ngày của kỳ học mới.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Move out class (Xin chuyển lớp/Tạm ngưng môn)",
+    "instructions": "- Dùng để xin chuyển sang lớp khác hoặc tạm ngưng một môn học đang theo học vì lý do cá nhân hoặc lịch trình.\n- Hướng dẫn: Chọn kỳ học, chọn môn muốn chuyển/tạm ngưng, kiểm tra tính hợp lệ của lớp đích (nếu chuyển lớp) và nhấn Gửi đơn.\n- LƯU Ý : xin chuyển lớp/ngưng môn phải làm thủ tục trước 1 tuần của kỳ học mới.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Cancel registration (Hủy đăng ký học)",
+    "instructions": "- Dùng để hủy đăng ký các môn đã chọn trước khi học kỳ chính thức bắt đầu (theo thời hạn quy định).",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Send Application (Gửi đơn) | View Application (Xem đơn)",
+    "instructions": "- Cổng gửi các đơn từ hành chính (Đề nghị cấp điểm danh, đề nghị cấp tín chỉ...) và theo dõi trạng thái xử lý của đơn.\n- Hướng dẫn: Chọn loại đơn, điền thông tin chi tiết mô tả, đính kèm minh chứng (nếu có) và nhấn Gửi. Kiểm tra trạng thái tại mục \"View Application\" (bao giờ view application hiện Approved hãy đến phòng P102L_Alpha để nhận đơn từ của mình.",
+    "images": [
+      "/content/website-guides/fap/admin-procedures/fap-admin-procedures-send-application-02.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Xin xác nhận sinh viên",
+    "instructions": "- Dùng để xin giấy xác nhận sinh viên (hoãn nghĩa vụ quân sự, xin xác nhận sinh viên,...).\n- Hướng dẫn: Chọn loại giấy tờ, mô tả mục đích, địa chỉ thường trú, nếu làm ảnh thẻ cần có ảnh thẻ 3x4 gửi đính kèm, cuối cùng là ấn SEND.",
+    "images": [
+      "/content/website-guides/fap/admin-procedures/fap-admin-procedures-student-confirmation-03.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Yêu cầu đổi chéo lớp với sinh viên",
+    "instructions": "- Sinh viên có nhu cầu đổi chéo lớp, sắp xếp lịch học có thể đăng ký đổi lớp.\n- Hướng dẫn: Ấn tạo yêu cầu → Nhập mã môn, fromRollnumber, fromClass, toRollnumber, toClass.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Đề nghị hỗ trợ kinh phí khởi nghiệp | View",
+    "instructions": "- Dùng để xin sự hỗ trợ của nhà trường trong các dự án cá nhân hoặc đội nhóm mà có tính thực tiễn cao, ở mức có thể triển khai và thu lợi → xin vốn để khởi nghiệp.\n- Hướng dẫn: Tải file zip hướng dẫn có sẵn của nhà trường, thực hiện theo đúng các yêu cầu trong đó.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Changing major (Chuyển ngành)",
+    "instructions": "Changing major (Chuyển ngành):",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Hướng dẫn",
+    "instructions": "Hướng dẫn: Vào mục application và thực hiện chọn mục đơn xin chuyển ngành (làm theo hướng dẫn trong web).",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Changing campus (Chuyển cơ sở)",
+    "instructions": "Changing campus (Chuyển cơ sở):",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thủ tục thay đổi trạng thái & Hành chính",
+    "title": "Hướng dẫn",
+    "instructions": "Hướng dẫn: Vào mục application và thực hiện chọn mục đơn xin chuyển cơ sở (làm theo hướng dẫn trong web).",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "University timetable (Lịch học)",
+    "instructions": "- Cấu trúc bao gồm các Kỳ qua các năm và nhóm tên môn học (không rõ để làm gì).",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "Weekly timetable (Thời khóa biểu từng tuần)",
+    "instructions": "- Cấu trúc bao gồm thời khóa biểu qua từng tuần của sinh viên, có thể chọn kỳ, chọn tuần, và sẽ thấy được các slot học trong 1 ngày của tuần, giúp sinh viên có thể quản lý và nắm được lịch học.\n- Hướng dẫn:",
+    "images": [
+      "/content/website-guides/fap/study-info/fap-study-info-weekly-timetable-04.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "View exam schedule (Xem lịch thi)",
+    "instructions": "- Phần này là phần cực kỳ quan trọng để giúp sinh viên nắm rõ thời gian thi sắp tới để có chiến lược ôn thi hiệu quả.\n- Hướng dẫn:",
+    "images": [
+      "/content/website-guides/fap/study-info/fap-study-info-exam-schedule-05.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "View Syllabuses (Xem đề cương môn học)",
+    "instructions": "- Đây được coi là một trong các mục quan trọng nhất của FAP, mục này giúp học sinh có thể tra cứu chi tiết tài liệu và giáo trình của một môn, từ yêu cầu cho đến khung chương trình đầy đủ.\n- Hướng dẫn: Ấn vào mục View Syllabuses → Đăng nhập tài khoản FEID",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "→ Tiếp theo sẽ có 4 phần nội dung cần chọn",
+    "instructions": "View Curriculum → Xem khung chi tiết của chuyên ngành bạn học.\nView Syllabus → Xem khung giáo trình chi tiết môn cụ thể mà bạn đang học (tra cứu theo mã môn của môn học).\nShow Learning Path of a Subject → chức năng giống với view syllabuses.\nA subject is the prerequisite of → Check môn điều kiện (môn điều kiện là môn bạn bắt buộc phải qua trước khi học thêm các môn khác liên quan ở mức độ khó hơn).",
+    "images": [
+      "/content/website-guides/fap/study-info/fap-study-info-syllabus-guide-06.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "View semester, room (Xem thông tin về học kỳ, phòng)",
+    "instructions": "- Thời gian bắt đầu và kết thúc của một kỳ (View semester).\n- Room: số lượng phòng của các tòa.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Thông tin học tập",
+    "title": "Thông báo kết quả OJT | xét khóa luận tốt nghiệp",
+    "instructions": "- OJT: ở đây FAP đã ghi đủ những yêu cầu cần thiết cho 1 khóa luận tốt nghiệp.\n- Khóa luận tốt nghiệp: hiện chưa thể xem được.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Báo cáo & Kết quả",
+    "title": "Attendance report (Báo cáo điểm danh)",
+    "instructions": "- Cho bạn xem được chi tiết báo cáo điểm danh của các kỳ đã học, trong đó có các môn, các tiết đã học, chưa học. Trong đây cung cấp phần để bạn theo dõi tiến độ học tập cũng như nhắc nhở học sinh về điều kiện nghỉ không quá 20% số buổi.",
+    "images": [
+      "/content/website-guides/fap/lookup-reports/fap-lookup-reports-attendance-report-07.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Báo cáo & Kết quả",
+    "title": "Mark Report (Báo cáo điểm)",
+    "instructions": "- Mục này cung cấp điểm số của từng môn bao gồm cả điểm thành phần của từng kỳ bạn học cho đến thời điểm hiện tại, cũng như cung cấp trọng số của các đầu điểm quan trọng.",
+    "images": [
+      "/content/website-guides/fap/lookup-reports/fap-lookup-reports-mark-report-08.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Báo cáo & Kết quả",
+    "title": "Academic Transcript (Báo cáo điểm)",
+    "instructions": "- Trong này bao gồm khung chương trình môn của các bạn trong vòng 9 kỳ học, học đến đâu sẽ có điểm trung bình của môn đó được ghi kèm với mã môn (đối với môn đã học), với những môn đang học sẽ để status studying, chưa học để là not started.",
+    "images": [
+      "/content/website-guides/fap/lookup-reports/fap-lookup-reports-academic-transcript-09.png"
+    ],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Báo cáo & Kết quả",
+    "title": "Curriculum (Khung chương trình)",
+    "instructions": "- Cung cấp khung chương trình đầy đủ xuyên suốt 9 kỳ bạn học, từ Mã môn, Tên môn, Kỳ học, Số tín chỉ, trạng thái,....",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Báo cáo & Kết quả",
+    "title": "Report điểm phong trào",
+    "instructions": "- Ghi lại điểm hoạt động phong trào của 1 cá nhân trong kỳ (VD: chạy sự kiện của nhà trường, tham gia vào các hoạt động quan trọng khác để đóng góp cho mọi người và môi trường).\n→ Góp phần trở thành điều kiện xét khen thưởng những cá nhân hoạt động phong trào xuất sắc.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài chính & Giao dịch",
+    "title": "Tuition fee per course (Biểu học phí)",
+    "instructions": "- Cung cấp cho sinh viên biểu học phí của từng chuyên ngành vào mỗi kỳ, giúp sinh viên nắm rõ được những khoản nộp cần thiết, tránh bị kẻ xấu lợi dụng.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài chính & Giao dịch",
+    "title": "Choose paid items (Lựa chọn các khoản nộp) - Thanh toán",
+    "instructions": "- Đây là nơi bạn xem và nộp những khoản tiền cần thiết trong một kỳ như học phí, phí phụ trội của ký túc xá, ….\n- Hướng dẫn: Giao diện có số dư FAP → các khoản nộp (nếu có) → Chọn xác nhận và ấn thanh toán.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài chính & Giao dịch",
+    "title": "Transaction history (Lịch sử giao dịch)",
+    "instructions": "- Trong đây sẽ lưu trữ lịch sử nạp tiền ra vào của số dư Fap trong ví của bạn, từ đây bạn sẽ thống kê được các khoản tiền mình đã chi trả.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Quy định & Hướng dẫn",
+    "title": "Regulations...",
+    "instructions": "- Bao gồm chính sách, quy định khen thưởng, nội quy của nhà trường (đọc để tham khảo thêm).",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Quy định & Hướng dẫn",
+    "title": "Dormitory regulations (Nội quy KTX Hà Nội)",
+    "instructions": "- Nội dung là văn bản về nội quy ktx Hà Nội.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Quy định & Hướng dẫn",
+    "title": "Dormitory regulations (Nội quy KTX Cần Thơ)",
+    "instructions": "- Nội dung là văn bản về nội quy ktx Cần Thơ.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Quy định & Hướng dẫn",
+    "title": "Dormitory regulations (Nội quy KTX Đà Nẵng)",
+    "instructions": "- Nội dung là văn bản về nội quy ktx Cần Thơ.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài khoản & Hồ sơ",
+    "title": "Thông tin chung",
+    "instructions": "Student Profile | Update Profile | Đồng ý cung cấp thông tin cho phụ huynh:\n- Bao gồm profile của cá nhân bạn, tất cả thông tin các nhân, mã ngành, loại bằng,....\n→ Nếu thông tin sai hoặc muốn chỉnh sửa hoàn toàn có thể dùng mục update profile.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài khoản & Hồ sơ",
+    "title": "Sinh viên điểm danh bằng mã được cấp",
+    "instructions": "- Thường các kỳ định hướng trước khi vào trường với mỗi buổi sẽ có mã điểm danh chung và sinh viên sẽ vào mục này nhập mã đó → hệ thống sẽ tự động ghi nhận bạn tham gia.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài khoản & Hồ sơ",
+    "title": "Change password FEID",
+    "instructions": "- Đổi mật khẩu FEID: mật khẩu cũ → mật khẩu mới → xác nhận lại mật khẩu.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài khoản & Hồ sơ",
+    "title": "Download EOS Client",
+    "instructions": "- Phần mềm thi của nhà trường: tải file zip về và giải nén từ đó xem hướng dẫn phòng công tác sinh viên gửi về quy trình thi.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Tài khoản & Hồ sơ",
+    "title": "Nâng cấp phần mềm SAFE EXAM BROWSER (SEB)",
+    "instructions": "- Là phần mềm phổ biến với sinh viên, những bài kiểm tra trên lớp thường dùng SEB để thi và kiểm tra để đảm bảo tính khách quan, trung thực,....\n- Hướng dẫn: Tải → Ấn vào và chọn setup → Sau khi tải xong ấn vào thao tác trên ứng dụng( vào những lần có bài kiểm tra chi cần mở lên nhập mã vào và thi).",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Khác",
+    "title": "Feedback about teaching (Ý kiến về việc giảng dạy)",
+    "instructions": "- Mỗi một kỳ sẽ có giảng viên phụ trách dạy các bạn từng môn khác nhau vậy nên khi đến giai đoạn cuối kỳ sẽ có form feedback, đây là nơi các bạn sinh viên đánh giá, chấm điểm, góp ý cho giảng viên của mình theo học.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Khác",
+    "title": "Đăng ký bảo hiểm y tế",
+    "instructions": "- Quy trình sinh viên đăng ký mua thẻ bảo hiểm y tế.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Register extra courses (Đăng ký môn học đi chậm kỳ)",
+    "instructions": "* Dùng để đăng ký những môn học bắt buộc như VOVINAM (võ 1, võ 2, võ 3) và nhạc cụ truyền thống.\n\n[Giao diện web nhà trường]\n\n<strong style=\"color:var(--color-primary);\">Cơ sở:</strong> Chọn cơ sở bạn đang theo học.\n\n<strong style=\"color:var(--color-primary);\">Mã Môn học:</strong> Nhập mã môn cần đăng ký (VD: VOV124, VOV134,...) → (nhớ tick vào ô vuông bên cạnh).\n\n<strong style=\"color:var(--color-primary);\">Lớp:</strong> Lớp học hiện đang có để đăng ký.\n\n<strong style=\"color:var(--color-primary);\">Thời gian học:</strong> Tùy thuộc vào thời gian của sinh viên, hãy chọn khung giờ học phù hợp.\n\n→ Sau khi chọn xong ấn thanh toán và SAVE.\n\n<span style=\"color:var(--color-warning); font-weight:bold; background-color:var(--color-warning-soft); padding:4px 8px; border-radius:4px; display:inline-block;\">* LƯU Ý : Làm thủ tục trước 1 tuần của kỳ học mới.</span>",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Register to improve mark (Đăng ký học cải thiện điểm)",
+    "instructions": "* Dùng để đăng ký những môn học bản thân muốn học lại để cải thiện điểm số, tăng GPA trung bình.\n\n[Giao diện web nhà trường]\n\n<strong style=\"color:var(--color-primary);\">Cơ sở:</strong> Chọn cơ sở bạn đang theo học.\n\n<strong style=\"color:var(--color-primary);\">Mã Môn học:</strong> Nhập mã môn cần đăng ký (VD: CSD203, DBI202,...) → (nhớ tick vào ô vuông bên cạnh).\n\n<strong style=\"color:var(--color-primary);\">Lớp:</strong> Lớp học hiện đang có để đăng ký (Lưu ý lớp cải thiện sẽ được mở theo thời gian cố định).\n\n<strong style=\"color:var(--color-primary);\">Thời gian học:</strong> Tùy thuộc vào thời gian của sinh viên, hãy chọn khung giờ học phù hợp.\n\n→ Sau khi chọn xong ấn thanh toán và SAVE.\n\n<span style=\"color:var(--color-warning); font-weight:bold; background-color:var(--color-warning-soft); padding:4px 8px; border-radius:4px; display:inline-block;\">* LƯU Ý : Làm thủ tục trước 1 tuần của kỳ học mới.</span>",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Register to repeat a course (Đăng ký học lại)",
+    "instructions": "* Dùng để đăng ký những môn học bản thân chưa pass ở những kỳ trước, đây sẽ là nơi đăng ký để trả nợ những môn bản thân đã trượt.\n\n[Giao diện web nhà trường]\n\n<strong style=\"color:var(--color-primary);\">Cơ sở:</strong> Chọn cơ sở bạn đang theo học.\n\n<strong style=\"color:var(--color-primary);\">Mã Môn học:</strong> Nhập mã môn cần đăng ký (VD: CSD203, DBI202,...) → (nhớ tick vào ô vuông bên cạnh).\n\n<strong style=\"color:var(--color-primary);\">Lớp:</strong> Lớp học hiện đang có để đăng ký (Lưu ý lớp học lại sẽ được mở theo thời gian cố định).\n\n<strong style=\"color:var(--color-primary);\">Thời gian học:</strong> Tùy thuộc vào thời gian của sinh viên, hãy chọn khung giờ học phù hợp.\n\n→ Sau khi chọn xong thanh toán và SAVE\n\n(Sinh viên đăng ký học lại ngay trong kỳ hoặc trong kỳ tiếp theo được áp dụng phí học lại bằng 50% biểu phí môn)\n\n<span style=\"color:var(--color-warning); font-weight:bold; background-color:var(--color-warning-soft); padding:4px 8px; border-radius:4px; display:inline-block;\">* LƯU Ý : làm thủ tục trước 1 tuần của kỳ học mới.</span>",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Register Free Elective Courses (Đăng ký môn tự chọn)",
+    "instructions": "* Dùng để đăng ký những môn tự chọn (khi bạn check những môn học ở kỳ tiếp theo và thấy mã môn là ELECTIVE thì kỳ đó bạn sẽ phải đăng ký một môn tự chọn).\n\n→ Đăng ký chỉ áp dụng với người có môn ELECTIVE ở kỳ đó.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Wishlist Course (Danh sách các môn học chờ lớp) | Register wishlist (Đăng ký)",
+    "instructions": "* Chứa danh sách các môn chờ được xếp lớp ở kỳ tiếp theo.\n\n→ Nếu kỳ tới bạn học 5 môn sẽ hiển thị ở đây danh sách chờ của 5 môn đó nếu cá nhân bạn muốn hủy hoặc tạm dừng môn học nào sẽ chỉ nhận được ½ số tiền bạn đã đăng ký học.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Đăng ký học vượt kỳ",
+    "instructions": "* Dùng để đăng ký học vượt những môn ở kỳ tiếp theo nếu bản thân cảm thấy hoàn toàn đủ kiến thức để đẩy nhanh tiến độ theo khung chương trình:\n\n<div style=\"color:var(--color-warning); font-weight:bold; background-color:var(--color-warning-soft); padding:8px; border-radius:4px; margin-top:8px;\">\n# Lưu ý:\n\n* Sinh viên học kỳ <0 hoặc 5,6,9 không được phép đăng ký.\n* Chỉ được phép đăng ký học vượt môn của kỳ +1 (VD: đang học kỳ 2 thì chỉ được vượt môn của kỳ 3).\n* Sinh viên chỉ tự đăng ký 2 môn học vượt kỳ.\n* Sinh viên cần cân nhắc kỹ trước khi đăng ký học vượt kỳ. Trong trường hợp chương trình đào tạo thay đổi, môn học vượt bị thay thế bằng môn khác thì sinh viên cần bổ sung học môn thay thế và học phí học thừa môn.\n</div>",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Đăng ký học phụ đạo",
+    "instructions": "* Dùng để đăng ký học thêm, bổ trợ những môn mà bản thân đang hổng kiến thức.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "FAP",
+    "group": "Đăng ký môn học & Lộ trình",
+    "title": "Đăng ký học môn học tại nước ngoài",
+    "instructions": "* Dùng để đăng ký học những môn ngoại ngữ tại nước ngoài, giúp các bạn sinh viên vừa được học lại vừa được khám phá những nền văn hóa khác nhau.\n\n[Giao diện web nhà trường]\n\n<strong style=\"color:var(--color-primary);\">Cơ sở:</strong> Chọn cơ sở bạn đang theo học.\n\n<strong style=\"color:var(--color-primary);\">Mã Môn học:</strong> Nhập mã môn cần đăng ký (VD: TRS601,...) → (nhớ tick vào ô vuông bên cạnh).\n\n<strong style=\"color:var(--color-primary);\">Lớp:</strong> Lớp học hiện đang có để đăng ký (Lưu ý lớp sẽ được mở theo thời gian cố định).\n\n<strong style=\"color:var(--color-primary);\">Thời gian học:</strong> Tùy thuộc vào thời gian của sinh viên, hãy chọn khung giờ, thời điểm học phù hợp.\n\n→ Sau khi chọn xong ấn thanh toán và SAVE.",
+    "images": [],
+    "review_status": "needs_review",
+    "published": false,
+    "verified_by": "",
+    "verified_at": ""
+  },
+  {
+    "website": "Hướng dẫn thi cử",
+    "group": "Quy chế & Phần mềm thi",
+    "title": "SEB: Safe Exam Browser",
+    "instructions": "Phần 1: Công dụng và chức năng của phần mềm\n\n- SEB được Đại học FPT sử dụng như một công cụ kiểm tra trong các buổi học và những buổi thi PT của nhà trường (nhằm tạo môi trường thi nghiêm túc, tránh gian lận). Các công dụng chính bao gồm:\n\n* Bảo vệ tính công bằng và minh bạch (Toàn vẹn học thuật): Ngăn chặn tương đối các hành vi gian lận kỹ thuật số trong quá trình thi như tra cứu tài liệu trên mạng, trao đổi với người khác qua ứng dụng chat, hoặc nhờ người thi hộ qua phần mềm điều khiển từ xa.\n* Bảo mật nội dung đề thi: Tránh tình trạng rò rỉ, sao chép hoặc phát tán ngân hàng câu hỏi của nhà trường bằng cách chặn các công cụ chụp ảnh màn hình, quay video và tính năng Copy/Paste.\n* Tạo môi trường tập trung cao độ: Bằng cách khóa thiết bị vào một cửa sổ duy nhất, SEB loại bỏ các yếu tố gây xao nhãng từ hệ điều hành (thông báo tin nhắn, email, cập nhật phần mềm), buộc sinh viên phải tập trung 100% vào bài thi, không thể rời hoặc chuyển tab khi thực hiện thi.\n* Đồng bộ: Đảm bảo mọi sinh viên đều làm bài trên một giao diện và điều kiện kỹ thuật giống hệt nhau, bất kể họ đang sử dụng thiết bị cá nhân nào.\n\nPhần 2: Chuẩn bị và Yêu cầu hệ thống\n\n* Hệ điều hành: Khuyến cáo sử dụng phiên bản WINDOW cao nhất, hoặc hệ điều hành MACBOOK để tương thích tốt nhất với phần mềm thi của trường.\n* Kết nối mạng: Đảm bảo kết nối Internet ổn định. Khi thi trực tiếp tại trường, sinh viên sử dụng mạng nội bộ/WiFi DAI HOC FPT.\n* Tài khoản: Sử dụng tài khoản gmail mà sinh viên đăng ký với nhà trường khi làm thủ tục nhập học.\n\nPhần 3: Tải và Cài đặt phần mềm\n\nTuyệt đối không tải SEB tự do trên mạng mà phải sử dụng file do giảng viên cung cấp hoặc nhà trường cung cấp qua cổng dịch vụ FAP (thường được cập nhật xuyên suốt các kỳ học).\n\n1. Tải file: Tải file nén chứa bộ cài đặt (SEB\\_3.10.0.794\\_AutoSettings.zip), để lấy file này xin vui lòng truy cập FAP.\n2. Giải nén: Extract (giải nén) file vừa tải về thành một thư mục trên máy tính.\n3. Khởi chạy bộ cài: Tìm và nhấp đúp chuột vào file cài đặt duy nhất ở trong thư mục bạn vừa giải nén (phiên bản có thể thay đổi tùy kỳ thi).\n4. Cài đặt:\n   * Tích chọn vào ô \"I agree to the license terms and conditions\".\n   * Bấm Install và đợi quá trình cài đặt diễn ra.\n   * Sau khi màn hình báo \"Installation Successfully Completed\", bấm Close.\n\nPhần 4: Đăng nhập và Làm bài thi\n\n1. Mở SEB:\n   * Khởi chạy phần mềm từ thanh taskbar hoặc từ màn hình Desktop (VD: mở thanh tìm kiếm nhập: ‘Safe Exam Browser’).\n   * Lưu ý: SEB sẽ chặn mọi thao tác của bạn với môi trường bên ngoài trừ những cài đặt như âm lượng và wifi.\n2. Đăng nhập hệ thống:\n   * Màn hình SEB sẽ chuyển hướng đến trang đăng nhập. Sau đó bạn hãy nhập tài khoản gmail đã đăng ký.\n3. Vào phòng thi (Course):\n   * Bài kiểm tra mà giảng viên yêu cầu sẽ được cập nhật ngay ở giao diện chính. Dựa theo mã bài thi để tìm bài thi giảng viên yêu cầu.\n   * Nhập mã vào bài thi (do giảng viên hoặc cán bộ coi thi cung cấp) và chọn START .\n4. Nộp bài:\n   * Sau khi hoàn thành các câu hỏi, nhấn vào Finish attempt ở cuối bài, sau đó chọn Submit all and finish để nộp bài.\n   * Nếu hết giờ, hệ thống thường sẽ tự động thu bài. Đợi màn hình xác nhận điểm hoặc thông báo lưu bài thành công trước khi thoát SEB.",
+    "images": [],
+    "review_status": "verified",
+    "published": true,
+    "verified_by": "System",
+    "verified_at": "2026-07-03T00:00:00Z"
+  },
+  {
+    "website": "Hướng dẫn thi cử",
+    "group": "Quy chế & Phần mềm thi",
+    "title": "PEA:",
+    "instructions": "1. Công tác chuẩn bị\n\n* Thiết bị: Sinh viên bắt buộc phải mang laptop cá nhân đi thi (kể cả khi thi tại phòng LAB).\n* Mạng kết nối: Bắt buộc kết nối vào mạng Wi‑Fi: FPTU-EXAMONLINE.\n* Thi thử: Sinh viên bắt buộc phải tham gia thi thử để kiểm tra độ tương thích của máy tính với phần mềm thi. Nếu có sự cố, cần đọc file \"Hướng dẫn xử lý sự cố\" hoặc liên hệ phòng IT ngay.\n\n2. Quy định về phần mềm và hành vi\n\n* Phần mềm được phép sử dụng cho từng môn và một số quy tắc: Phan-mem-duoc-dung-va-khong-duoc-dung-thi-PE.xlsx (https://docs.google.com/spreadsheets/d/1ysyFdiGTENOvEAOGtq5wlR6xFdP8l_RB/edit?gid=212372652#gid=212372652)\n* Hành vi/Phần mềm BỊ CẤM:\n  + Nghiêm cấm kết nối Internet ra bên ngoài.\n  + Cấm sử dụng phần mềm chat (Zalo, Skype, Messenger...), phần mềm quay màn hình, phần mềm diệt virus (nên tắt trước khi thi).\n  + Cấm sử dụng công cụ đồng bộ code (Git, OneDrive, Dropbox).\n  + Cấm sử dụng các công cụ AI chạy cục bộ trên máy tính.\n  + Vi phạm sẽ bị hủy kết quả bài thi (0 điểm).\n\n3. Tải và cài đặt phần mềm thi:\n\n* Tùy vào môn thi, sinh viên tải đúng phiên bản phần mềm như đã được gửi qua Gmail trước lịch thi từ 1 - 2 tuần\n* Sau đó giải nén phần mềm trước khi sử dụng. Không chạy trực tiếp từ file nén.\n\n4. Quy trình thực hiện bài thi\n\n* Khởi động: Mở folder phần mềm thi đã giải nén và chạy file PEALogin.exe để hiển thị của sổ đăng nhập\n* Kết nối mạng thi FPTU-EXAMONLINE\n* Đăng nhập:\n  + Nhập Test name: Do giám thị cung cấp tại phòng thi.\n  + Nhập Username/Password: Là tài khoản Wifi mà bạn đã tạo để đăng nhập vào mạng của trường.\n* Cách lấy đề thi và làm bài:![](/assets/huong-dan-thi-cu/image_1.png)\n  + Làm bài: Chọn Show paper để hiển thị đề thi, sau đó chọn Download given materials để lấy folder làm bài. Sau khi tải về sinh viên làm bài luôn vào các file trong folder vừa tải (hoặc có thể làm ở ngoài nhưng sau khi làm xong tuyệt đối phải cho tất cả bài làm vào folder nộp bài và đặt tên theo yêu cầu của đề). Sinh viên có thể chọn Submit guide để xem hướng dẫn chi tiết cách làm và nộp bài\n  + Nộp bài: Chọn Browse, sau đó chọn đường dẫn tới folder nộp bài và câu hỏi bạn muốn nộp. Tiếp đó chọn vào ô Question no để chọn câu hỏi tương ứng. Cuối cùng chọn Submit để nộp bài ![](/assets/huong-dan-thi-cu/image_2.png)\n\n![](/assets/huong-dan-thi-cu/image_3.png)\n\n![](/assets/huong-dan-thi-cu/image_4.png)\n\n* Kết thúc: Show màn hình cho giám thị. Sau đó tích vào dòng dưới cùng của màn hình phần mềm thi, chọn Close để đóng bài thi![](/assets/huong-dan-thi-cu/image_5.png)\n\n5. Quy trình Checkout sau khi nhấn Submit trên phần mềm PEA, sinh viên thực hiện các bước sau:\n\n1. Truy cập trang web: https://fe360.fpt.edu.vn/checkout (https://www.google.com/search?q=https://fe360.fpt.edu.vn/checkout)\n2. Đăng nhập bằng email sinh viên đã đăng ký với trường.\n3. Trên màn hình sẽ hiện nút “Checkout”, sinh viên tích vào môn thi vừa hoàn thành để xác nhận thay cho việc ký tên vào danh sách giấy.\n\n6. Thông tin hỗ trợ trong lúc thi\n\n* Kỹ thuật: Phòng IT tại tòa Alpha (AL-L102), tòa Beta (BE-103), tòa Delta (Thư viện)\n* Khảo thí: Email: Khaothi@fpt.edu.vn | SĐT: 02462597749.\n\n7. Một số sự cố trong lúc thi:\n\n* Lỗi chưa được setup hoặc sinh viên nhập sai account:\n  + Sinh viên check lại account\n  + Nếu đúng account, sinh viên chưa được add vào thi, hãy báo cho giám thị account và môn thi của mình\n\n![](/assets/huong-dan-thi-cu/image_6.png)\n\n* Lỗi bị out ra khỏi bài thi:\n  + Do sinh viên bị out ra khỏi bài thi và muốn đăng nhập lại vào tiếp. Sinh viên cung cấp môn thi + MSSV gửi giám thị để giám thị báo khảo thí cấp quyền cho sinh viên vào thi tiếp![](/assets/huong-dan-thi-cu/image_7.png)",
+    "images": [
+      "/assets/huong-dan-thi-cu/image_1.png",
+      "/assets/huong-dan-thi-cu/image_2.png",
+      "/assets/huong-dan-thi-cu/image_3.png",
+      "/assets/huong-dan-thi-cu/image_4.png",
+      "/assets/huong-dan-thi-cu/image_5.png",
+      "/assets/huong-dan-thi-cu/image_6.png",
+      "/assets/huong-dan-thi-cu/image_7.png"
+    ],
+    "review_status": "verified",
+    "published": true,
+    "verified_by": "System",
+    "verified_at": "2026-07-03T00:00:00Z"
+  },
+  {
+    "website": "Hướng dẫn thi cử",
+    "group": "Quy chế & Phần mềm thi",
+    "title": "EOS:",
+    "instructions": "Phần 1: Công dụng chính của phần mềm thi EOS:\n\n* EOS là môi trường thi được sử dụng cho các bài thi cuối kỳ (FE) bằng trắc nghiệm, nghe, nói, đọc, viết.\n* Giúp sinh viên có môi trường thi rõ ràng, nghiêm ngặt, trung thực, phòng tránh những hành vi gian lận.\n\nPhần 2: Hướng dẫn cài đặt phần mềm thi EOS:\n\n* Để tải phần mềm: Sinh viên đăng nhập FAP → Mục Others(Khác) → Click vào dòng Download EOS Client.\n* Khi tải xuống, file nén có tên: EOSClient\\_SinhvienHL\\_13032026\n* Lưu ý: Sinh viên cài win ảo không thi được trên phần mềm này.\n\n→ Khi tải về xong sinh viên thực hiện giải nén tập tin vừa rồi.\n\nPhần 3: Hướng dẫn sử dụng phần mềm thi EOS:\n\n- Trước khi mở phần mềm thi cần lưu ý:\n\n+ Tất cả các ứng dụng đang chạy chỉ sử dụng phần mềm thi do nhà trường cấp.\n\n+ Tắt bộ gõ Tiếng Việt (chuyển từ V → E, VIE → ENG).\n\n+ Không sử dụng tài liệu.\n\n- Chuyển đổi mạng thành mạng “FPTU-EXAMONLINE”.\n\n- Mở tập tin đã giải nén từ trước, tiến hành ấn đúp vào mục EOSClient.exe (lưu ý file có kích thước 28Kb) chọn Run as administrator.\n\n→ Xuất hiện màn hình đăng nhập:\n\n![](/assets/huong-dan-thi-cu/image_8.png)\n\n- Sau khi điền đầy đủ thông tin và ấn Login màn hình chụp ảnh sẽ xuất hiện yêu cầu bạn chụp ảnh xác minh khuôn mặt, Ấn chụp → Ấn Retry để chụp lại, Ấn mũi tên để tiếp tục.\n\nPhần 4: Quy trình thi với các môn thi Tiếng Anh, Nhật, Hàn, Trung:\n\nA. Phần thi Listening (Nghe):\n\n- Lưu ý: Sinh viên BẮT BUỘC sử dụng tai nghe có dây.\n\n- Kiểm tra tai nghe: Sinh viên phải cắm tai nghe vào máy tính trước, sau đó mở cửa sổ đăng nhập, âm lượng máy tính để từ 50 – 60, ấn check sound để kiểm tra tai nghe, thấy có nhạc nổi lên là ok, nhập exam code rồi mới ấn Login.\n\n→ Sau khi ấn Login để đăng nhập, sẽ xuất hiện màn hình chờ.\n\n+ Bước 1: Sinh viên đọc kỹ phần ghi chú để biết bài nghe gồm mấy phần và thứ tự phần thi.\n\n+ Bước 2: Nhập open code (giám thị sẽ cung cấp trong phòng thi).\n\n+ Bước 3: Ấn Show question để hiển thị câu hỏi và bài nghe.\n\n![](/assets/huong-dan-thi-cu/image_9.png)\n\nB. Phần thi Reading (đọc):\n\n![](/assets/huong-dan-thi-cu/image_10.png)\n\n+ Bao gồm phần chọn đáp án, chuyển câu tiếp theo của mục đang làm, chuyển sang phần đọc tiếp theo.\n\nC. Phần thi FillBlank (điền vào chỗ trống):\n\n![](/assets/huong-dan-thi-cu/image_11.png)\n\n- Bao gồm phần chọn tab và điền từ vào chỗ trống.\n\nD. Phần thi Matching (Nối từ):\n\n![](/assets/huong-dan-thi-cu/image_12.png)\n\n- Bao gồm phần chọn tab, thêm câu trả lời và xóa câu trả lời nếu muốn thay đổi.\n\nE. Phần thi Grammar và Multiple choice (Chọn phương án đúng ABCD):\n\n![](/assets/huong-dan-thi-cu/image_13.png)\n\n- Bao gồm thanh thư mục để chọn phần, chọn phương án và chuyển tiếp.\n\nF. Phần thi Writing (Viết):\n\n![](/assets/huong-dan-thi-cu/image_14.png)\n\n- Trước khi đăng nhập vào bài thi viết, sinh viên phải tắt bộ gõ tiếng Việt.\n\n- Khi sinh viên đăng nhập vào phần viết, màn hình thi sẽ chia làm 2, nửa bên trái là đề thi, nửa bên phải là phần để sinh viên viết câu trả lời.\n\n- Khi làm xong, sinh viên bấm save để lưu và bấm finish để nộp bài thi.\n\n- Không dùng lệnh copy khi thi Writing.\n\nPhần 5: Nộp bài kết thúc thi trên EOS:\n\n- Khi sinh viên làm xong bài, cần báo với giám thị. Giám thị sẽ nhập Submission Code, sau đó sinh viên mới tích vào ô xác nhận và ấn Finish để nộp bài. Sinh viên show màn hình nộp bài thành công để giám thị xác nhận.\n\n![](/assets/huong-dan-thi-cu/image_15.png)\n\n- Sau khi ấn Finish sinh viên cần báo lại cho giám thị để tiến hành điểm danh tham gia thi trên website <https://e360.fpt.edu.vn/checkout> , sau khi điểm danh thành công thí sinh có thể ra về.\n\nPhần 6: Các sự cố hay gặp khi thi:\n\n- Khi đăng nhập giao diện EOS trước khi vào thi sinh viên thường hay có tình trạng quên mật khẩu và tài khoản đăng nhập wifi, trong trường hợp như vậy sinh viên cần phải biết thao tác đổi mật khẩu:\n\n+ Đăng nhập vào mạng FPTU-Register → Dẫn bạn đến trang web → Lướt xuống dưới ấn vào mục Change Password.\n\n→ Nếu nhớ mật khẩu và muốn đổi bạn có thể nhập mật khẩu cũ và mật khẩu mới, trong trường hợp quên mật khẩu hãy nhập tài khoản email đăng ký với nhà trường, mật khẩu mới sẽ được gửi đến đó.\n\n→ Thoát ra đăng nhập lại vào EOS với mật khẩu mới.\n\n- Nếu muốn biết chi tiết thêm hãy tham khảo tại đây: Xu-ly-su-co-trong-khi-thi-EOS.pptx (https://docs.google.com/presentation/d/1NHpw59EJOyCCG4K9cejQcZxgmRyUL_4I/edit?slide=id.p15#slide=id.p15)",
+    "images": [
+      "/assets/huong-dan-thi-cu/image_8.png",
+      "/assets/huong-dan-thi-cu/image_9.png",
+      "/assets/huong-dan-thi-cu/image_10.png",
+      "/assets/huong-dan-thi-cu/image_11.png",
+      "/assets/huong-dan-thi-cu/image_12.png",
+      "/assets/huong-dan-thi-cu/image_13.png",
+      "/assets/huong-dan-thi-cu/image_14.png",
+      "/assets/huong-dan-thi-cu/image_15.png"
+    ],
+    "review_status": "verified",
+    "published": true,
+    "verified_by": "System",
+    "verified_at": "2026-07-03T00:00:00Z"
+  },
+  {
+    "website": "Hướng dẫn thi cử",
+    "group": "Quy chế & Phần mềm thi",
+    "title": "USB:",
+    "instructions": "Phần 1: Công dụng và chức năng khi thi USB:\n\n- Thi USB bản chất vẫn là phần mềm thi EOS, nhưng khác với EOS được chạy local trên giao diện máy tính cá nhân của bạn giờ đây chúng được chạy trên giao diện hệ điều hành của USB.\n\n→ Giúp tăng tính bảo mật và tránh được tối đa những trường hợp gian lận, cài phần mềm không cho phép vào máy.\n\n→ USB theo dõi và nhận diện những hành vi thao tác bất thường của máy.\n\nPhần 2: Hướng dẫn thao tác với USB:\n\n- Yêu cầu:\n\n* Sinh viên cần đảm bảo ít nhất 2 cổng USB của máy tính còn trống và còn khả năng đọc ghi dữ liệu (đủ chức năng của 1 cổng USB) trước khi vào phòng thi.\n* Sinh viên mang theo chuột rời có kết nối dây hoặc receiver với laptop (khuyến khích kết nối dây, không sử dụng được kết nối bluetooth), phòng trường hợp touchpad không hoạt động.\n\n- Quy trình:\n\nA. Boot vào hệ điều hành trong USB:\n\n#### Cách 1: Thay đổi lựa chọn khởi động vào Windows to go (đơn giản):\n\n1. Khởi động máy tính vào hệ điều hành windows.\n2. Cắm usb thi được giám thị cấp vào máy.\n3. Search từ thanh search của windows từ khóa “windows to go” và chọn “Change Windows To Go startup options”\n\n![](/assets/huong-dan-thi-cu/image_16.png)\n\nHình 1: Thay đổi ưu tiên khởi động vào windows to go (ảnh windows 11)\n\n1. Chọn “Yes” rồi chọn “Save changes”\n2. Khởi động lại máy.\n3. Sau khi thi thao tác lại và chuyển option về “No”\n\n#### Cách 2 (khuyến khích): Advanced startup:\n\n1. Sinh viên khởi động máy tính vào hệ điều hành windows.\n2. Cắm usb thi được giám thị cấp vào máy.\n3. Giữ phím “Shift” trên bàn phím và “Khởi động lại (Restart)” máy tính, có thể nhả nút shift sau khi máy tắt.\n4. Máy sẽ restart và hiển thị màn hình dưới, chọn “Use a device”\n\n![](/assets/huong-dan-thi-cu/image_17.png)\n\nHình 2: Màn hình advanced startup\n\n1. Chọn các lựa chọn liên quan đến bộ nhớ rời như “EFI USB Device”\n\n- Hoặc “USB Entry for Windows to go”\n\n- Hoặc “UEFI USB Device”\n\n- Hoặc “Removable device”\n\nB. Sử dụng hệ điều hành trong USB để tham gia thi:\n\n- Màn hình khởi đầu hệ điều hành của USB thi:\n\n![](/assets/huong-dan-thi-cu/image_18.jpeg)\n\nHình 3: Màn hình của hệ điều hành trong USB thi\n\nCác công cụ bao gồm:\n\n* EOSClient: phần mềm sinh viên sử dụng để tham gia thi.\n* Wifi Config: cấu hình mạng WiFi.\n* File Explorer: truy cập folder thi.\n* Keyboard Test: phần mềm cho phép sinh viên test bàn phím các ngôn ngữ đặc biệt (cho các sinh viên thi phần thi viết).\n* Re\\_Submit: Dùng cho trường hợp nộp bài thi lỗi\n* DriverInstaller: Dùng cho trường hợp lỗi âm thanh hoặc Wi-Fi.\n\n1. Kết nối mạng chọn “Wifi Config”, đăng nhập mạng “FPTU-EXAMONLINE”\n2. Sau khi nối mạng “FPT-EXAMONLINE”, bật phần mềm ”EOSClient” để tham gia thi.\n3. Sau khi thi xong, sinh viên submit bài xong rồi tắt máy tính. CHỜ MÁY TÍNH TẮT HẲN sau đó mới rút usb và nộp lại USB cho giám thị. ![](/assets/huong-dan-thi-cu/image_19.png)\n\nHình 4: Tắt máy thoát khỏi hệ điều hành USB thi\n\nLưu ý:\n\n#### Lưu ý khi thi nghe\n\n1. Trong trường hợp không có âm thanh, sinh viên dùng app “DriverInstaller” để sửa lỗi âm thanh.\n   * Mở app “DriverInstaller”.\n   * Bấm “Install Driver” ở tab Audio Driver\n   * Chờ chạy xong, có thể cần chạy 2-3 lần để âm thanh chạy lại (chỉ cần chờ lần đầu, các lần sau chạy chủ yếu active driver sẽ nhanh hơn).\n\n|  |\n| --- |\n| Hình 5: Sửa lỗi âm thanh bằng DriverInstaller |\n\n#### Lưu ý khi thi viết\n\n1. Đổi ngôn ngữ phím: sử dụng tổ hợp phím “Windows” + “Space” hoặc tổ hợp phím “Alt” + “Shift”\n2. Thử gõ phím ngôn ngữ đặc biệt: chạy phần mềm “Test Ban Phim”.\n\n![](/assets/huong-dan-thi-cu/image_21.png)\n\nHình 6: Phần mềm gõ thử bàn phím ngôn ngữ\n\n1. Các tổ hợp phím thường dùng để chuyển đổi bàn phím không thay đổi, ví dụ tổ hợp phím “Alt” + “~” để chuyển giữa chữ latinh và tượng hình.\n\n#### Khắc phục sự cố mạng\n\nTrong trường hợp bấm Wi-Fi nhưng không hiện mạng Wifi nào, dùng phần mềm “DriverInstaller” để sửa lỗi không có Wi-Fi.\n\n* Mở phần mềm “DriverInstaller”.\n* Bấm “Install Driver” ở tab Wi-Fi Driver.\n* Chờ chương trình chạy xong, có thể cần chạy 2-3 lần để Wifi hoạt động lại (chỉ cần chờ lần đầu, các lần sau chạy chủ yếu active driver sẽ nhanh hơn).\n\n![](/assets/huong-dan-thi-cu/image_22.png)\n\nHình 6: Sửa lỗi mạng bằng DriverInstaller\n\nPhần 3: Quy định và trách nhiệm:\n\n* Sinh viên chỉ được sử dụng usb thi do giám thị giao cho ở đầu ca thi.\n* Trong quá trình thi, sinh viên phải có ý thức bảo quản USB, các hành vi cố tình phá hoại sẽ bị xử lý theo quy định.\n* Sinh viên có trách nhiệm bàn giao nguyên vẹn USB thi cho giám thị trước khi ra khỏi phòng thi.\n\nPhần 4: Lưu ý khi sử dụng USB thi:\n\n* Khuyến cáo tắt tính năng “Fast Boot” trong BIOS.\n* Khuyến cáo cắm USB vào khe USB bên trái laptop để tránh vướng tay khi di chuyển chuột.\n* Khuyến cáo chỉnh cấu hình độ sáng máy tính, ngày giờ máy tính trước khi boot vào hệ điều hành trong USB.\n* Khi tắt máy khuyến cáo chờ máy tắt hẳn khoảng 5s sau khi màn hình và đèn bàn phím (nếu có) tắt hẳn rồi mới rút USB ra.\n* USB thi không ảnh hưởng đến máy tính cá nhân của sinh viên, không truy cập, sửa đổi hay xóa dữ liệu trong máy.\n\nPhần 5: Chú ý lịch thi thử USB:\n\nTHI THỬ:\n\n* Sinh viên bắt buộc phải vào thi thử để kiểm tra laptop của mình đã phù hợp để thi hay chưa, trường hợp không đăng nhập được, liên hệ với phòng IT để được hỗ trợ. Nhà Alpha (AL-L102), nhà Beta (BE-103), nhà Delta (thư viện).\n* Những ngày thi vào thứ 7 và chủ nhật, phòng IT support sẽ hỗ trợ ở Nhà Alpha (AL-L102), nhà Beta (BE-206, BE-317).\n* Phòng Khảo thí có bố trí USB test ở khu vực thư viện nhà Delta (30 chiếc), sinh viên có thể đến đó để test phần mềm EOS trên USB.\n\nMỤC TIÊU:\n\n* Giúp sinh viên kiểm tra laptop có tương thích với phần mềm hay không.\n* Check lại mật khẩu Wi‑Fi – hỗ trợ hướng dẫn sinh viên đổi mật khẩu Wi‑Fi.\n* Giúp sinh viên tải đúng phần mềm thi, biết cách đăng nhập và nộp bài lên hệ thống.",
+    "images": [
+      "/assets/huong-dan-thi-cu/image_16.png",
+      "/assets/huong-dan-thi-cu/image_17.png",
+      "/assets/huong-dan-thi-cu/image_18.jpeg",
+      "/assets/huong-dan-thi-cu/image_19.png",
+      "/assets/huong-dan-thi-cu/image_21.png",
+      "/assets/huong-dan-thi-cu/image_22.png"
+    ],
+    "review_status": "verified",
+    "published": true,
+    "verified_by": "System",
+    "verified_at": "2026-07-03T00:00:00Z"
+  },
+  {
+    "website": "Hướng dẫn thi cử",
+    "group": "Quy chế & Phần mềm thi",
+    "title": "Nội quy thi cử:",
+    "instructions": "QD 1234 DHFPT Ban hanh Noi quy ky thi Truong Dai hoc FPT.pdf (https://drive.google.com/file/d/1Dpn4ysXKxJO5o4mY6GWKmU0opv8Q-ZXu/view?usp=sharing)\n\n- Sinh viên có thể vào đây để tham khảo.",
+    "images": [],
+    "review_status": "verified",
+    "published": true,
+    "verified_by": "System",
+    "verified_at": "2026-07-03T00:00:00Z"
+  }
+]

@@ -1,0 +1,926 @@
+{
+  "Tầng 1": {
+    "max_row": 20,
+    "max_col": 12,
+    "rooms": [
+      {
+        "room_code": "icpdp",
+        "row_idx": 6,
+        "col_idx": 1
+      },
+      {
+        "room_code": "cửa",
+        "row_idx": 6,
+        "col_idx": 4
+      },
+      {
+        "room_code": "112.0",
+        "row_idx": 6,
+        "col_idx": 8
+      },
+      {
+        "room_code": "cửa ra",
+        "row_idx": 8,
+        "col_idx": 0
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 8,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Sảnh",
+        "row_idx": 8,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 8,
+        "col_idx": 10
+      },
+      {
+        "room_code": "cửa ra",
+        "row_idx": 8,
+        "col_idx": 11
+      },
+      {
+        "room_code": "103",
+        "row_idx": 9,
+        "col_idx": 1
+      },
+      {
+        "room_code": "111",
+        "row_idx": 9,
+        "col_idx": 10
+      },
+      {
+        "room_code": "104",
+        "row_idx": 10,
+        "col_idx": 1
+      },
+      {
+        "room_code": "110",
+        "row_idx": 10,
+        "col_idx": 10
+      },
+      {
+        "room_code": "105",
+        "row_idx": 11,
+        "col_idx": 1
+      },
+      {
+        "room_code": "109",
+        "row_idx": 11,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 12,
+        "col_idx": 1
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 12,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 13,
+        "col_idx": 1
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 13,
+        "col_idx": 10
+      },
+      {
+        "room_code": "startup",
+        "row_idx": 14,
+        "col_idx": 1
+      },
+      {
+        "room_code": "108C",
+        "row_idx": 14,
+        "col_idx": 10
+      },
+      {
+        "room_code": "108B",
+        "row_idx": 15,
+        "col_idx": 10
+      },
+      {
+        "room_code": "108A",
+        "row_idx": 16,
+        "col_idx": 10
+      },
+      {
+        "room_code": "cửa ra vào",
+        "row_idx": 17,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 17,
+        "col_idx": 10
+      },
+      {
+        "room_code": "cửa ra",
+        "row_idx": 17,
+        "col_idx": 11
+      },
+      {
+        "room_code": "cầu thang",
+        "row_idx": 18,
+        "col_idx": 1
+      },
+      {
+        "room_code": "cửa thư viện",
+        "row_idx": 18,
+        "col_idx": 2
+      },
+      {
+        "room_code": "cửa 107B",
+        "row_idx": 18,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Thư viện",
+        "row_idx": 19,
+        "col_idx": 1
+      },
+      {
+        "room_code": "kỹ thuật",
+        "row_idx": 19,
+        "col_idx": 10
+      }
+    ]
+  },
+  "Tấng 2": {
+    "max_row": 19,
+    "max_col": 11,
+    "rooms": [
+      {
+        "room_code": "220",
+        "row_idx": 3,
+        "col_idx": 1
+      },
+      {
+        "room_code": "219",
+        "row_idx": 3,
+        "col_idx": 3
+      },
+      {
+        "room_code": "218",
+        "row_idx": 3,
+        "col_idx": 5
+      },
+      {
+        "room_code": "216",
+        "row_idx": 3,
+        "col_idx": 7
+      },
+      {
+        "room_code": "214",
+        "row_idx": 3,
+        "col_idx": 10
+      },
+      {
+        "room_code": "213",
+        "row_idx": 5,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 6,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Hành lang",
+        "row_idx": 6,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 6,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 7,
+        "col_idx": 3
+      },
+      {
+        "room_code": "222",
+        "row_idx": 8,
+        "col_idx": 1
+      },
+      {
+        "room_code": "212",
+        "row_idx": 8,
+        "col_idx": 10
+      },
+      {
+        "room_code": "223",
+        "row_idx": 9,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C204",
+        "row_idx": 9,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C203",
+        "row_idx": 9,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C202",
+        "row_idx": 9,
+        "col_idx": 7
+      },
+      {
+        "room_code": "224A",
+        "row_idx": 10,
+        "col_idx": 1
+      },
+      {
+        "room_code": "211",
+        "row_idx": 10,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 11,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C205",
+        "row_idx": 11,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 11,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C201",
+        "row_idx": 11,
+        "col_idx": 7
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 11,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 12,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C206",
+        "row_idx": 12,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C210",
+        "row_idx": 12,
+        "col_idx": 7
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 12,
+        "col_idx": 10
+      },
+      {
+        "room_code": "224B",
+        "row_idx": 13,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C207",
+        "row_idx": 13,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C208",
+        "row_idx": 13,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C209",
+        "row_idx": 13,
+        "col_idx": 7
+      },
+      {
+        "room_code": "???",
+        "row_idx": 13,
+        "col_idx": 10
+      },
+      {
+        "room_code": "224C",
+        "row_idx": 14,
+        "col_idx": 1
+      },
+      {
+        "room_code": "???",
+        "row_idx": 14,
+        "col_idx": 10
+      },
+      {
+        "room_code": "225",
+        "row_idx": 15,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Hành lang",
+        "row_idx": 15,
+        "col_idx": 3
+      },
+      {
+        "room_code": "227",
+        "row_idx": 15,
+        "col_idx": 10
+      },
+      {
+        "room_code": "cầu thang",
+        "row_idx": 16,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 16,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 16,
+        "col_idx": 10
+      },
+      {
+        "room_code": "tường",
+        "row_idx": 17,
+        "col_idx": 1
+      },
+      {
+        "room_code": "tường",
+        "row_idx": 17,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Thư viện",
+        "row_idx": 18,
+        "col_idx": 2
+      }
+    ]
+  },
+  "Tầng 3": {
+    "max_row": 20,
+    "max_col": 11,
+    "rooms": [
+      {
+        "room_code": "321",
+        "row_idx": 3,
+        "col_idx": 1
+      },
+      {
+        "room_code": "320A",
+        "row_idx": 3,
+        "col_idx": 3
+      },
+      {
+        "room_code": "318",
+        "row_idx": 3,
+        "col_idx": 5
+      },
+      {
+        "room_code": "316",
+        "row_idx": 3,
+        "col_idx": 7
+      },
+      {
+        "room_code": "315",
+        "row_idx": 3,
+        "col_idx": 10
+      },
+      {
+        "room_code": "319",
+        "row_idx": 4,
+        "col_idx": 3
+      },
+      {
+        "room_code": "317",
+        "row_idx": 4,
+        "col_idx": 7
+      },
+      {
+        "room_code": "314",
+        "row_idx": 4,
+        "col_idx": 10
+      },
+      {
+        "room_code": "213",
+        "row_idx": 5,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 6,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Hành lang",
+        "row_idx": 6,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 6,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 7,
+        "col_idx": 3
+      },
+      {
+        "room_code": "322",
+        "row_idx": 8,
+        "col_idx": 1
+      },
+      {
+        "room_code": "313",
+        "row_idx": 8,
+        "col_idx": 10
+      },
+      {
+        "room_code": "323",
+        "row_idx": 9,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C304",
+        "row_idx": 9,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C303",
+        "row_idx": 9,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C302",
+        "row_idx": 9,
+        "col_idx": 7
+      },
+      {
+        "room_code": "312",
+        "row_idx": 9,
+        "col_idx": 10
+      },
+      {
+        "room_code": "324",
+        "row_idx": 10,
+        "col_idx": 1
+      },
+      {
+        "room_code": "311",
+        "row_idx": 10,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 11,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C305",
+        "row_idx": 11,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 11,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C301",
+        "row_idx": 11,
+        "col_idx": 7
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 11,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 12,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C306",
+        "row_idx": 12,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C310",
+        "row_idx": 12,
+        "col_idx": 7
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 12,
+        "col_idx": 10
+      },
+      {
+        "room_code": "325",
+        "row_idx": 13,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C307",
+        "row_idx": 13,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C308",
+        "row_idx": 13,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C309",
+        "row_idx": 13,
+        "col_idx": 7
+      },
+      {
+        "room_code": "339",
+        "row_idx": 13,
+        "col_idx": 10
+      },
+      {
+        "room_code": "326",
+        "row_idx": 14,
+        "col_idx": 1
+      },
+      {
+        "room_code": "338",
+        "row_idx": 14,
+        "col_idx": 10
+      },
+      {
+        "room_code": "327",
+        "row_idx": 15,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Hành lang",
+        "row_idx": 15,
+        "col_idx": 3
+      },
+      {
+        "room_code": "337",
+        "row_idx": 15,
+        "col_idx": 10
+      },
+      {
+        "room_code": "cầu thang",
+        "row_idx": 16,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 16,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 16,
+        "col_idx": 10
+      },
+      {
+        "room_code": "328",
+        "row_idx": 17,
+        "col_idx": 1
+      },
+      {
+        "room_code": "336",
+        "row_idx": 17,
+        "col_idx": 10
+      },
+      {
+        "room_code": "331",
+        "row_idx": 18,
+        "col_idx": 3
+      },
+      {
+        "room_code": "333",
+        "row_idx": 18,
+        "col_idx": 7
+      },
+      {
+        "room_code": "329",
+        "row_idx": 19,
+        "col_idx": 1
+      },
+      {
+        "room_code": "330",
+        "row_idx": 19,
+        "col_idx": 3
+      },
+      {
+        "room_code": "332",
+        "row_idx": 19,
+        "col_idx": 5
+      },
+      {
+        "room_code": "334",
+        "row_idx": 19,
+        "col_idx": 7
+      },
+      {
+        "room_code": "335",
+        "row_idx": 19,
+        "col_idx": 10
+      }
+    ]
+  },
+  "Tầng 4": {
+    "max_row": 20,
+    "max_col": 11,
+    "rooms": [
+      {
+        "room_code": "421",
+        "row_idx": 3,
+        "col_idx": 1
+      },
+      {
+        "room_code": "420",
+        "row_idx": 3,
+        "col_idx": 3
+      },
+      {
+        "room_code": "418",
+        "row_idx": 3,
+        "col_idx": 5
+      },
+      {
+        "room_code": "416",
+        "row_idx": 3,
+        "col_idx": 7
+      },
+      {
+        "room_code": "415",
+        "row_idx": 3,
+        "col_idx": 10
+      },
+      {
+        "room_code": "422",
+        "row_idx": 4,
+        "col_idx": 1
+      },
+      {
+        "room_code": "419",
+        "row_idx": 4,
+        "col_idx": 3
+      },
+      {
+        "room_code": "417",
+        "row_idx": 4,
+        "col_idx": 7
+      },
+      {
+        "room_code": "414",
+        "row_idx": 4,
+        "col_idx": 10
+      },
+      {
+        "room_code": "213",
+        "row_idx": 5,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 6,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Hành lang",
+        "row_idx": 6,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 6,
+        "col_idx": 10
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 7,
+        "col_idx": 3
+      },
+      {
+        "room_code": "423",
+        "row_idx": 8,
+        "col_idx": 1
+      },
+      {
+        "room_code": "413",
+        "row_idx": 8,
+        "col_idx": 10
+      },
+      {
+        "room_code": "424",
+        "row_idx": 9,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C404",
+        "row_idx": 9,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C403",
+        "row_idx": 9,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C402",
+        "row_idx": 9,
+        "col_idx": 7
+      },
+      {
+        "room_code": "412",
+        "row_idx": 9,
+        "col_idx": 10
+      },
+      {
+        "room_code": "425",
+        "row_idx": 10,
+        "col_idx": 1
+      },
+      {
+        "room_code": "411",
+        "row_idx": 10,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 11,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C405",
+        "row_idx": 11,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 11,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C401",
+        "row_idx": 11,
+        "col_idx": 7
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 11,
+        "col_idx": 10
+      },
+      {
+        "room_code": "NVS Nam",
+        "row_idx": 12,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C406",
+        "row_idx": 12,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C410",
+        "row_idx": 12,
+        "col_idx": 7
+      },
+      {
+        "room_code": "NVS Nữ",
+        "row_idx": 12,
+        "col_idx": 10
+      },
+      {
+        "room_code": "426",
+        "row_idx": 13,
+        "col_idx": 1
+      },
+      {
+        "room_code": "C407",
+        "row_idx": 13,
+        "col_idx": 3
+      },
+      {
+        "room_code": "C408",
+        "row_idx": 13,
+        "col_idx": 5
+      },
+      {
+        "room_code": "C409",
+        "row_idx": 13,
+        "col_idx": 7
+      },
+      {
+        "room_code": "440",
+        "row_idx": 13,
+        "col_idx": 10
+      },
+      {
+        "room_code": "427",
+        "row_idx": 14,
+        "col_idx": 1
+      },
+      {
+        "room_code": "439",
+        "row_idx": 14,
+        "col_idx": 10
+      },
+      {
+        "room_code": "428",
+        "row_idx": 15,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Hành lang",
+        "row_idx": 15,
+        "col_idx": 3
+      },
+      {
+        "room_code": "438",
+        "row_idx": 15,
+        "col_idx": 10
+      },
+      {
+        "room_code": "cầu thang",
+        "row_idx": 16,
+        "col_idx": 1
+      },
+      {
+        "room_code": "Giếng trời",
+        "row_idx": 16,
+        "col_idx": 3
+      },
+      {
+        "room_code": "Cầu thang",
+        "row_idx": 16,
+        "col_idx": 10
+      },
+      {
+        "room_code": "429",
+        "row_idx": 17,
+        "col_idx": 1
+      },
+      {
+        "room_code": "437",
+        "row_idx": 17,
+        "col_idx": 10
+      },
+      {
+        "room_code": "432",
+        "row_idx": 18,
+        "col_idx": 3
+      },
+      {
+        "room_code": "434",
+        "row_idx": 18,
+        "col_idx": 7
+      },
+      {
+        "room_code": "430",
+        "row_idx": 19,
+        "col_idx": 1
+      },
+      {
+        "room_code": "431",
+        "row_idx": 19,
+        "col_idx": 3
+      },
+      {
+        "room_code": "433",
+        "row_idx": 19,
+        "col_idx": 5
+      },
+      {
+        "room_code": "435",
+        "row_idx": 19,
+        "col_idx": 7
+      },
+      {
+        "room_code": "436",
+        "row_idx": 19,
+        "col_idx": 10
+      }
+    ]
+  }
+}
