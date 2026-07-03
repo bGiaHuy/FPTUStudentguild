@@ -1,5 +1,7 @@
 # 🗺️ FPTU Student Guide
 
+> 🌐 **Live Demo (Website):** [https://fptu-studentguild.vercel.app/](https://fptu-studentguild.vercel.app/)
+
 > 🚀 **Hệ sinh thái chuyển đổi số toàn diện dành cho sinh viên Đại học FPT**
 
 FPTU Student Guide không chỉ là một ứng dụng bản đồ thông thường. Đây là một nền tảng kết hợp **Hệ thống dẫn đường trong nhà (Indoor Navigation)** siêu tối ưu, **Cổng thông tin sinh viên** và **AI Chatbot** thông minh để giải quyết mọi bài toán di chuyển và tìm kiếm thông tin trong khuôn viên trường.
