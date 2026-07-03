@@ -13,10 +13,10 @@
       "items": [
         {
           "item_id": "DELTA-F1-user-gen-0",
-          "room_code": "",
-          "display_name": "Cửa chính",
+          "room_code": "Cửa chính",
+          "display_name": "Cửa chính Tòa Delta",
           "item_type": "door",
-          "is_clickable": false,
+          "is_clickable": true,
           "bbox": {
             "min_x": 895,
             "min_y": 10,
@@ -117,7 +117,7 @@
         },
         {
           "item_id": "DELTA-F1-user-gen-8",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 1 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -130,7 +130,7 @@
         },
         {
           "item_id": "DELTA-F1-user-gen-9",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 1 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -247,7 +247,7 @@
         },
         {
           "item_id": "DELTA-F1-user-gen-18",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 1 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -260,7 +260,7 @@
         },
         {
           "item_id": "DELTA-F1-user-gen-19",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 1 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -495,7 +495,7 @@
         },
         {
           "item_id": "DELTA-F2-user-gen-6",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 2 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -508,7 +508,7 @@
         },
         {
           "item_id": "DELTA-F2-user-gen-7",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 2 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -638,7 +638,7 @@
         },
         {
           "item_id": "DELTA-F2-user-gen-18",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 2 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -651,7 +651,7 @@
         },
         {
           "item_id": "DELTA-F2-user-gen-19",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 2 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1074,7 +1074,7 @@
         },
         {
           "item_id": "DELTA-F3-user-gen-7",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 3 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1087,7 +1087,7 @@
         },
         {
           "item_id": "DELTA-F3-user-gen-8",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 3 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1230,7 +1230,7 @@
         },
         {
           "item_id": "DELTA-F3-user-gen-21",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 3 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1243,7 +1243,7 @@
         },
         {
           "item_id": "DELTA-F3-user-gen-22",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 3 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1808,7 +1808,7 @@
         },
         {
           "item_id": "DELTA-F4-user-gen-7",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 4 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1821,7 +1821,7 @@
         },
         {
           "item_id": "DELTA-F4-user-gen-8",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 4 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1964,7 +1964,7 @@
         },
         {
           "item_id": "DELTA-F4-user-gen-21",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nam Tầng 4 (WC)",
           "display_name": "NVS NAM",
           "item_type": "toilet",
           "is_clickable": true,
@@ -1977,7 +1977,7 @@
         },
         {
           "item_id": "DELTA-F4-user-gen-22",
-          "room_code": "",
+          "room_code": "Nhà vệ sinh Nữ Tầng 4 (WC)",
           "display_name": "NVS NỮ",
           "item_type": "toilet",
           "is_clickable": true,

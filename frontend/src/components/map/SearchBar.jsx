@@ -82,7 +82,7 @@ const SearchBar = () => {
         return (r.room_code && removeAccents(r.room_code.toLowerCase()).includes(lowerQ)) ||
                (r.name && removeAccents(r.name.toLowerCase()).includes(lowerQ)) ||
                (r.aliases && r.aliases.some(alias => removeAccents(alias.toLowerCase()).includes(lowerQ)));
-      }).slice(0, 10);
+      }).slice(0, 20);
       setResults(filtered);
     }
   };
