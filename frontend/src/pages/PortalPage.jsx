@@ -221,14 +221,14 @@ const PortalPage = () => {
       </div>
 
       {/* Hero Section - Always visible at top */}
-      <div style={{ flexShrink: 0, background: 'linear-gradient(135deg, var(--color-primary-soft) 0%, var(--color-background) 100%)', padding: 'var(--space-8) var(--space-4)', textAlign: 'center', borderBottom: '1px solid var(--color-border)' }}>
-        <h2 className="text-2xl text-primary" style={{ margin: '0 0 var(--space-2) 0' }}>Hướng dẫn sử dụng website nhà trường</h2>
-        <p className="text-sm text-muted" style={{ margin: '0 0 var(--space-6) 0' }}>Cẩm nang giải đáp cách sử dụng các hệ thống FAP, FLM, CMS, Edunext</p>
+      <div style={{ flexShrink: 0, background: 'linear-gradient(135deg, var(--color-primary-soft) 0%, var(--color-background) 100%)', padding: 'var(--space-5) var(--space-4)', textAlign: 'center', borderBottom: '1px solid var(--color-border)' }}>
+        <h2 className="text-xl text-primary" style={{ margin: '0 0 var(--space-1) 0', fontWeight: 700 }}>Hướng dẫn sử dụng website nhà trường</h2>
+        <p className="text-sm text-muted" style={{ margin: '0 0 var(--space-4) 0' }}>Cẩm nang giải đáp cách sử dụng các hệ thống FAP, FLM, CMS, Edunext</p>
         
         {/* Search Bar */}
         <div style={{ maxWidth: '600px', margin: '0 auto', position: 'relative' }}>
           <div style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-muted-foreground)' }}>
-            <Search size={20} />
+            <Search size={18} />
           </div>
           <input 
             type="text" 
@@ -237,12 +237,12 @@ const PortalPage = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="input-field"
             style={{ 
-              paddingLeft: '48px', 
+              paddingLeft: '44px', 
               borderRadius: 'var(--radius-pill)', 
               boxShadow: 'var(--shadow-soft)',
-              fontSize: '16px',
-              paddingTop: '16px',
-              paddingBottom: '16px',
+              fontSize: '15px',
+              paddingTop: '12px',
+              paddingBottom: '12px',
               backgroundColor: 'var(--color-surface)'
             }} 
           />
