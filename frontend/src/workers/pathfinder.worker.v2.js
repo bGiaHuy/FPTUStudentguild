@@ -398,16 +398,13 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
 
   // ── Phase 2: String-Pulling (greedy LOS simplification) ──
   // "Go straight until you hit a wall, go around, go straight again"
-  // Also use cornerGapSet to prevent cutting through wall corners
-  const cornerSet = floorData.cornerGapSet || null;
-  
   const smoothed = [rawPath[0]];
   let i = 0;
   while (i < rawPath.length - 1) {
     // Try to reach as far as possible with a straight line from rawPath[i]
     let farthest = i + 1;
     for (let j = rawPath.length - 1; j > i + 1; j--) {
-      if (supercoverLineOfSight(rawPath[i].x, rawPath[i].y, rawPath[j].x, rawPath[j].y, grid, width, height, cornerSet)) {
+      if (supercoverLineOfSight(rawPath[i].x, rawPath[i].y, rawPath[j].x, rawPath[j].y, grid, width, height)) {
         farthest = j;
         break;
       }
