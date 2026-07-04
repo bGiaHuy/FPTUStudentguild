@@ -489,7 +489,7 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
         if (eStair.item_type === 'elevator' && isElevatorBroken) continue;
         if (disabledAccessPoints.has(eStairId)) continue;
         const dist = heuristic(stair.points[0].x, stair.points[0].y, eStair.points[0].x, eStair.points[0].y);
-        if (dist < minDist && dist < 30) {
+        if (dist < minDist && dist < 300) {
           minDist = dist;
           endStair = eStair;
         }
@@ -523,7 +523,7 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
       if (eStair.item_type === 'elevator' && isElevatorBroken) continue;
       if (disabledAccessPoints.has(eStairId)) continue;
       const dist = heuristic(startStair.points[0].x, startStair.points[0].y, eStair.points[0].x, eStair.points[0].y);
-      if (dist < bestMinDist && dist < 30) { // strict match
+      if (dist < bestMinDist && dist < 300) { // strict match
         bestMinDist = dist;
         bestEndStair = eStair;
         bestEndStairId = eStairId;
@@ -554,7 +554,7 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
                 if (ap.item_type === 'elevator' && isElevatorBroken) continue;
                 if (disabledAccessPoints.has(id)) continue;
                 const dist = heuristic(startStair.points[0].x, startStair.points[0].y, ap.points[0].x, ap.points[0].y);
-                if (dist < minDist && dist < 30) { // strict match
+                if (dist < minDist && dist < 300) { // strict match
                     minDist = dist;
                     intermStair = ap;
                 }
