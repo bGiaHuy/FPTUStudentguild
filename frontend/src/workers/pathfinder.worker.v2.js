@@ -91,6 +91,27 @@ function loadGrid(gridData) {
     
     // 2. Inflation / Clearance    // Removed wall penalty inflation
     
+    // 2b. Compute corner gap cells for LOS blocking
+    // A corner gap cell is walkable but sits at an L-shaped wall corner
+    const cornerGapSet = new Set();
+    const cDirs = [{dx:-1,dy:-1},{dx:1,dy:-1},{dx:-1,dy:1},{dx:1,dy:1}];
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        if (grid[y * width + x] === 1) continue; // skip walls
+        for (const cd of cDirs) {
+          const dx2 = x + cd.dx, dy2 = y + cd.dy;
+          if (dx2 < 0 || dx2 >= width || dy2 < 0 || dy2 >= height) continue;
+          if (grid[dy2 * width + dx2] !== 1) continue; // diagonal must be wall
+          const adj1IsWall = grid[y * width + (x + cd.dx)] === 1;
+          const adj2IsWall = grid[(y + cd.dy) * width + x] === 1;
+          if (adj1IsWall || adj2IsWall) {
+            cornerGapSet.add(y * width + x);
+            break; // already marked, no need to check other diagonals
+          }
+        }
+      }
+    }
+    
     // 3. Map Access Points
     const accessPointsMap = new Map();
     if (floor.access_points) {
@@ -112,7 +133,8 @@ function loadGrid(gridData) {
       width,
       height,
       cell_size: cellSize,
-      access_points: accessPointsMap
+      access_points: accessPointsMap,
+      cornerGapSet
     });
   }
 }
@@ -235,18 +257,28 @@ function losPathCost(x0, y0, x1, y1, width, roomPerimeterSet) {
 
 // THETA* ALGORITHM
 function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
-  const roomPerimeterSet = new Set();
+  // Build LOS blocking set: room perimeters + wall corner gaps
+  const losBlockSet = new Set();
+  
+  // Add room perimeter points (door cells of non-target rooms)
   if (floorData.access_points) {
     for (const [id, ap] of floorData.access_points.entries()) {
       if (ap.item_type === 'room' && id !== startItemId && id !== endItemId) {
         for (const pt of ap.points) {
-          roomPerimeterSet.add(pt.y * floorData.width + pt.x);
+          losBlockSet.add(pt.y * floorData.width + pt.x);
         }
       }
     }
   }
+  
+  // Add wall corner gap cells
+  if (floorData.cornerGapSet) {
+    for (const idx of floorData.cornerGapSet) {
+      losBlockSet.add(idx);
+    }
+  }
 
-  return _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, roomPerimeterSet);
+  return _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, losBlockSet);
 }
 
 function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, roomPerimeterSet) {
