@@ -199,7 +199,11 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
   let startPts = [];
   if (startItemId && floorData.access_points.has(startItemId)) {
     const ap = floorData.access_points.get(startItemId);
-    startPts = ap.points;
+    if (ap.item_type !== 'room') {
+      startPts = ap.points;
+    } else {
+      startPts = [getNearestWalkable(startGridX, startGridY, floorData)];
+    }
   } else {
     startPts = [getNearestWalkable(startGridX, startGridY, floorData)];
   }
@@ -208,7 +212,11 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
   let endPtsSet = new Set();
   if (endItemId && floorData.access_points.has(endItemId)) {
     const ap = floorData.access_points.get(endItemId);
-    endPts = ap.points;
+    if (ap.item_type !== 'room') {
+      endPts = ap.points;
+    } else {
+      endPts = [getNearestWalkable(endGridX, endGridY, floorData)];
+    }
   } else {
     endPts = [getNearestWalkable(endGridX, endGridY, floorData)];
   }
