@@ -152,7 +152,9 @@ async def get_stats(db: AsyncSession = Depends(get_db)):
     }
 
 
-@router.post("/obstacles/direct")
+from schemas.obstacle_schemas import ObstacleResponse
+
+@router.post("/obstacles/direct", response_model=ObstacleResponse)
 async def create_obstacle_direct(
     data: DirectObstacleCreate,
     db: AsyncSession = Depends(get_db)
