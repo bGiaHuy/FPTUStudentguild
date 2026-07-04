@@ -158,13 +158,11 @@ const DraftImageMap = () => {
       
       const dx = reportDragCurrent.x - reportDragStart.x;
       const dy = reportDragCurrent.y - reportDragStart.y;
-      const width = Math.abs(dx);
-      const height = Math.abs(dy);
       
-      const cx = reportDragStart.x + dx/2;
-      const cy = reportDragStart.y + dy/2;
+      const cx = reportDragStart.x;
+      const cy = reportDragStart.y;
       
-      const radius = Math.max(width, height) / 2;
+      let radius = Math.hypot(dx, dy);
       const finalRadius = Math.max(30, Math.min(radius, 300));
       
       store.setPendingReport({ 
@@ -1250,13 +1248,12 @@ const DraftImageMap = () => {
                     } catch (err) { console.error('Downvote failed:', err); }
                   }}
                 />
-                {/* Render report drag box if active */}
+                {/* Render report drag circle if active */}
                 {reportDragStart && reportDragCurrent && isActiveFloor && (
-                  <rect 
-                    x={Math.min(reportDragStart.x, reportDragCurrent.x)}
-                    y={Math.min(reportDragStart.y, reportDragCurrent.y)}
-                    width={Math.abs(reportDragCurrent.x - reportDragStart.x)}
-                    height={Math.abs(reportDragCurrent.y - reportDragStart.y)}
+                  <circle 
+                    cx={reportDragStart.x}
+                    cy={reportDragStart.y}
+                    r={Math.max(10, Math.hypot(reportDragCurrent.x - reportDragStart.x, reportDragCurrent.y - reportDragStart.y))}
                     fill="rgba(239, 68, 68, 0.15)"
                     stroke="#EF4444"
                     strokeWidth="3"
