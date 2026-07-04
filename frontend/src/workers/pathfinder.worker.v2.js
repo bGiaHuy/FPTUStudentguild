@@ -255,37 +255,8 @@ function losPathCost(x0, y0, x1, y1, width, roomPerimeterSet) {
   return totalCost;
 }
 
-// THETA* ALGORITHM
+// PATHFINDING: Pure A* + String-Pulling
 function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
-  // Build LOS blocking set: room perimeters + wall corner gaps
-  const losBlockSet = new Set();
-  
-  // Room perimeter set (small - just door cells) for diagonal step blocking
-  const roomPerimSet = new Set();
-  
-  if (floorData.access_points) {
-    for (const [id, ap] of floorData.access_points.entries()) {
-      if (ap.item_type === 'room' && id !== startItemId && id !== endItemId) {
-        for (const pt of ap.points) {
-          const idx = pt.y * floorData.width + pt.x;
-          losBlockSet.add(idx);
-          roomPerimSet.add(idx);
-        }
-      }
-    }
-  }
-  
-  // Add wall corner gap cells (only for LOS blocking, NOT for step blocking)
-  if (floorData.cornerGapSet) {
-    for (const idx of floorData.cornerGapSet) {
-      losBlockSet.add(idx);
-    }
-  }
-
-  return _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, losBlockSet, roomPerimSet);
-}
-
-function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, losBlockSet, roomPerimSet) {
   const { grid, width, height } = floorData;
   let startPts = [];
   if (startItemId && floorData.access_points.has(startItemId)) {
@@ -295,10 +266,7 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
       let minDist = Infinity;
       for (const pt of ap.points) {
         const d = heuristic(startGridX, startGridY, pt.x, pt.y);
-        if (d < minDist) {
-          minDist = d;
-          bestPt = pt;
-        }
+        if (d < minDist) { minDist = d; bestPt = pt; }
       }
       startPts = [bestPt];
     } else {
@@ -317,10 +285,7 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
       let minDist = Infinity;
       for (const pt of ap.points) {
         const d = heuristic(endGridX, endGridY, pt.x, pt.y);
-        if (d < minDist) {
-          minDist = d;
-          bestPt = pt;
-        }
+        if (d < minDist) { minDist = d; bestPt = pt; }
       }
       endPts = [bestPt];
     } else {
@@ -343,6 +308,7 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
     }
   }
 
+  // ── Phase 1: Pure A* (8-directional, no Theta* LOS shortcut) ──
   const openSet = new MinHeap((a, b) => a.f - b.f);
   const closedSet = new Set();
   const gCosts = new Map();
@@ -357,19 +323,13 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
   };
 
   for (const pt of startPts) {
-    const startNode = {
-      x: pt.x, y: pt.y,
-      g: 0,
-      f: getHeuristic(pt.x, pt.y),
-      parent: null
-    };
+    const startNode = { x: pt.x, y: pt.y, g: 0, f: getHeuristic(pt.x, pt.y), parent: null };
     openSet.push(startNode);
     gCosts.set(`${pt.x},${pt.y}`, 0);
   }
   
   let endNode = null;
   
-  // 8-way movement
   const DIRS = [
     {dx: 0, dy: -1, cost: 1},
     {dx: 0, dy: 1, cost: 1},
@@ -400,46 +360,23 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
       if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
         if (grid[ny * width + nx] === 1) continue;
         
+        // Prevent diagonal corner-cutting
         if (d.dx !== 0 && d.dy !== 0) {
-          const adjIdx1 = current.y * width + nx;
-          const adjIdx2 = ny * width + current.x;
-          if (grid[adjIdx1] === 1 || grid[adjIdx2] === 1) continue;
-          // Block diagonal corner-cutting through room perimeters (small set, doors only)
-          if (roomPerimSet && (roomPerimSet.has(adjIdx1) && roomPerimSet.has(adjIdx2))) continue;
+          if (grid[current.y * width + nx] === 1 || grid[ny * width + current.x] === 1) continue;
         }
-        
-        let moveCost = d.cost;
         
         const nextStateKey = `${nx},${ny}`;
         if (closedSet.has(nextStateKey)) continue;
         
-        let parent = current;
-        let newG = current.g + moveCost;
-        
-        // Theta* optimization: Check Line of Sight from current's parent to neighbor
-        // LOS is blocked by losBlockSet (room perimeters + corner gaps)
-        if (current.parent) {
-          const px = current.parent.x;
-          const py = current.parent.y;
-          if (supercoverLineOfSight(px, py, nx, ny, grid, width, height, losBlockSet)) {
-            const dist = heuristic(px, py, nx, ny);
-            
-            if (current.parent.g + dist < newG) {
-              parent = current.parent;
-              newG = current.parent.g + dist;
-            }
-          }
-        }
-        
+        const newG = current.g + d.cost;
         const existingG = gCosts.get(nextStateKey);
         if (existingG === undefined || newG < existingG) {
           gCosts.set(nextStateKey, newG);
-          const h = getHeuristic(nx, ny);
           openSet.push({
             x: nx, y: ny,
             g: newG,
-            f: newG + h,
-            parent: parent
+            f: newG + getHeuristic(nx, ny),
+            parent: current
           });
         }
       }
@@ -448,34 +385,38 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
   
   if (!endNode) return null;
   
-  const path = [];
+  // Reconstruct raw A* path
+  const rawPath = [];
   let curr = endNode;
   while (curr) {
-    path.push({x: curr.x, y: curr.y});
+    rawPath.push({x: curr.x, y: curr.y});
     curr = curr.parent;
   }
-  path.reverse();
+  rawPath.reverse();
   
-  // Simplify path by removing collinear points
-  if (path.length <= 2) return path;
-  const simplified = [path[0]];
-  for (let i = 1; i < path.length - 1; i++) {
-    const prev = path[i - 1];
-    const curr = path[i];
-    const next = path[i + 1];
-    
-    const dx1 = curr.x - prev.x;
-    const dy1 = curr.y - prev.y;
-    const dx2 = next.x - curr.x;
-    const dy2 = next.y - curr.y;
-    
-    // Cross product to check collinearity
-    if ((dx1 * dy2 - dy1 * dx2) !== 0) {
-      simplified.push(curr);
+  if (rawPath.length <= 2) return rawPath;
+
+  // ── Phase 2: String-Pulling (greedy LOS simplification) ──
+  // "Go straight until you hit a wall, go around, go straight again"
+  // Also use cornerGapSet to prevent cutting through wall corners
+  const cornerSet = floorData.cornerGapSet || null;
+  
+  const smoothed = [rawPath[0]];
+  let i = 0;
+  while (i < rawPath.length - 1) {
+    // Try to reach as far as possible with a straight line from rawPath[i]
+    let farthest = i + 1;
+    for (let j = rawPath.length - 1; j > i + 1; j--) {
+      if (supercoverLineOfSight(rawPath[i].x, rawPath[i].y, rawPath[j].x, rawPath[j].y, grid, width, height, cornerSet)) {
+        farthest = j;
+        break;
+      }
     }
+    smoothed.push(rawPath[farthest]);
+    i = farthest;
   }
-  simplified.push(path[path.length - 1]);
-  return simplified;
+  
+  return smoothed;
 }
 
 const FLOOR_CHANGE_COST = 50; // Cost of changing floors
