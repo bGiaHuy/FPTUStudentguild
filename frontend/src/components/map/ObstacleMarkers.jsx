@@ -82,30 +82,30 @@ const ObstacleMarkers = ({ obstacles = [], draftFloorData, currentFloor, onUpvot
               {/* Vote popup */}
               {isSelected && (
                 <foreignObject 
-                  x={-120} y={-120} width="240" height="110"
+                  x={-240} y={-240} width="480" height="220"
                   transform={`translate(${cx}, ${cy}) rotate(${-mapRotation})`}
                 >
                   <div xmlns="http://www.w3.org/1999/xhtml" style={{
-                    background: 'rgba(0,0,0,0.9)', borderRadius: '14px', padding: '12px 16px',
-                    display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center', justifyContent: 'center',
+                    background: 'rgba(0,0,0,0.9)', borderRadius: '28px', padding: '24px 32px',
+                    display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', justifyContent: 'center',
                   }}>
-                    <div style={{ display: 'flex', gap: '12px' }}>
+                    <div style={{ display: 'flex', gap: '24px' }}>
                       <button onClick={(e) => { e.stopPropagation(); onUpvote?.(obs.id, isTesterMode); }} style={{
-                        padding: '8px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer',
-                        background: '#16A34A', color: 'white', fontSize: '15px', fontWeight: 700,
+                        padding: '16px 32px', borderRadius: '16px', border: 'none', cursor: 'pointer',
+                        background: '#16A34A', color: 'white', fontSize: '30px', fontWeight: 700,
                       }}>👍 Còn ({obs.upvotes})</button>
                       <button onClick={(e) => { e.stopPropagation(); onDownvote?.(obs.id, isTesterMode); }} style={{
-                        padding: '8px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer',
-                        background: '#DC2626', color: 'white', fontSize: '15px', fontWeight: 700,
+                        padding: '16px 32px', borderRadius: '16px', border: 'none', cursor: 'pointer',
+                        background: '#DC2626', color: 'white', fontSize: '30px', fontWeight: 700,
                       }}>👎 Hết ({obs.downvotes})</button>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <input 
                         type="checkbox" id={`tester-${obs.id}`}
                         checked={isTesterMode} onChange={e => setIsTesterMode(e.target.checked)}
-                        style={{ accentColor: '#EA580C', cursor: 'pointer' }}
+                        style={{ accentColor: '#EA580C', cursor: 'pointer', width: '24px', height: '24px' }}
                       />
-                      <label htmlFor={`tester-${obs.id}`} style={{ fontSize: '12px', color: '#D1D5DB', cursor: 'pointer', fontWeight: 600 }}>
+                      <label htmlFor={`tester-${obs.id}`} style={{ fontSize: '24px', color: '#D1D5DB', cursor: 'pointer', fontWeight: 600 }}>
                         Tester Mode (Bỏ chặn vote)
                       </label>
                     </div>
@@ -145,30 +145,30 @@ const ObstacleMarkers = ({ obstacles = [], draftFloorData, currentFloor, onUpvot
               {/* Vote popup */}
               {isSelected && (
                 <foreignObject 
-                  x={-120} y={-r - 120} width="240" height="110"
+                  x={-240} y={-r - 240} width="480" height="220"
                   transform={`translate(${obs.x}, ${obs.y}) rotate(${-mapRotation})`}
                 >
                   <div xmlns="http://www.w3.org/1999/xhtml" style={{
-                    background: 'rgba(0,0,0,0.9)', borderRadius: '14px', padding: '12px 16px',
-                    display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center', justifyContent: 'center',
+                    background: 'rgba(0,0,0,0.9)', borderRadius: '28px', padding: '24px 32px',
+                    display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', justifyContent: 'center',
                   }}>
-                    <div style={{ display: 'flex', gap: '12px' }}>
+                    <div style={{ display: 'flex', gap: '24px' }}>
                       <button onClick={(e) => { e.stopPropagation(); onUpvote?.(obs.id, isTesterMode); }} style={{
-                        padding: '8px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer',
-                        background: '#16A34A', color: 'white', fontSize: '15px', fontWeight: 700,
+                        padding: '16px 32px', borderRadius: '16px', border: 'none', cursor: 'pointer',
+                        background: '#16A34A', color: 'white', fontSize: '30px', fontWeight: 700,
                       }}>👍 Còn ({obs.upvotes})</button>
                       <button onClick={(e) => { e.stopPropagation(); onDownvote?.(obs.id, isTesterMode); }} style={{
-                        padding: '8px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer',
-                        background: '#DC2626', color: 'white', fontSize: '15px', fontWeight: 700,
+                        padding: '16px 32px', borderRadius: '16px', border: 'none', cursor: 'pointer',
+                        background: '#DC2626', color: 'white', fontSize: '30px', fontWeight: 700,
                       }}>👎 Hết ({obs.downvotes})</button>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <input 
                         type="checkbox" id={`tester-area-${obs.id}`}
                         checked={isTesterMode} onChange={e => setIsTesterMode(e.target.checked)}
-                        style={{ accentColor: '#EA580C', cursor: 'pointer' }}
+                        style={{ accentColor: '#EA580C', cursor: 'pointer', width: '24px', height: '24px' }}
                       />
-                      <label htmlFor={`tester-area-${obs.id}`} style={{ fontSize: '12px', color: '#D1D5DB', cursor: 'pointer', fontWeight: 600 }}>
+                      <label htmlFor={`tester-area-${obs.id}`} style={{ fontSize: '24px', color: '#D1D5DB', cursor: 'pointer', fontWeight: 600 }}>
                         Tester Mode (Bỏ chặn vote)
                       </label>
                     </div>
