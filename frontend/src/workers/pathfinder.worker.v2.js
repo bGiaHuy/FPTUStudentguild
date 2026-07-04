@@ -151,7 +151,7 @@ function getNearestWalkable(cx, cy, floorData) {
 }
 
 // Supercover Line of Sight (Bresenham based)
-function supercoverLineOfSight(x0, y0, x1, y1, grid, width, height) {
+function supercoverLineOfSight(x0, y0, x1, y1, grid, width, height, roomPerimeterSet = null) {
   let dx = x1 - x0;
   let dy = y1 - y0;
   let nx = Math.abs(dx);
@@ -183,7 +183,9 @@ function supercoverLineOfSight(x0, y0, x1, y1, grid, width, height) {
 
   for (const pt of points) {
     if (pt.x < 0 || pt.x >= width || pt.y < 0 || pt.y >= height) return false;
-    if (grid[pt.y * width + pt.x] === 1) return false;
+    const idx = pt.y * width + pt.x;
+    if (grid[idx] === 1) return false;
+    if (roomPerimeterSet && roomPerimeterSet.has(idx)) return false;
   }
   return true;
 }
@@ -196,33 +198,21 @@ function heuristic(x0, y0, x1, y1) {
 
 // THETA* ALGORITHM
 function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
-  const originalGridValues = new Map();
+  const roomPerimeterSet = new Set();
   if (floorData.access_points) {
     for (const [id, ap] of floorData.access_points.entries()) {
       if (ap.item_type === 'room' && id !== startItemId && id !== endItemId) {
         for (const pt of ap.points) {
-          const idx = pt.y * floorData.width + pt.x;
-          if (floorData.grid[idx] !== 1) {
-            originalGridValues.set(idx, floorData.grid[idx]);
-            floorData.grid[idx] = 1;
-          }
+          roomPerimeterSet.add(pt.y * floorData.width + pt.x);
         }
       }
     }
   }
 
-  let result = null;
-  try {
-    result = _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId);
-  } finally {
-    for (const [idx, val] of originalGridValues.entries()) {
-      floorData.grid[idx] = val;
-    }
-  }
-  return result;
+  return _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, roomPerimeterSet);
 }
 
-function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
+function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, roomPerimeterSet) {
   const { grid, width, height } = floorData;
   let startPts = [];
   if (startItemId && floorData.access_points.has(startItemId)) {
@@ -342,6 +332,10 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
         }
         
         let moveCost = d.cost;
+        const idx = ny * width + nx;
+        if (roomPerimeterSet && roomPerimeterSet.has(idx)) {
+          moveCost += 10000;
+        }
         
         const nextStateKey = `${nx},${ny}`;
         if (closedSet.has(nextStateKey)) continue;
@@ -353,7 +347,7 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
         if (current.parent) {
           const px = current.parent.x;
           const py = current.parent.y;
-          if (supercoverLineOfSight(px, py, nx, ny, grid, width, height)) {
+          if (supercoverLineOfSight(px, py, nx, ny, grid, width, height, roomPerimeterSet)) {
             const dist = heuristic(px, py, nx, ny);
             let losCost = dist;
             
