@@ -164,6 +164,8 @@ function supercoverLineOfSight(x0, y0, x1, y1, grid, width, height) {
   
   for (let ix = 0, iy = 0; ix < nx || iy < ny;) {
     if ((0.5 + ix) / nx === (0.5 + iy) / ny) {
+      points.push({ x: p.x + sign_x, y: p.y });
+      points.push({ x: p.x, y: p.y + sign_y });
       p.x += sign_x;
       p.y += sign_y;
       ix++;
@@ -280,6 +282,10 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
       
       if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
         if (grid[ny * width + nx] === 1) continue;
+        
+        if (d.dx !== 0 && d.dy !== 0) {
+          if (grid[current.y * width + nx] === 1 || grid[ny * width + current.x] === 1) continue;
+        }
         
         let moveCost = d.cost;
         
