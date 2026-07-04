@@ -39,7 +39,14 @@ app.include_router(admin_router.router)
 async def startup():
     """Tự động tạo bảng reports + obstacles nếu chưa có."""
     from database.models import Report, Obstacle
+    from sqlalchemy import text
     async with engine.begin() as conn:
+        # Create vector extension if not exists for Supabase compatibility
+        try:
+            await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+        except Exception as e:
+            print(f"Warning: Could not create vector extension (maybe using sqlite?): {e}")
+            
         await conn.run_sync(
             Base.metadata.create_all,
             tables=[Report.__table__, Obstacle.__table__]
