@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { supabase } from './supabase';
+import { sendChatMessageDirect } from './chatService';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api',
@@ -15,12 +16,8 @@ export const getMapItems = (floorId) => api.get(`/map/floors/${floorId}/map-item
 export const searchRooms = (query) => api.get(`/search?q=${query}`);
 
 export const sendChatMessage = async (messages, userId) => {
-  const { data: { session } } = await supabase.auth.getSession();
-  const token = session?.access_token;
-  
-  return api.post('/chat', { messages, user_id: userId }, {
-    headers: token ? { Authorization: `Bearer ${token}` } : {}
-  });
+  const result = await sendChatMessageDirect(messages);
+  return { data: result };
 };
 
 // ── Crowdsourcing Report ──
