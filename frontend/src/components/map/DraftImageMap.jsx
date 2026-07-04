@@ -1264,6 +1264,19 @@ const DraftImageMap = () => {
                     style={{ pointerEvents: 'none' }}
                   />
                 )}
+                {/* Render pending report area if in confirm step */}
+                {!reportDragStart && isReportMode && reportStep === 'confirm' && pendingReport?.x && isActiveFloor && (
+                  <circle
+                    cx={pendingReport.x}
+                    cy={pendingReport.y}
+                    r={pendingReport.radius || 30}
+                    fill="rgba(239, 68, 68, 0.15)"
+                    stroke="#EF4444"
+                    strokeWidth="3"
+                    strokeDasharray="6,6"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                )}
               </svg>
             );
           })}

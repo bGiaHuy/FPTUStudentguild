@@ -25,7 +25,7 @@ async def create_report(
     report = Report(
         building_code=data.building_code,
         floor=data.floor,
-        obstacle_type=data.obstacle_type,
+        obstacle_type=data.obstacle_type.value,
         target_item_id=data.target_item_id,
         x=data.x,
         y=data.y,
