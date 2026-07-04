@@ -71,9 +71,9 @@ const ObstacleMarkers = ({ obstacles = [], draftFloorData, currentFloor, onUpvot
               />
               {/* Badge */}
               <g transform={`translate(${cx}, ${cy}) rotate(${-mapRotation})`}>
-                <rect x="-40" y="-14" width="80" height="28" rx="6"
+                <rect x="-80" y="-28" width="160" height="56" rx="12"
                   fill={style.stroke} opacity="0.95" />
-                <text x="0" y="5" textAnchor="middle" fontSize="12"
+                <text x="0" y="10" textAnchor="middle" fontSize="24"
                   fill="white" fontWeight="bold" fontFamily="var(--font-sans)">
                   {style.icon} {style.label}
                 </text>
