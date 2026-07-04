@@ -373,10 +373,6 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
         }
         
         let moveCost = d.cost;
-        const idx = ny * width + nx;
-        if (roomPerimeterSet && roomPerimeterSet.has(idx)) {
-          moveCost += 10000;
-        }
         
         const nextStateKey = `${nx},${ny}`;
         if (closedSet.has(nextStateKey)) continue;
@@ -385,16 +381,16 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
         let newG = current.g + moveCost;
         
         // Theta* optimization: Check Line of Sight from current's parent to neighbor
+        // LOS is blocked by roomPerimeterSet so shortcuts can't cut through rooms
         if (current.parent) {
           const px = current.parent.x;
           const py = current.parent.y;
           if (supercoverLineOfSight(px, py, nx, ny, grid, width, height, roomPerimeterSet)) {
-            // Compute actual LOS cost including room perimeter penalties
-            let losCost = losPathCost(px, py, nx, ny, width, roomPerimeterSet);
+            const dist = heuristic(px, py, nx, ny);
             
-            if (current.parent.g + losCost < newG) {
+            if (current.parent.g + dist < newG) {
               parent = current.parent;
-              newG = current.parent.g + losCost;
+              newG = current.parent.g + dist;
             }
           }
         }
