@@ -262,10 +262,11 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
   if (startItemId && floorData.access_points.has(startItemId)) {
     const ap = floorData.access_points.get(startItemId);
     if (ap.item_type === 'room') {
+      // Pick the AP closest to the DESTINATION so we exit toward it
       let bestPt = ap.points[0];
       let minDist = Infinity;
       for (const pt of ap.points) {
-        const d = heuristic(startGridX, startGridY, pt.x, pt.y);
+        const d = heuristic(endGridX, endGridY, pt.x, pt.y);
         if (d < minDist) { minDist = d; bestPt = pt; }
       }
       startPts = [bestPt];
@@ -281,10 +282,11 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
   if (endItemId && floorData.access_points.has(endItemId)) {
     const ap = floorData.access_points.get(endItemId);
     if (ap.item_type === 'room') {
+      // Pick the AP closest to the ORIGIN so we enter from nearest side
       let bestPt = ap.points[0];
       let minDist = Infinity;
       for (const pt of ap.points) {
-        const d = heuristic(endGridX, endGridY, pt.x, pt.y);
+        const d = heuristic(startGridX, startGridY, pt.x, pt.y);
         if (d < minDist) { minDist = d; bestPt = pt; }
       }
       endPts = [bestPt];
