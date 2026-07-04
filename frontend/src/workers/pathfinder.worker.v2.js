@@ -163,14 +163,15 @@ function supercoverLineOfSight(x0, y0, x1, y1, grid, width, height) {
   let points = [{ x: p.x, y: p.y }];
   
   for (let ix = 0, iy = 0; ix < nx || iy < ny;) {
-    if ((0.5 + ix) / nx === (0.5 + iy) / ny) {
+    const diff = (0.5 + ix) / nx - (0.5 + iy) / ny;
+    if (Math.abs(diff) < 1e-9) {
       points.push({ x: p.x + sign_x, y: p.y });
       points.push({ x: p.x, y: p.y + sign_y });
       p.x += sign_x;
       p.y += sign_y;
       ix++;
       iy++;
-    } else if ((0.5 + ix) / nx < (0.5 + iy) / ny) {
+    } else if (diff < 0) {
       p.x += sign_x;
       ix++;
     } else {
@@ -195,6 +196,33 @@ function heuristic(x0, y0, x1, y1) {
 
 // THETA* ALGORITHM
 function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
+  const originalGridValues = new Map();
+  if (floorData.access_points) {
+    for (const [id, ap] of floorData.access_points.entries()) {
+      if (ap.item_type === 'room' && id !== startItemId && id !== endItemId) {
+        for (const pt of ap.points) {
+          const idx = pt.y * floorData.width + pt.x;
+          if (floorData.grid[idx] !== 1) {
+            originalGridValues.set(idx, floorData.grid[idx]);
+            floorData.grid[idx] = 1;
+          }
+        }
+      }
+    }
+  }
+
+  let result = null;
+  try {
+    result = _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId);
+  } finally {
+    for (const [idx, val] of originalGridValues.entries()) {
+      floorData.grid[idx] = val;
+    }
+  }
+  return result;
+}
+
+function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
   const { grid, width, height } = floorData;
   let startPts = [];
   if (startItemId && floorData.access_points.has(startItemId)) {
