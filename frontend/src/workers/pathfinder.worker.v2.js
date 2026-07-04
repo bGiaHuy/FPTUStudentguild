@@ -196,6 +196,43 @@ function heuristic(x0, y0, x1, y1) {
   return Math.sqrt(dx * dx + dy * dy);
 }
 
+// Compute actual cost along a straight line, adding penalties for room perimeter cells
+function losPathCost(x0, y0, x1, y1, width, roomPerimeterSet) {
+  let dx = x1 - x0;
+  let dy = y1 - y0;
+  let nx = Math.abs(dx);
+  let ny = Math.abs(dy);
+  let sign_x = dx > 0 ? 1 : -1;
+  let sign_y = dy > 0 ? 1 : -1;
+  let p = { x: x0, y: y0 };
+  let totalCost = 0;
+  
+  for (let ix = 0, iy = 0; ix < nx || iy < ny;) {
+    let stepCost;
+    const diff = (0.5 + ix) / nx - (0.5 + iy) / ny;
+    if (Math.abs(diff) < 1e-9) {
+      p.x += sign_x;
+      p.y += sign_y;
+      ix++;
+      iy++;
+      stepCost = 1.414;
+    } else if (diff < 0) {
+      p.x += sign_x;
+      ix++;
+      stepCost = 1;
+    } else {
+      p.y += sign_y;
+      iy++;
+      stepCost = 1;
+    }
+    if (roomPerimeterSet && roomPerimeterSet.has(p.y * width + p.x)) {
+      stepCost += 10000;
+    }
+    totalCost += stepCost;
+  }
+  return totalCost;
+}
+
 // THETA* ALGORITHM
 function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId) {
   const roomPerimeterSet = new Set();
@@ -328,7 +365,11 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
         if (grid[ny * width + nx] === 1) continue;
         
         if (d.dx !== 0 && d.dy !== 0) {
-          if (grid[current.y * width + nx] === 1 || grid[ny * width + current.x] === 1) continue;
+          const adjIdx1 = current.y * width + nx;
+          const adjIdx2 = ny * width + current.x;
+          if (grid[adjIdx1] === 1 || grid[adjIdx2] === 1) continue;
+          // Also block diagonal corner-cutting through room perimeters
+          if (roomPerimeterSet && (roomPerimeterSet.has(adjIdx1) && roomPerimeterSet.has(adjIdx2))) continue;
         }
         
         let moveCost = d.cost;
@@ -348,8 +389,8 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
           const px = current.parent.x;
           const py = current.parent.y;
           if (supercoverLineOfSight(px, py, nx, ny, grid, width, height, roomPerimeterSet)) {
-            const dist = heuristic(px, py, nx, ny);
-            let losCost = dist;
+            // Compute actual LOS cost including room perimeter penalties
+            let losCost = losPathCost(px, py, nx, ny, width, roomPerimeterSet);
             
             if (current.parent.g + losCost < newG) {
               parent = current.parent;
