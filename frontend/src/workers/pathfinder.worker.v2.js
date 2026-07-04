@@ -59,6 +59,7 @@ let lastGridData = null;
 let disabledAccessPoints = new Set();
 let currentObstaclesList = [];
 let currentAvoidObstacles = true;
+let isElevatorBroken = false;
 
 function loadGrid(gridData) {
   lastGridData = gridData;
@@ -436,6 +437,7 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
     
     for (const [stairId, stair] of startFloor.access_points.entries()) {
       if (stair.item_type !== 'stair' && stair.item_type !== 'elevator') continue;
+      if (stair.item_type === 'elevator' && isElevatorBroken) continue;
       if (disabledAccessPoints.has(stairId)) continue;
       const stx = stair.points[0].x;
       const sty = stair.points[0].y;
@@ -452,9 +454,10 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
       let minDist = Infinity;
       for (const [eStairId, eStair] of endFloor.access_points.entries()) {
         if (eStair.item_type !== stair.item_type) continue;
+        if (eStair.item_type === 'elevator' && isElevatorBroken) continue;
         if (disabledAccessPoints.has(eStairId)) continue;
         const dist = heuristic(stair.points[0].x, stair.points[0].y, eStair.points[0].x, eStair.points[0].y);
-        if (dist < minDist && dist < 1600) {
+        if (dist < minDist && dist < 30) {
           minDist = dist;
           endStair = eStair;
         }
@@ -485,9 +488,10 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
     
     for (const [eStairId, eStair] of endFloor.access_points.entries()) {
       if (eStair.item_type !== startStair.item_type) continue;
+      if (eStair.item_type === 'elevator' && isElevatorBroken) continue;
       if (disabledAccessPoints.has(eStairId)) continue;
       const dist = heuristic(startStair.points[0].x, startStair.points[0].y, eStair.points[0].x, eStair.points[0].y);
-      if (dist < bestMinDist && dist < 1600) { // match Phase 1 threshold
+      if (dist < bestMinDist && dist < 30) { // strict match
         bestMinDist = dist;
         bestEndStair = eStair;
         bestEndStairId = eStairId;
@@ -515,9 +519,10 @@ function findHierarchicalPath(startPt, endPt, preferElevator = false, startItemI
         if (currFloorData) {
             for (const [id, ap] of currFloorData.access_points.entries()) {
                 if (ap.item_type !== startStair.item_type) continue;
+                if (ap.item_type === 'elevator' && isElevatorBroken) continue;
                 if (disabledAccessPoints.has(id)) continue;
                 const dist = heuristic(startStair.points[0].x, startStair.points[0].y, ap.points[0].x, ap.points[0].y);
-                if (dist < minDist && dist < 1600) { // match Phase 1 threshold
+                if (dist < minDist && dist < 30) { // strict match
                     minDist = dist;
                     intermStair = ap;
                 }
@@ -638,10 +643,14 @@ self.onmessage = function (e) {
 
 function applyObstacles(obstacles) {
   disabledAccessPoints.clear();
+  isElevatorBroken = false;
   if (!obstacles || obstacles.length === 0) return;
   for (const obs of obstacles) {
     if (obs.type === 'targeted') {
       disabledAccessPoints.add(obs.target_item_id);
+      if (obs.obstacle_type === 'elevator_broken') {
+        isElevatorBroken = true;
+      }
     } else if (obs.type === 'area') {
       const floorData = cachedGridMap.get(obs.floor);
       if (!floorData) continue;
