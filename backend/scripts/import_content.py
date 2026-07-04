@@ -111,7 +111,7 @@ async def import_articles_and_guides(session, csv_path, json_path):
             reader = csv.DictReader(f)
             for row in reader:
                 title = row.get("title", "").strip()
-                content = row.get("content", "").strip()
+                content = row.get("content_md", "").strip()  # Fixed: CSV column is content_md
                 
                 search_text = f"{title}. {content}"
                 emb = get_embedding(search_text)
@@ -135,8 +135,13 @@ async def import_articles_and_guides(session, csv_path, json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
             guides = json.load(f)
             for row in guides:
-                title = row.get("title", "").strip()
-                content = row.get("content", "").strip()
+                # Build full title with website/group context
+                website = row.get("website", "").strip()
+                group = row.get("group", "").strip()
+                raw_title = row.get("title", "").strip()
+                title = f"[{website}] {group} - {raw_title}" if website else raw_title
+                
+                content = row.get("instructions", "").strip()  # Fixed: JSON field is instructions
                 
                 search_text = f"{title}. {content}"
                 emb = get_embedding(search_text)
@@ -144,8 +149,8 @@ async def import_articles_and_guides(session, csv_path, json_path):
                 article = Article(
                     title=title,
                     content=content,
-                    category=row.get("category", "website_guide"),
-                    source_name=row.get("source_name", ""),
+                    category="website_guide",
+                    source_name=row.get("source_name", website),
                     source_url=row.get("source_url", ""),
                     verified_by=row.get("verified_by", ""),
                     verified_at=row.get("verified_at", ""),
@@ -155,8 +160,34 @@ async def import_articles_and_guides(session, csv_path, json_path):
                 )
                 session.add(article)
                 
+    # 3. Hoc Vu JSON (academic regulations)
+    hoc_vu_path = os.path.join(os.path.dirname(csv_path), "hoc_vu.json")
+    if os.path.exists(hoc_vu_path):
+        with open(hoc_vu_path, 'r', encoding='utf-8') as f:
+            hoc_vu_items = json.load(f)
+            for item in hoc_vu_items:
+                title = item.get("title", "").strip()
+                content = item.get("content", "").strip()
+                
+                search_text = f"{title}. {content}"
+                emb = get_embedding(search_text)
+                
+                article = Article(
+                    title=title,
+                    content=content,
+                    category="hoc_vu",
+                    source_name="Quy định học vụ FPTU",
+                    source_url="",
+                    verified_by="",
+                    verified_at="",
+                    review_status="verified",
+                    published=True,
+                    embedding=emb
+                )
+                session.add(article)
+                
     await session.commit()
-    print("Articles & Guides imported.")
+    print("Articles, Guides & Hoc Vu imported.")
 
 async def import_room_metadata(session, filepath):
     if not os.path.exists(filepath):

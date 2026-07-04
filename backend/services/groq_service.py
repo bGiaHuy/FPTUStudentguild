@@ -71,9 +71,15 @@ async def search_knowledge(query: str, db: AsyncSession):
     faqs = res_faq.all()
     
     # Search Articles
-    stmt_art = text(f"SELECT title, content FROM articles ORDER BY embedding <=> '{emb_str}'::vector LIMIT 2")
+    stmt_art = text(f"SELECT title, content FROM articles ORDER BY embedding <=> '{emb_str}'::vector LIMIT 3")
     res_art = await db.execute(stmt_art)
     arts = res_art.all()
+    
+    # Search Room Metadata (keyword-based, no embeddings)
+    query_lower = query.lower()
+    stmt_rm = text("SELECT room_code, display_name, description, floor, opening_hours, contact FROM room_metadata WHERE LOWER(room_code) LIKE :q OR LOWER(display_name) LIKE :q OR LOWER(description) LIKE :q")
+    res_rm = await db.execute(stmt_rm, {"q": f"%{query_lower}%"})
+    rooms = res_rm.all()
     
     context = ""
     related_actions = []
@@ -93,7 +99,22 @@ async def search_knowledge(query: str, db: AsyncSession):
     if arts:
         context += "--- Articles / Guides ---\n"
         for art in arts:
-            context += f"Title: {art.title}\nContent: {art.content[:500]}...\n"
+            content_text = art.content or ""
+            if len(content_text) > 1500:
+                content_text = content_text[:1500] + "..."
+            context += f"Title: {art.title}\nContent: {content_text}\n\n"
+    
+    if rooms:
+        context += "--- Room Info ---\n"
+        for rm in rooms:
+            context += f"Room: {rm.room_code} ({rm.display_name}), Tầng {rm.floor}"
+            if rm.description:
+                context += f", Mô tả: {rm.description}"
+            if rm.opening_hours:
+                context += f", Giờ mở cửa: {rm.opening_hours}"
+            if rm.contact:
+                context += f", Liên hệ: {rm.contact}"
+            context += "\n"
             
     return context, related_actions
 
