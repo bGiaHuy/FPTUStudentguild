@@ -104,7 +104,7 @@ function loadGrid(gridData) {
           if (grid[dy2 * width + dx2] !== 1) continue; // diagonal must be wall
           const adj1IsWall = grid[y * width + (x + cd.dx)] === 1;
           const adj2IsWall = grid[(y + cd.dy) * width + x] === 1;
-          if (adj1IsWall || adj2IsWall) {
+          if (adj1IsWall && adj2IsWall) {
             cornerGapSet.add(y * width + x);
             break; // already marked, no need to check other diagonals
           }
@@ -260,28 +260,32 @@ function thetaStar(startGridX, startGridY, endGridX, endGridY, floorData, startI
   // Build LOS blocking set: room perimeters + wall corner gaps
   const losBlockSet = new Set();
   
-  // Add room perimeter points (door cells of non-target rooms)
+  // Room perimeter set (small - just door cells) for diagonal step blocking
+  const roomPerimSet = new Set();
+  
   if (floorData.access_points) {
     for (const [id, ap] of floorData.access_points.entries()) {
       if (ap.item_type === 'room' && id !== startItemId && id !== endItemId) {
         for (const pt of ap.points) {
-          losBlockSet.add(pt.y * floorData.width + pt.x);
+          const idx = pt.y * floorData.width + pt.x;
+          losBlockSet.add(idx);
+          roomPerimSet.add(idx);
         }
       }
     }
   }
   
-  // Add wall corner gap cells
+  // Add wall corner gap cells (only for LOS blocking, NOT for step blocking)
   if (floorData.cornerGapSet) {
     for (const idx of floorData.cornerGapSet) {
       losBlockSet.add(idx);
     }
   }
 
-  return _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, losBlockSet);
+  return _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, losBlockSet, roomPerimSet);
 }
 
-function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, roomPerimeterSet) {
+function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, startItemId, endItemId, losBlockSet, roomPerimSet) {
   const { grid, width, height } = floorData;
   let startPts = [];
   if (startItemId && floorData.access_points.has(startItemId)) {
@@ -400,8 +404,8 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
           const adjIdx1 = current.y * width + nx;
           const adjIdx2 = ny * width + current.x;
           if (grid[adjIdx1] === 1 || grid[adjIdx2] === 1) continue;
-          // Also block diagonal corner-cutting through room perimeters
-          if (roomPerimeterSet && (roomPerimeterSet.has(adjIdx1) && roomPerimeterSet.has(adjIdx2))) continue;
+          // Block diagonal corner-cutting through room perimeters (small set, doors only)
+          if (roomPerimSet && (roomPerimSet.has(adjIdx1) && roomPerimSet.has(adjIdx2))) continue;
         }
         
         let moveCost = d.cost;
@@ -413,11 +417,11 @@ function _thetaStarCore(startGridX, startGridY, endGridX, endGridY, floorData, s
         let newG = current.g + moveCost;
         
         // Theta* optimization: Check Line of Sight from current's parent to neighbor
-        // LOS is blocked by roomPerimeterSet so shortcuts can't cut through rooms
+        // LOS is blocked by losBlockSet (room perimeters + corner gaps)
         if (current.parent) {
           const px = current.parent.x;
           const py = current.parent.y;
-          if (supercoverLineOfSight(px, py, nx, ny, grid, width, height, roomPerimeterSet)) {
+          if (supercoverLineOfSight(px, py, nx, ny, grid, width, height, losBlockSet)) {
             const dist = heuristic(px, py, nx, ny);
             
             if (current.parent.g + dist < newG) {
