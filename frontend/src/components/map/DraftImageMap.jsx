@@ -725,9 +725,16 @@ const DraftImageMap = () => {
                       onClick={(e) => {
                         if (hasDragged.current) return;
                         if (isInteractive) {
-                          e.stopPropagation();
-                          
                           const store = useAppStore.getState();
+                          
+                          // Nếu đang chọn vùng (area) cho report, bỏ qua click trên item
+                          // để event nổi bọt (bubble) lên <svg> xử lý lấy tọa độ.
+                          if (store.isReportMode && store.reportStep === 'select_target' && store.pendingReport) {
+                            const isArea = ['wet_floor','construction','debris','other'].includes(store.pendingReport.obstacle_type);
+                            if (isArea) return;
+                          }
+                          
+                          e.stopPropagation();
                           
                           // Report mode: targeted type → chọn item này
                           if (store.isReportMode && store.reportStep === 'select_target' && store.pendingReport) {
