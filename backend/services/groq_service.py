@@ -16,15 +16,15 @@ client = AsyncGroq(api_key=settings.GROQ_API_KEY)
 # Load embedder once
 embedder = None
 try:
-    from sentence_transformers import SentenceTransformer
-    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    from fastembed import TextEmbedding
+    embedder = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
 except ImportError:
     pass
 
 def get_embedding(query: str):
     if not embedder:
         return [0.0]*384
-    return embedder.encode(query).tolist()
+    return next(embedder.embed([query])).tolist()
 
 SYSTEM_PROMPT = """Bạn là trợ lý ảo của FPTU Student Guide, chuyên giúp sinh viên Đại học FPT tìm phòng học, chỉ đường và giải đáp thắc mắc về thi cử, thủ tục hành chính.
 Bạn giao tiếp thân thiện, ngắn gọn và chính xác.

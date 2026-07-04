@@ -12,17 +12,18 @@ from database.connection import engine, async_session_factory
 from database.models import Base, ChatbotKnowledge, FAQ, Article, RoomMetadata
 
 try:
-    from sentence_transformers import SentenceTransformer
-    print("Loading embedding model (all-MiniLM-L6-v2)...")
-    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    print("Khởi tạo mô hình Embedding (fastembed)...")
+    from fastembed import TextEmbedding
+    
+    embedder = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
 except ImportError:
-    print("Error: sentence-transformers not installed.")
+    print("Error: fastembed not installed.")
     sys.exit(1)
 
 def get_embedding(text_content):
     if not text_content:
         return [0.0]*384
-    return embedder.encode(text_content).tolist()
+    return next(embedder.embed([text_content])).tolist()
 
 async def setup_db():
     async with engine.begin() as conn:
